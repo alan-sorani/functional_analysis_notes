@@ -1,0 +1,102 @@
+\contentsline {definition}{{Definition}{1.1.{1}}{Norm}}{5}%
+\contentsline {remark}{{Remark}{1.1.{2}}{}}{5}%
+\contentsline {definition}{{Definition}{1.1.{3}}{Banach Space}}{5}%
+\contentsline {definition}{{Definition}{1.1.{4}}{Inner Product}}{5}%
+\contentsline {remark}{{Remark}{1.1.{5}}{}}{6}%
+\contentsline {definition}{{Definition}{1.1.{6}}{Hilbert Space}}{6}%
+\contentsline {example}{{Example}{1.1.{7}}{$\ell _p$ Spaces}}{6}%
+\contentsline {example}{{Example}{1.1.{8}}{}}{6}%
+\contentsline {example}{{Example}{1.1.{9}}{Continuous Functions over a Compact Space}}{6}%
+\contentsline {definition}{{Definition}{1.1.{10}}{Support of a Function}}{6}%
+\contentsline {example}{{Example}{1.1.{11}}{Continuous Functions over Locally Compact Hausdorff Spaces}}{6}%
+\contentsline {definition}{{Definition}{1.1.{12}}{Completion of a Nםרצקג Space}}{7}%
+\contentsline {example}{{Example}{1.1.{13}}{}}{7}%
+\contentsline {example}{{Example}{1.1.{14}}{}}{7}%
+\contentsline {remark}{{Remark}{1.1.{15}}{}}{7}%
+\contentsline {remark}{{Remark}{1.1.{16}}{}}{7}%
+\contentsline {theorem}{{Theorem}{1.1.{17}}{Hölder Inequality}}{7}%
+\contentsline {corollary}{{Corollary}{1.1.{18}}{}}{7}%
+\contentsline {corollary}{{Corollary}{1.1.{19}}{}}{7}%
+\contentsline {theorem}{{Theorem}{1.1.{20}}{}}{7}%
+\contentsline {proof}{{Proof}{1}{}}{7}%
+\contentsline {definition}{{Definition}{1.1.{21}}{}}{8}%
+\contentsline {definition}{{Definition}{1.1.{22}}{$L_\infty $}}{8}%
+\contentsline {exercise}{{Exercise}{1}{}}{8}%
+\contentsline {definition}{{Definition}{1.1.{23}}{The Operator Norm}}{8}%
+\contentsline {definition}{{Definition}{1.1.{24}}{Bounded Linear Map}}{8}%
+\contentsline {fact}{{Fact}{1.1.{25}}{}}{8}%
+\contentsline {notation}{{Notation}{1.1.{26}}{}}{9}%
+\contentsline {theorem}{{Theorem}{1.1.{27}}{}}{9}%
+\contentsline {definition}{{Definition}{1.1.{28}}{The Dual Space}}{9}%
+\contentsline {remark}{{Remark}{1.1.{29}}{}}{9}%
+\contentsline {example}{{Example}{1.1.{30}}{}}{9}%
+\contentsline {example}{{Example}{1.1.{31}}{}}{9}%
+\contentsline {example}{{Example}{1.1.{32}}{}}{9}%
+\contentsline {example}{{Example}{1.1.{33}}{}}{10}%
+\contentsline {definition}{{Definition}{1.1.{34}}{Complex Measure}}{10}%
+\contentsline {fact}{{Fact}{1.1.{35}}{}}{10}%
+\contentsline {definition}{{Definition}{1.1.{36}}{Norm of a Measure}}{10}%
+\contentsline {theorem}{{Theorem}{1.1.{37}}{}}{10}%
+\contentsline {theorem}{{Theorem}{1.1.{38}}{Radon Nikodym}}{11}%
+\contentsline {proof}{{Proof}{2}{}}{11}%
+\contentsline {remark}{{Remark}{1.1.{39}}{}}{11}%
+\contentsline {theorem}{{Theorem}{1.1.{40}}{}}{12}%
+\contentsline {proof}{{Proof}{3}{}}{12}%
+\contentsline {exercise}{{Exercise}{2}{}}{14}%
+\contentsline {definition}{{Definition}{2.1.{1}}{Sublinear Functions}}{15}%
+\contentsline {theorem}{{Theorem}{2.1.{2}}{Hahn-Banach, \#1}}{15}%
+\contentsline {lemma}{{Lemma}{2.1.{3}}{}}{15}%
+\contentsline {proof}{{Proof}{4}{}}{15}%
+\contentsline {proof}{{Proof}{5}{\ref {theorem:hahn_banach}}}{16}%
+\contentsline {theorem}{{Theorem}{2.1.{4}}{Hahn Banach \#2}}{16}%
+\contentsline {proof}{{Proof}{6}{}}{16}%
+\contentsline {corollary}{{Corollary}{2.1.{5}}{}}{17}%
+\contentsline {proof}{{Proof}{7}{}}{18}%
+\contentsline {corollary}{{Corollary}{2.1.{6}}{}}{18}%
+\contentsline {proof}{{Proof}{8}{}}{18}%
+\contentsline {corollary}{{Corollary}{2.1.{7}}{}}{18}%
+\contentsline {proof}{{Proof}{9}{}}{18}%
+\contentsline {corollary}{{Corollary}{2.1.{8}}{}}{18}%
+\contentsline {proof}{{Proof}{10}{}}{18}%
+\contentsline {definition}{{Definition}{2.1.{9}}{Banach Limit}}{18}%
+\contentsline {remark}{{Remark}{2.1.{10}}{}}{19}%
+\contentsline {remark}{{Remark}{2.1.{11}}{}}{19}%
+\contentsline {theorem}{{Theorem}{2.1.{12}}{}}{19}%
+\contentsline {remark}{{Remark}{2.1.{13}}{}}{19}%
+\contentsline {proof}{{Proof}{11}{}}{19}%
+\contentsline {definition}{{Definition}{2.1.{14}}{}}{20}%
+\contentsline {proposition}{{Proposition}{2.1.{15}}{}}{20}%
+\contentsline {proof}{{Proof}{12}{}}{21}%
+\contentsline {definition}{{Definition}{2.1.{16}}{}}{21}%
+\contentsline {example}{{Example}{2.1.{17}}{}}{21}%
+\contentsline {example}{{Example}{2.1.{18}}{}}{21}%
+\contentsline {example}{{Example}{2.1.{19}}{}}{21}%
+\contentsline {theorem}{{Theorem}{2.1.{20}}{}}{21}%
+\contentsline {proof}{{Proof}{13}{}}{21}%
+\contentsline {definition}{{Definition}{2.1.{21}}{The Minkowski Functional}}{23}%
+\contentsline {definition}{{Definition}{2.1.{22}}{Internal Point}}{23}%
+\contentsline {remark}{{Remark}{2.1.{23}}{}}{23}%
+\contentsline {fact}{{Fact}{2.1.{24}}{}}{23}%
+\contentsline {proof}{{Proof}{14}{}}{23}%
+\contentsline {remark}{{Remark}{2.1.{25}}{}}{23}%
+\contentsline {definition}{{Definition}{2.1.{26}}{Separating Function}}{23}%
+\contentsline {theorem}{{Theorem}{2.1.{27}}{}}{24}%
+\contentsline {proof}{{Proof}{15}{}}{24}%
+\contentsline {example}{{Example}{2.1.{28}}{}}{24}%
+\contentsline {proposition}{{Proposition}{2.1.{29}}{}}{25}%
+\contentsline {proof}{{Proof}{16}{}}{25}%
+\contentsline {corollary}{{Corollary}{2.1.{30}}{}}{25}%
+\contentsline {proof}{{Proof}{17}{}}{25}%
+\contentsline {definition}{{Definition}{2.2.{1}}{}}{26}%
+\contentsline {theorem}{{Theorem}{2.2.{2}}{Baire}}{26}%
+\contentsline {theorem}{{Theorem}{2.2.{3}}{Uniform Boundedness Principle}}{26}%
+\contentsline {theorem}{{Theorem}{2.2.{4}}{}}{26}%
+\contentsline {proof}{{Proof}{18}{}}{26}%
+\contentsline {corollary}{{Corollary}{2.2.{5}}{}}{27}%
+\contentsline {proof}{{Proof}{19}{}}{27}%
+\contentsline {proposition}{{Proposition}{2.2.{6}}{}}{27}%
+\contentsline {proof}{{Proof}{20}{}}{27}%
+\contentsline {definition}{{Definition}{2.2.{7}}{}}{27}%
+\contentsline {theorem}{{Theorem}{2.2.{8}}{Dirichlet}}{28}%
+\contentsline {theorem}{{Theorem}{2.2.{9}}{}}{28}%
+\contentsline {proof}{{Proof}{21}{}}{28}%
