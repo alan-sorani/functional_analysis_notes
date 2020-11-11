@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  11 NOV 2020 18:46
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  11 NOV 2020 19:04
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -1194,8 +1194,8 @@ Underfull \vbox (badness 2158) has occurred while \output is active []
 [14]
 Chapter 2.
 
-Overfull \hbox (10.49649pt too wide) in paragraph at lines 462--463
-[]\TU/lmr/m/n/10 LEt $\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 2 [][]$\TU/lmr/m/n/10
+Overfull \hbox (8.1265pt too wide) in paragraph at lines 462--463
+[]\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 2 [][]$\TU/lmr/m/n/10
  . A func-tion $\OML/cmm/m/it/10 p [] [] X \OMS/cmsy/m/n/10 !
  []
 
@@ -1316,7 +1316,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Use
 rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7
 .pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs1
 0.pfb>
-Output written on functional_analysis.pdf (34 pages, 421287 bytes).
+Output written on functional_analysis.pdf (34 pages, 421290 bytes).
 
 PDF statistics: 578 PDF objects out of 1000 (max. 8388607)
  219 named destinations out of 1000 (max. 131072)
