@@ -17,6 +17,8 @@
 \author{Lectures by Liran Rotem \\ \small{Typed by Elad Tzorani}}
 \date{\today}
 
+\usepackage{hyperref}
+
 \begin{document}
 
 \maketitle
@@ -698,7 +700,7 @@ where in the last inequality we use $a_n \in \brs{0,1}$ for all $n \in \mbb{N}_+
 
 Note that
 \begin{align*}
-\forall a \in \ell_\infty \forall k \in_{mbb{N}} f\prs{\prs{a_n}_{n \in \mbb{N}_+}} = f\prs{\prs{a_{n+k}}_{n \in \mbb{N}_+}} \leq \sup_{n \geq k} a_n \text{.}
+\forall a \in \ell_\infty \forall k \inf_{mbb{N}} f\prs{\prs{a_n}_{n \in \mbb{N}_+}} = f\prs{\prs{a_{n+k}}_{n \in \mbb{N}_+}} \leq \sup_{n \geq k} a_n \text{.}
 \end{align*}
 Hence
 \[f\prs{\prs{a_n}_{n \in \mbb{N}_+}} \leq \inf_{k \in \mbb{N}} \sup_{n \geq k} a_n = \limsup_{n \to \infty} a_n \text{.}\]
@@ -873,7 +875,7 @@ but don't know if a point $p \in X$ for which $p_K\prs{p} = 1$ are in $K$ or not
 \begin{definition}[Separating Function]
 Let $X$ be a real Banach space.
 Let $A,B \subseteq X$ be disjoint. A linear functional $f \colon X \to \mbb{R}$ separates $A$ and $B$ if $f \neq 0$ and
-\[\sup_{a \in A} f\prs{a} \leq \in_{b \in B} f\prs{b} \text{.}\]
+\[\sup_{a \in A} f\prs{a} \leq \inf_{b \in B} f\prs{b} \text{.}\]
 \end{definition}
 
 \begin{theorem}
@@ -1060,7 +1062,7 @@ By the uniform boundedness theorem it follows that $A$ is bounded, hence $T$ is 
 \subsection{Applications to Harmonic Analysis}
 
 \begin{definition}
-Given $f \in \mcal{C}prs{\mbb{T}}$ and define
+Given $f \in \mcal{C}\prs{\mbb{T}}$ and define
 \[\hat{f}\prs{n} = \frac{1}{2 \pi} \int_0^{2 \pi} f\prs{x} e^{-i n x} \diff x \text{.}\]
 The Fourier series of $f$ is
 \[\sum_{n \in \mbb{Z}} \hat{f}\prs{n} e^{inx} \text{.}\]
