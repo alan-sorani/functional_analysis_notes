@@ -11,3 +11,7 @@
 \contentsline {section}{\numberline {2.2}Banach Spaces}{26}%
 \contentsline {subsection}{\numberline {2.2.1}Baire Category Theorem \& Uniform Boundedness}{26}%
 \contentsline {subsection}{\numberline {2.2.2}Applications to Harmonic Analysis}{27}%
+\contentsline {subsection}{\numberline {2.2.3}The Open Mapping Theorem}{29}%
+\contentsline {subsection}{\numberline {2.2.4}Application of the Open Mapping Theorem to Harmonic Analysis}{31}%
+\contentsline {subsection}{\numberline {2.2.5}The Closed Graph Theorem}{32}%
+\contentsline {subsection}{\numberline {2.2.6}Projections and Quotient Spaces}{33}%

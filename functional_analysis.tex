@@ -1120,4 +1120,280 @@ I_N \ceq \frac{1}{2 \pi} \int_0^{2 \pi} \frac{\sin \brs{\prs{N + \frac{1}{2}} x}
 so $\sup_{n \in \mbb{N}} \norm{T_n} = \infty$ as required by the above reduction.
 \end{proof}
 
+%11.11.2020
+
+\subsection{The Open Mapping Theorem}
+
+\begin{definition}[Open Map]
+Let $X,Y$ be topological spaces. A map $\phi \colon X \to Y$ is called \emph{open} if $\phi\prs{U}$ is open for every open $U \subseteq X$.
+\end{definition}
+
+\begin{theorem}[The Open Mapping Theorem]
+Let $X,Y$ be Banach spaces and let $T \in \mscr{L}\prs{X,Y}$. If $T$ is onto, it's open.
+\end{theorem}
+
+\begin{proof}
+We prove that for any open ball $B\prs{x,r}$ the set $T\prs{B\prs{x,r}}$ contains a ball around $Tx$.
+Note that
+\begin{align*}
+T\prs{B\prs{x,r}} &= T\prs{r B\prs{0,1} + x}
+&= r\cdot T\prs{B\prs{0,1}} + Tx \text{.}
+\end{align*}
+Hence it's enough to show that $T\prs{B\prs{0,1}}$ contains a ball around $0$.
+Note that
+\[Y = T\prs{X} = \bigcup_{n \in \mbb{N}_+} T\prs{B_X\prs{0,1}} \text{.}\]
+By Baire's theorem
+\[\exists n \in \mbb{N}_+ \colon \mrm{int} \overline{T\prs{B\prs{0,1}}} \neq \ns\]
+or in other words
+\[\overline{T\prs{B\prs{0,1}}} \supseteq B\prs{y,r} \text{.}\]
+
+We have to fix three things. We want a ball around zero, we want the image of a ball of radius $1$, and we want the actual image to contain it, rather than the closure of the image.
+
+\begin{description}
+\item[Ball Around Zero \& Image of $1$-Ball:]
+Write
+\begin{align*}
+B\prs{0,r} &= B\prs{y,r} - y
+\\&\subseteq \overline{T\prs{B\prs{0,n}} - Tx}
+\\&=
+\overline{T\prs{B\prs{0,n} - x}}
+\\&\subseteq
+\overline{T\prs{B\prs{0,n+\norm{x}}}} \text{.}
+\end{align*}
+Dividing by $n + \norm{x}$ we get
+\begin{align*}
+\overline{T\prs{B\prs{0,1}}} \supseteq B\prs{0, \frac{r}{n + \norm{x}}} \eqqcolon B\prs{0,\eps} \text{.}
+\end{align*}
+
+\item[Closure:]
+Note that for every $a > 0$ it holds that
+\begin{equation} \label{equation:scaling_balls}
+\overline{T\prs{B\prs{0,a}}} \supseteq B\prs{0,a \eps} \text{.}
+\end{equation}
+We show that $T\prs{B\prs{0,1}} \supseteq B\prs{0,\frac{\eps}{2}}$.
+Let $y \in B\prs{0, \frac{\eps}{2}}$. By \eqref{equation:scaling_balls} with $a = \frac{1}{2}$ there's $x_1 \in B\prs{\frac{1}{2}}$ such that
+\[\norm{y - Tx_1} < \frac{\eps}{4} \text{.}\]
+By \eqref{equation:scaling_balls} with $\frac{1}{2^n}$ there are $x_n \in B\prs{0, \frac{1}{2^n}}$ such that
+\begin{equation}\label{equation:open_mapping_approximation}
+\norm{y - T\prs{\sum_{i\in[n]} x_i}} < \frac{\eps}{2^{n+1}} \text{.}
+\end{equation}
+Since \[\sum_{n \in \mbb{N}_+} \norm{x_n} < \sum_{n \in \mbb{N}_+} \frac{1}{2^n} = 1 < \infty\]
+and $X$ is complete, we get that
+$\sum_{n \in \mbb{N}_+} x_n$ converges to sum $x$.
+We have
+\[\norm{x} \leq \sum_{n \in \mbb{N}_+} \norm{x_n} < 1\]
+so $x \in B\prs{0,1}$.
+
+Let $n \to \infty$ in \eqref{equation:open_mapping_approximation}, we get $\norm{y - Tx} \leq 0$ so $y = Tx$.
+\end{description}
+\end{proof}
+
+\begin{corollary}\label{corollary:bounded_inverse}
+Let $X,Y$ be Banach spaces and $T \in \mscr{L}\prs{X,Y}$. If $T$ is a bijection, $T^{-1}$ is bounded and there's $c > 0$ such that $\norm{Tx}_Y \geq c \norm{x}_X$.
+\end{corollary}
+
+\begin{proof}
+We know by the open mapping theorem that $T\prs{B\prs{0,1}} \geq T\prs{0,\eps}$ for some $\eps > 0$, or in other words $B\prs{0,1} \supseteq T^{-1}\prs{B\prs{0,\eps}}$. Then
+\begin{align*}
+\norm{T^{-1} x} = \norm{T^{-1}\prs{\frac{\eps}{2} \cdot \frac{x}{\norm{x}}}} \cdot \frac{2 \norm{x}}{\eps} \leq \frac{2}{\eps} \norm{x}
+\end{align*}
+where in the last inequality we use $\frac{\eps}{2} \frac{x}{\norm{x}} \in B\prs{0,\eps}$.
+Hence
+$\norm{T^{-1}} \leq \frac{2}{\eps}$. In fact one can check $\norm{T^{-1}} \leq \frac{1}{\eps}$.
+
+For every $x \in X$ we now have
+\[\norm{x} = \norm{T^{-1} T x} \leq \norm{T^{-1}} \norm{Tx} \leq \frac{2}{\eps} \norm{Tx} \text{.}\]
+Hence $\norm{Tx} \geq \frac{\eps}{2} \norm{x}$.
+\end{proof}
+
+\begin{remark}
+The fact that $T^{-1}$ is bounded can be shown more directly. Since $T$ is surjective, it's open so $T^{-1}$ is continuous and therefore bounded.
+\end{remark}
+
+\begin{corollary}
+Let $X$ be a complete Banach space with respect to two norms $\norm{\cdot}_1$ and $\norm{\cdot}_2$.
+If
+\[\exists C > 0 \forall x \in X \colon \norm{x}_1 \leq C \norm{x}_2\]
+then
+\[\exists \tilde{C} > 0 \forall x \norm{x}_2 \leq \tilde{C} \norm{x}_1 \text{,}\]
+so the norms are equivalent.
+\end{corollary}
+
+\begin{proof}
+Apply \ref{corollary:bounded_inverse} to $i \colon \prs{X, \norm{\cdot}_2} \to \prs{X, \norm{\cdot}_1}$.
+\end{proof}
+
+\subsection{Application of the Open Mapping Theorem to Harmonic Analysis}
+
+\begin{definition}[Fourier Coefficients for Functions on the Circle]
+Write
+\[L_1\prs{\mbb{T}} \ceq \set{f \colon \mbb{R} \to \mbb{C}}{\substack{\text{$f$ is $2\pi$-periodic}\\\int_0^{2\pi} \abs{f} \diff x < \infty}} \cong L_1\prs{\brs{0, 2 \pi}}\]
+with the norm
+\[\norm{f} = \frac{1}{2 \pi} \int_0^{2\pi} \abs{f\prs{x}} \diff x \text{.}\]
+This is a Banach space.
+For every $f \in L_1\prs{\mbb{T}}$ and $z \in \mbb{Z}$ define
+\[\hat{f}\prs{n} = \frac{1}{2\pi} \int_0^{2 \pi} f\prs{x} e^{-inx} \diff x \text{.}\]
+\end{definition}
+
+\begin{fact} \label{fact:riemann_lebesgue}
+\begin{enumerate}
+\item If $\hat{f} \prs{n} = 0$ for every $n \in \mbb{Z}$ then $f = 0$ in $L_1$.
+\item \emph{Riemann-Lebesgue}: $\hat{f}\prs{n} \xrightarrow{n\to\pm \infty} 0$.
+\end{enumerate}
+\end{fact}
+
+Given $\prs{a_n}_{n \in \mbb{Z}} \subseteq \mbb{C}$ such that $a_n \xrightarrow{n \to \pm \infty} 0$ we want to ask if there's $f \in L_1\prs{\mbb{T}}$ such that $\hat{f}\prs{n} = a_n$ for every $n \in \mbb{Z}$.
+It turns out that the answer is no, which we prove using the open mapping theorem.
+
+\begin{definition}
+Define
+\[c_0\prs{\mbb{Z}} \ceq \set{\prs{a_n}_{n \in \mbb{Z}}}{a_n \xrightarrow{n\to\pm\infty} 0}\]
+with the supremum norm.
+\end{definition}
+
+\begin{definition}
+Define
+\begin{align*}
+\mcal{F} \colon L_1\prs{\mbb{T}} \to c_0\prs{\mbb{Z}} \\
+f &\mapsto \hat{f} \text{.}
+\end{align*}
+\end{definition}
+
+\begin{remark}
+$\mcal{F}$ is linear. It's bounded, because
+\[\abs{\hat{f}\prs{n}} \leq \frac{1}{2\pi} \int_0^{2\pi} \abs{f\prs{x} e^{-inx}} \diff x = \norm{f} \text{.}\]
+It's injective by the first part of \ref{fact:riemann_lebesgue}.
+If $\mcal{F}$ is onto, then by the corollary $\norm{\mcal{F}\prs{f}}_\infty \geq c\norm{f}_1$.
+But, take $f = D_N = \sum_{n \in \brs{-N,N}} e^{inx}$. Then
+\begin{align*}
+\norm{\mcal{F}\prs{f}} = \norm{\prs{0,0,\ldots, 0, 1, 1, \ldots, 1, 1, 0, 0, 0, \ldots}} = 1 \text{.}
+\end{align*}
+But, $\norm{D_N}_1 \xrightarrow{N\to\infty} \infty$.
+This is a contradiction, hence $\mcal{F}$ is not onto $c_0\prs{\mbb{Z}}$.
+\end{remark}
+
+\subsection{The Closed Graph Theorem}
+
+\begin{definition}[Graph of a Map]
+Let $X,Y$ be Banach spaces and let $E \leq X$. Let
+\[T \colon E \to Y\]
+be linear. The \emph{graph of $T$} is
+\[\Gamma\prs{T} \ceq \set{\prs{x, Tx}}{x \in E} \subseteq X \times Y \text{.}\]
+\end{definition}
+
+\begin{remark}
+We can define a norm on $X \times Y$ by
+\[\norm{\prs{x,y}} = \norm{x} + \norm{y} \text{.}\]
+$X \times Y$ with this norm is denote $X \oplus_1 Y$ or sometimes $X \oplus Y$. This is a Banach space.
+\end{remark}
+
+\begin{definition}
+$T$ is called closed if $\Gamma\prs{T} \subseteq X \oplus Y$ is a closed set.
+\end{definition}
+
+\begin{proposition}
+$T$ is closed iff for every $\prs{x_n}_{n \in \mbb{N}_+} \subseteq E$ such that $x_n \to x$ implies $T x_n \to y$, it holds that $x \in E$ and $y = Tx$.
+\end{proposition}
+
+\begin{proof}
+\begin{itemize}
+\item Assume $T$ is closed.
+If $x_n \to x$ and $T x_n \to y$ then $\prs{x_n, T x_n} \to \prs{x,y}$ so $\prs{x,y} \in \Gamma\prs{T}$, so $x \in E$ and $y \in Tx$.
+\item The other direction is left as an exercise.
+\end{itemize}
+\end{proof}
+
+\begin{example}
+Let $X=Y = \mcal{C}\brs{0,1}$ and let $E = \mcal{C}^1\brs{0,1}$.
+Define
+\begin{align*}
+T \colon E &\to Y \\
+f &\mapsto f' \text{.}
+\end{align*}
+Then $T$ is closed. Assume $\prs{f_n}_{n \in \mbb{N}_+} \subseteq E$ is such that $f_n \to f$ and $f_n' \to g$. Then
+\[f_n\prs{x} - f_n\prs{0} = \int_0^x f_n'\prs{t} \diff t \to \int_0^x g\prs{t} \diff t\]
+where the first expression converges also to $f\prs{x} - f\prs{0}$.
+Hence
+\[f\prs{x} = f\prs{0} + \int_0^x g\prs{t} \diff t \text{.}\]
+Hence $f \in E$ and $f' = g$.
+
+Note that $E$ is note closed (it's in fact dense) and that $T$ is not bounded.
+\end{example}
+
+\begin{theorem}
+Let $X,Y$ be Banach spaces. A closed map $T \colon X \to Y$ is continuous.
+\end{theorem}
+
+\begin{proof}
+$T$ is closed, hence $\Gamma\prs{T}$ is closed in $X \oplus Y$ and is therefore a Banach space. Let $\pi_X, \pi_Y$ be the projections from $\Gamma$ to $X$ and to $Y$. $\pi_X$ is a continuous bijection so $\pi_X^{-1}$ is continuous by \ref{corollary:bounded_inverse}. Then
+$T = \pi_Y \circ \pi_X^{-1}$ is continuous as a composition of continuous maps.
+\end{proof}
+
+\subsection{Projections and Quotient Spaces}
+
+\begin{definition}[Projection]
+A \emph{projection} is a linear map $P \colon X \to X$ such that $P^2 = P$.
+\end{definition}
+
+\begin{proposition}
+Given a projection $P \colon X \to X$ we have $X = \im P \oplus \ker P$.
+\end{proposition}
+
+\begin{proof}
+Let $x \in X$, we can write $x = \prs{x - Px} + Px$ where $Px \in \im\prs{P}$ and $x - P_x \in \ker \prs{P}$. If $x \in \im\prs{P} \cap \ker\prs{P}$ there's $y \in X$ such that $x = Py$ then
+\[0 = Px = P^2 y = Py = x\]
+so $x = 0$, so the sum is direct.
+\end{proof}
+
+\begin{remark}
+If $x = e + f$ where $e \in \im P$ and $f \in \ker P$ we get
+\[Px = Pe + Pf = Pe = e \text{.}\]
+\end{remark}
+
+\begin{definition}[Projection onto a Subspace]
+Let $P \colon X \to X$ be a projection, let $E = \im P$ and $F = \ker P$. We say $P$ is \emph{the projection onto $E$ parallel to $F$}.
+\end{definition}
+
+\begin{definition}[Complemented Subspace]
+A closed subspace $E \leq X$ of a Banach space is called \emph{complemented} if there exists $F \leq X$ closed such that $X = E \oplus F$.
+\end{definition}
+
+\begin{theorem}
+Let $X$ be a Banach space.
+For a closed $E \leq X$ the following are equivalent.
+\begin{enumerate}
+\item $E$ is complemented.
+\item There is a continuous projection $P \colon X \to E$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\begin{description}
+\item[2 $\implies$ 1:]
+Take $F = \ker P$ which is closed, and $X = E \oplus F$ since $E = \im P$ and $F = \ker P$.
+\item[1 $\implies$ 2:]
+Assume $X = E \oplus F$ where $E,F$ are closed subspaces. Take $P$ to be the projection onto $E$ parallel to $F$.
+
+We show that $P$ is closed. Assume $\prs{x_n}_{n \in \mbb{N}_+}$ is such that $x_n \to x$ and $P x_n \to y$. Since $E$ is closed, $y \in E$. But,
+\[x-y = \lim_{n\to\infty} \prs{x_n - P x_n} \in F\]
+since $F$ is closed.
+Hence
+\[x = y + \prs{x-y}\]
+where $y \in E$ and $\prs{x-y} \in F$.
+So, by definition, $Px = y$.
+Hence $P$ is closed.
+
+By the closed graph theorem, $P$ is then continuous.
+\end{description}
+\end{proof}
+
+\begin{fact}
+\begin{enumerate}
+\item $c_0$ is not complemented in $\ell_\infty$.
+\item \emph{Lindenstaruss-Tzafriri}: Every closed subspace of $X$ is complemented if and only if $X$ is isomorphic (in the sense that there's a bijection $T \colon X \to H$ such that $c\norm{x} \leq \norm{Tx} \leq C\norm{x}$ for constants $c,C > 0$) to a Hilbert space.
+\end{enumerate}
+\end{fact}
+
+%TODO fill in third hour
+
 \end{document}
