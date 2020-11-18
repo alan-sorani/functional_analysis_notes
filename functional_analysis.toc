@@ -15,3 +15,4 @@
 \contentsline {subsection}{\numberline {2.2.4}Application of the Open Mapping Theorem to Harmonic Analysis}{31}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}The Closed Graph Theorem}{32}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Projections and Quotient Spaces}{33}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}Finite-Dimensional Spaces}{36}{section.2.3}%

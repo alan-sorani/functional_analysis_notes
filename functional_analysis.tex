@@ -1,5 +1,7 @@
 \documentclass[10pt, twoside]{book}
 
+\usepackage{hyperref}
+
 %%%%%%%%%
 % Maths %
 %%%%%%%%%
@@ -1397,5 +1399,255 @@ By the closed graph theorem, $P$ is then continuous.
 \end{fact}
 
 %TODO fill in third hour
+
+\begin{theorem}
+If $\prs{e_n}_{n \in \mbb{N}_+}$ is a base for a Banach space $X$. There exists $C>0$ such that $\norm{P_k} \leq C$, and $\alpha_n \in X^*$.
+\end{theorem}
+
+\begin{proof}
+Define $\norm{\cdot}_1$ on $X$ by
+\[\norm{x}_1 \ceq \sup_{k \in \mbb{N}_+} \norm{P_k x} \text{.}\]
+This is finite since $P_k x \xrightarrow{n\to\infty} x$ and it is easily checked that this is a norm.
+We have
+\[\forall x \in X \colon \norm{x}_1 = \lim_{k \to \infty} \norm{P_k x} = \norm{x} \text{.}\]
+
+\begin{itemize}
+\item We show $\prs{X, \norm{\cdot}_1}$ is complete. Let $\prs{x_n}_{n \in \mbb{N}_+}$ be $\norm{\cdot}_1$-Cauchy. By our bound, it's also $\norm{\cdot}$-Cauchy. Hence there's
+\[x \ceq \norm{\cdot}\text{-}\lim_{n\to\infty} x_n \text{.}\]
+For every $k \in \mbb{N}_+$, $\prs{P_k x_n}_{n \in \mbb{N}_+}$ is also $\norm{\cdot}$-Cauchy, so $P_k x_n \xrightarrow{n\to\infty} y_k$ for some $y_k \in X$. We want to show
+\[\lim_{n\to\infty} \lim_{k\to\infty} P_k x_n
+=
+\lim_{k \to \infty} \lim_{n\to\infty} P_k x_n\]
+which then implies
+\begin{align*}
+x
+&=
+\lim_{n\to\infty} P_k x
+\\&=
+\lim_{n\to\infty} \lim_{k\to\infty} P_k x_n
+\\&=
+\lim_{k \to \infty} \lim_{n\to\infty} P_k x_n
+\\&=
+\lim_{k\to\infty} y_k
+\end{align*}
+
+Fix $\eps > 0$. Because $\prs{x_n}_{n \in \mbb{N}_+}$ is Cauchy, there's $n_0 \in \mbb{N}_+$ such that for all $m \geq n \geq n_0$ we have $\norm{x_m - x_n}_1 < \eps$.
+Hence
+\begin{enumerate}
+\item For every $m \geq n \geq n_0$ it holds that $\norm{x_n - x_m} < \eps$. Letting $m \to \infty$ we get $\norm{x_n - x} < \eps$.
+\item For every $k \in \mbb{N}_+$ and every $m \geq n \geq n_0$ we know $\norm{P_k x_m - P_k x_n} < \eps$ so by letting $m \to \infty$ we get $\norm{y_k - P_k x_n} < \eps$.
+\end{enumerate}
+
+Choose $k_0 \in \mbb{N}_+$ such that $\norm{x_{n_0} - P_k x_{n_1}} < \eps$ for all $k \geq k_0$. Then
+\[\norm{y_k - x} \leq \norm{y_k - P_k x_{n_0}} + \norm{P_k x_{n_0} - x_{n_0}} + \norm{x_{n_0} - x} < 3\eps \text{.}\]
+Then indeed $y_k \xrightarrow{k \to \infty} x$ in $\norm{\cdot}$.
+
+Fix $1 \leq j \leq k$. Then $\alpha_j$ is bounded on $E_k \ceq \spn\prs{e_i}_{i \in [k]}$.
+We have
+\begin{align*}
+\lim_{n\to\infty} &= \lim_{n \to \infty} \alpha_j \prs{P_k x_n}
+=
+\alpha_j\prs{y_k} \text{.}
+\end{align*}
+Hence $\alpha_j\prs{y_k}$ doesn't depend on $k$. Denote $c_j \ceq \alpha_j\prs{y_k}$. Hence
+\[y_k = \sum_{j\in[k]} c_j e_j \text{.}\]
+Hence
+\[x = \sum_{j \in \mbb{N}_+} c_j e_j \text{.}\]
+
+We now show $x_n \xrightarrow{n\to\infty} x$ in $\norm{\cdot}_1$. Fix $\eps > 0$ as before. Then
+\[\exists n_0 \in \mbb{N}_+ \forall k \in \mbb{N}_+ \forall n \geq n_0 \colon \norm{y_k - P_k x_n} < \eps \text{.}\]
+Hence
+\begin{align*}
+\norm{x_n - x}_1 &= \sup_{k \in \mbb{N}_+} \norm{P_k x_n P_k x}
+\\&= \sup_{k \in \mbb{N}_+} \norm{P_k x_n - y_k}
+\\&< \eps \text{.}
+\end{align*}
+
+Hence $\prs{X, \norm{\cdot}_1}$ is complete.
+
+\item By the corollary %TODO add ref.
+we have $\norm{x}_1 \leq C \norm{x}$.
+This implies
+\[\forall k \in \mbb{N}_+ \colon \norm{P_k x} \leq C \norm{x}\]
+so
+$\norm{P_k} \leq C$.
+
+For the part $\alpha_n \in X^*$, we have
+\begin{align*}
+\abs{\alpha_n\prs{x}} \norm{e_n} &=
+\norm{\alpha_n\prs{x} e_n}
+\\&=
+\norm{P_n x - P_{n-1} x}
+\\&\leq
+2 C \norm{x}
+\end{align*}
+so $\norm{\alpha_n} \leq \frac{2 C}{\norm{e_n}}$.
+\end{itemize}
+\end{proof}
+
+\section{Finite-Dimensional Spaces}
+
+\begin{definition}[Isomorphic Normed Spaces]
+Let $X,Y$ be normed spaces.
+We say $X,Y$ are \emph{isomorphic} if there's a bijection $T \colon X \to Y$ and there are $c, C \in \mbb{R}_+$ such that
+\[\forall x \in X \colon c \norm{x}_X \leq \norm{Tx}_Y \leq C \norm{x}_X \text{.}\] 
+\end{definition}
+
+\begin{theorem}
+Let $X,Y$ be normed spaces with $\dim X = \dim Y = n \in \mbb{N}$. Then $X,Y$ are isomorphic.
+\end{theorem}
+
+\begin{corollary}
+Every finite-dimensional normed space is a Banach space.
+\end{corollary}
+
+\begin{corollary}
+If $X$ is a finite-dimensional normed space, any linear $T \colon X \to Y$ is bounded.
+\end{corollary}
+
+\begin{definition}[The Banach-Mazur distance]
+Let $X,Y$ be isomorphic Banach spaces. The \emph{Banach-Mazur distance} is
+\begin{align*}
+d_{\mrm{BM}} \prs{X,Y} &\ceq \inf\set{\norm{T} \norm{T^{-1}}}{\text{$T \colon X \to Y$ is a linear bijection}} \\&=
+\inf \set{\frac{b}{a}}{\substack{\text{There's a linear bijection $T \colon X \to Y$ such that} \\ \forall x \in X \colon a \norm{x} \leq \norm{Tx} \leq b \norm{x}}} \text{.}
+\end{align*}
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item $d_{\mrm{BM}}\prs{X,Y} \geq 1$ and $d_{\mrm{BM}}\prs{X,Y} = 1$ if and only if $X,Y$ are isometric.
+\item $d_{\mrm{BM}}\prs{X,Y} = d_{\mrm{BM}} \prs{Y,X}$.
+\item $d_{\mrm{BM}}\prs{X,Z} \leq d_{\mrm{BM}}\prs{X,Y} d_{\mrm{BM}}\prs{Y,Z}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{corollary}
+$\log d_{\mrm{BM}}$ is a metric on the space of isomorphism classes of finite-dimensional normed spaces quotiented by the isometric relation.
+\end{corollary}
+
+\begin{proposition}
+$d_{\mrm{BM}}\prs{\ell_1^n, \ell_2^n} = \sqrt{n}$.
+\end{proposition}
+
+\begin{proof}
+\begin{itemize}
+\item We first show that $d_{\mrm{BM}}\prs{\ell_1^n, \ell_2^n} \leq \sqrt{n}$.
+
+Recall that
+\[\norm{x}_1 = \sum_{i \in [n]} \abs{x_i} \cdot 1 \leq \prs{\sum_{i \in [n]} \abs{x_i}^2}^{\frac{1}{2}} \cdot \prs{\sum_{i \in [n]} 1^2}^{\frac{1}{2}} = \sqrt{n} \norm{x}_2 \text{.}\]
+
+For the other inequality, assume $\norm{x}_1 = 1$. The $\forall i \in [n] \colon \abs{x_i} \leq 1$. Then $\forall i \in [n] \colon \abs{x_i}^2 \leq \abs{x_i}$.
+Hence
+\[\norm{x}_2 = \prs{\sum_{i \in [n]} \abs{x_i}^2}^{\frac{1}{2}} \leq \prs{\sum_{i \in [n]} \abs{x_i}}^{\frac{1}{2}} = 1 \text{.}\]
+Hence by homogeneity
+\[\forall x \in X \colon \norm{x}_2 = \norm{\frac{x}{\norm{x}_1}}_2 \cdot \norm{x}_1 \leq 1 \cdot \norm{x}_1 = \norm{x}_1 \text{.}\]
+Hence
+\[\norm{x}_2 \leq \norm{x}_1 \leq \sqrt{n} \norm{x}_2 \text{.}\]
+Hence
+\[d_{\mrm{BM}}\prs{\ell_1^n, \ell_2^n} \leq \frac{\sqrt{n}}{1} = \sqrt{n} \text{.}\]
+
+\item Let $T \colon \ell_1^n \to \ell_2^n$ be a bijection such that
+\[\forall x \in X \colon a \norm{x}_1 \leq \norm{T x}_2 \leq b \norm{x}_1 \text{.}\]
+By the parallelogram law
+\begin{align*}
+\sum_{\prs{\theta_i}_{i \in [n]} \subseteq \set{\pm 1}} \norm{\sum_{i \in [n]} \theta_i T e_i}_2^2
+&=
+\sum_{\prs{\theta_i}_{i \in [n]} \subseteq \set{\pm 1}} \trs{\sum_{i \in [n]} \theta_i T e_i, \sum_{j \in [n]} \theta_j T e_j}
+\\&=
+\sum_{\prs{\theta_i}_{i \in [n]} \subseteq \set{\pm 1}} \sum_{i,j \in [n]} \theta_i \theta_j \trs{T e_i, T e_j}
+\\&=
+\sum_{i,j \in [n]}^n \prs{\sum_{\prs{\theta_i}_{i \in [n]} \theta_i \theta_j}} \trs{T e_i, T e_j}
+\\&=
+2^n \sum_{i \in [n]} \trs{T e_i, T e_i}
+\\&=
+2^n \sum_{i \in [n]} \norm{T e_i}_2^2
+\\&\leq
+2^n \sum_{i \in [n]} \prs{b \norm{e_i}_1}^2
+\\&=
+2^n \cdot n \cdot b^2 \text{.}
+\end{align*}
+On the other hand,
+\begin{align*}
+\sum_{\prs{\theta_i}_{i \in [n]} \subseteq \set{\pm 1}} \norm{\sum_{i \in [n]} \theta_i T e_i}_2^2
+&\geq
+\sum_{\prs{\theta_i}_{i \in [n]} \subseteq \set{\pm 1}} \prs{a \norm{\sum_{i \in [n]} \theta_i e_i}}^2
+\\&=
+\sum_{\prs{\theta_i}_{i \in [n]} \subseteq \set{\pm 1}} \prs{a n}^2
+\\&=
+2^n n^2 a^2 \text{.}
+\end{align*}
+Combining the inequalities we get $2^n n^2 a^2 \leq 2^n n b^2$, from which we get $\frac{b}{a} \geq \sqrt{n}$.
+\end{itemize}
+\end{proof}
+
+\begin{theorem}[Auerbach]
+Let $X$ be a real normed space of dimension $n \in \mbb{N}$. There exists a basis $\prs{e_i}_{i \in [n]}$ such that for every $x = \sum_{i \in [n]} \alpha_i e_i$ in $X$ we have $\abs{\alpha_i} \leq \norm{x}$ and $\norm{e_i} = 1$.
+
+Equivalently, if we write $x = \sum_{i \in [n]} \alpha_i\prs{x} e_i$, we have $\norm{\alpha_i} = 1$ (where the norm on $\alpha_i$ is in $X^*$) and $\norm{e_i} = 1$.
+
+We call such a basis an \emph{Auerbach basis}.
+\end{theorem}
+
+\begin{proof}
+Without loss of generality, write $X = \prs{\mbb{R}^n, \norm{\cdot}}$ for some norm $\norm{\cdot}$. For $\prs{y_i}_{i \in [n]} \subseteq \mbb{R}^n$ define
+\[D\prs{y_1, \ldots, y_n} \ceq \det \pmat{\vert & & \vert \\ y_1 & \cdots & y_n \\ \vert & & \vert} \text{.}\]
+Choose $\prs{e_i}_{i \in [n]}$ to maximise $D\prs{e_1, \ldots, e_n}$ such that $\norm{e_i} = 1$ for all $i \in [n]$. This exists by compactness.
+Since $D\prs{e_1, \ldots, e_n} > 0$ we get that $\prs{e_i}_{i \in \brs{n}}$ is a base.
+Let
+\[f_i\prs{x} \ceq \frac{D\prs{e_1, \ldots, e_{i-1} x, e_{i+1}, \ldots, e_n}}{D\prs{e_1, \ldots, e_{i-1}, e_i, e_{i+1}, \ldots, e_n}} \text{.}\]
+Then $f_i$ is linear, it holds that $f_i\prs{e_j} = \delta_{i,j}$.
+Hence $f_i = \alpha_i$. Hence if $\norm{x} = 1$ we have
+\[\abs{\alpha_i\prs{x}} = \abs{f_i\prs{x}} \leq 1\]
+where inequality is by maximality of $D\prs{e_1, \ldots, e_n}$.
+Hence $\norm{\alpha_i} \leq 1$.
+\end{proof}
+
+\begin{corollary}
+If $\dim X = n \in \mbb{N}$ it holds that $d_{\mrm{BM}}\prs{X, \ell^n} \leq n$.
+\end{corollary}
+
+\begin{proof}
+Let $\prs{\tilde{e}_i}_{i \in [n]}$ be an Auerbach base of $X$ and let
+\begin{align*}
+T \colon X &\to \ell_1^n \\
+\tilde{e}_i &\mapsto e_i \text{.}
+\end{align*}
+Then
+\begin{align*}
+\norm{Tx} &= \norm{T \prs{\sum_{i \in [n]} \alpha_i \prs{x} \tilde{e}_i}}
+\\&\leq \sum_{i\in[n]} \alpha_i \prs{x} \norm{T \tilde{e}_i}
+\\&=
+\sum_{i \in \brs{n}} \alpha_i \prs{x}
+\\&\leq
+n\norm{x} \text{.}
+\end{align*}
+
+Conversely, for $a = \prs{a_1, \ldots, a_n} \in \ell_1$ we have
+\begin{align*}
+\norm{T^{-1} a}
+&=
+\norm{T^{-1} \sum_{i \in [n]} a_i e_i}
+\\&=
+\norm{\sum_{i \in \brs{N}} a_i \tilde{e}_i}
+\\&\leq
+\sum_{i \in [n]} \abs{a_i} \underset{1}{\underbrace{\norm{\tilde{e}_i}}} = \norm{a}_1 \text{.}
+\end{align*}
+
+Hence \[d_{\mrm{BM}}\prs{X, \ell_1^n} \leq \norm{T} \norm{T^{-1}} \leq n \cdot 1 = n \text{.}\]
+\end{proof}
+
+\begin{corollary}
+If $\dim X = \dim Y = n$, then $d_{\mrm{BM}}\prs{X,Y} \leq n^2$.
+\end{corollary}
+
+\begin{fact}[F. John]
+If $\dim X = n$ it holds that $d_{\mrm{BM}}\prs{X, \ell_2^n} \leq \sqrt{n}$. So, for every $X,Y$ of dimension $n$ it holds that $d_{\mrm{BM}}\prs{X,Y} \leq n$.
+\end{fact}
+
+\begin{fact}[Gluskin]
+There are $X,Y$ of dimension $n$ such that $d_{\mrm{BM}}\prs{X,Y} \geq \frac{n}{1000000}$.
+\end{fact}
+
+%TODO fill in 3rd hour
 
 \end{document}

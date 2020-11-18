@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  13 NOV 2020 20:55
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  18 NOV 2020 11:25
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -92,7 +92,144 @@ iKTeX/luatex-cache/generic-dev/names/luaotfload-names.luc)
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-(C:/localtexmf/tex/latex/math/math-fonts.sty
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks15
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/kvsetkeys/kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/letltxmacro/letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen135
+\Hy@linkcounter=\count173
+\Hy@pagecounter=\count174
+ (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count175
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count176
+ (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen136
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+))
+\Fld@menulength=\count177
+\Field@Width=\dimen137
+\Fld@charsize=\dimen138
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count178
+\c@Item=\count179
+\c@Hfootnote=\count180
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+ (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2020-05-15 v7.00e Hyperref driver for luaTeX
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count181
+\c@bookmark@seq@number=\count182
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+6.
+)
+\Hy@SectionHShift=\skip49
+) (C:/localtexmf/tex/latex/math/math-fonts.sty
 
 LaTeX Warning: You have requested package `math-fonts',
                but the package provides `maths'.
@@ -100,7 +237,7 @@ LaTeX Warning: You have requested package `math-fonts',
 Package: maths 2020/08/11 fonts for maths
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
@@ -108,51 +245,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen135
+\@emptytoks=\toks17
+\ex@=\dimen139
 ))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
+\pmbraise@=\dimen140
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count173
+\inf@bad=\count183
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count174
-\leftroot@=\count175
+\uproot@=\count184
+\leftroot@=\count185
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count176
-\DOTSCASE@=\count177
+\classnum@=\count186
+\DOTSCASE@=\count187
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box45
 \strutbox@=\box46
-\big@size=\dimen137
+\big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count178
-\c@MaxMatrixCols=\count179
-\dotsspace@=\muskip16
-\c@parentequation=\count180
-\dspbrk@lvl=\count181
-\tag@help=\toks16
-\row@=\count182
-\column@=\count183
-\maxfields@=\count184
-\andhelp@=\toks17
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks18
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
+\dotsspace@=\muskip17
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
+\tag@help=\toks18
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
@@ -173,22 +310,18 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
-)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count185
-\calc@Bcount=\count186
-\calc@Adimen=\dimen144
-\calc@Bdimen=\dimen145
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+\calc@Acount=\count195
+\calc@Bcount=\count196
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count187
-\calc@Cskip=\skip54
+\calc@Ccount=\count197
+\calc@Cskip=\skip55
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -197,17 +330,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count188
-\l_MT_multwidth_dim=\dimen146
-\origjot=\skip55
-\l_MT_shortvdotswithinadjustabove_dim=\dimen147
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen148
-\l_MT_above_intertext_sep=\dimen149
-\l_MT_below_intertext_sep=\dimen150
-\l_MT_above_shortintertext_sep=\dimen151
-\l_MT_below_shortintertext_sep=\dimen152
+\g_MT_multlinerow_int=\count198
+\l_MT_multwidth_dim=\dimen150
+\origjot=\skip56
+\l_MT_shortvdotswithinadjustabove_dim=\dimen151
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
+\l_MT_above_intertext_sep=\dimen153
+\l_MT_below_intertext_sep=\dimen154
+\l_MT_above_shortintertext_sep=\dimen155
+\l_MT_below_shortintertext_sep=\dimen156
 \xmathstrut@box=\box47
-\xmathstrut@dim=\dimen153
+\xmathstrut@dim=\dimen157
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
@@ -225,9 +358,9 @@ sty
 y
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil
 -common.tex
-\pgfutil@everybye=\toks21
-\pgfutil@tempdima=\dimen154
-\pgfutil@tempdimb=\dimen155
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen158
+\pgfutil@tempdimb=\dimen159
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil
 -common-lists.tex))
@@ -265,8 +398,8 @@ Package graphics Info: Driver file: luatex.def on input line 105.
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
 File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen156
-\Gin@req@width=\dimen157
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.
 sty
@@ -276,33 +409,33 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks22
-\pgfkeys@temptoks=\toks23
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys
 filtered.code.tex
-\pgfkeys@tmptoks=\toks24
+\pgfkeys@tmptoks=\toks25
 ))
-\pgf@x=\dimen158
-\pgf@y=\dimen159
-\pgf@xa=\dimen160
-\pgf@ya=\dimen161
-\pgf@xb=\dimen162
-\pgf@yb=\dimen163
-\pgf@xc=\dimen164
-\pgf@yc=\dimen165
-\pgf@xd=\dimen166
-\pgf@yd=\dimen167
+\pgf@x=\dimen162
+\pgf@y=\dimen163
+\pgf@xa=\dimen164
+\pgf@ya=\dimen165
+\pgf@xb=\dimen166
+\pgf@yb=\dimen167
+\pgf@xc=\dimen168
+\pgf@yc=\dimen169
+\pgf@xd=\dimen170
+\pgf@yd=\dimen171
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count189
-\c@pgf@countb=\count190
-\c@pgf@countc=\count191
-\c@pgf@countd=\count192
-\t@pgf@toka=\toks25
-\t@pgf@tokb=\toks26
-\t@pgf@tokc=\toks27
-\pgf@sys@id@count=\count193
+\c@pgf@counta=\count199
+\c@pgf@countb=\count266
+\c@pgf@countc=\count267
+\c@pgf@countd=\count268
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count269
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.c
 fg
@@ -321,8 +454,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count194
-\pgfsyssoftpath@bigbuffer@items=\count195
+\pgfsyssoftpath@smallbuffer@items=\count270
+\pgfsyssoftpath@bigbuffer@items=\count271
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsy
 sprotocol.code.tex
@@ -357,12 +490,12 @@ code.tex
 code.tex)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen168
-\pgfmath@count=\count196
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count272
 \pgfmath@box=\box49
-\pgfmath@toks=\toks28
-\pgfmath@stack@operand=\toks29
-\pgfmath@stack@operation=\toks30
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunct
 ions.code.tex
@@ -384,39 +517,39 @@ ions.misc.code.tex)
 ions.integerarithmetics.code.tex)))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count197
+\c@pgfmathroundto@lastzeros=\count273
 ))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code.
 tex)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen169
-\pgf@picmaxx=\dimen170
-\pgf@picminy=\dimen171
-\pgf@picmaxy=\dimen172
-\pgf@pathminx=\dimen173
-\pgf@pathmaxx=\dimen174
-\pgf@pathminy=\dimen175
-\pgf@pathmaxy=\dimen176
-\pgf@xx=\dimen177
-\pgf@xy=\dimen178
-\pgf@yx=\dimen179
-\pgf@yy=\dimen180
-\pgf@zx=\dimen181
-\pgf@zy=\dimen182
+\pgf@picminx=\dimen173
+\pgf@picmaxx=\dimen174
+\pgf@picminy=\dimen175
+\pgf@picmaxy=\dimen176
+\pgf@pathminx=\dimen177
+\pgf@pathmaxx=\dimen178
+\pgf@pathminy=\dimen179
+\pgf@pathmaxy=\dimen180
+\pgf@xx=\dimen181
+\pgf@xy=\dimen182
+\pgf@yx=\dimen183
+\pgf@yy=\dimen184
+\pgf@zx=\dimen185
+\pgf@zy=\dimen186
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen183
-\pgf@path@lasty=\dimen184
+\pgf@path@lastx=\dimen187
+\pgf@path@lasty=\dimen188
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen185
-\pgf@shorten@start@additional=\dimen186
+\pgf@shorten@end@additional=\dimen189
+\pgf@shorten@start@additional=\dimen190
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 escopes.code.tex
@@ -424,19 +557,19 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box50
 \pgf@hbox=\box51
 \pgf@layerbox@main=\box52
-\pgf@picture@serial@count=\count198
+\pgf@picture@serial@count=\count274
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen187
+\pgflinewidth=\dimen191
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen188
-\pgf@pt@y=\dimen189
-\pgf@pt@temp=\dimen190
+\pgf@pt@x=\dimen192
+\pgf@pt@y=\dimen193
+\pgf@pt@temp=\dimen194
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 equick.code.tex
@@ -453,14 +586,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen191
+\pgfarrowsep=\dimen195
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen192
-\pgf@sys@shading@range@num=\count199
-\pgf@shadingcount=\count266
+\pgf@max=\dimen196
+\pgf@sys@shading@range@num=\count275
+\pgf@shadingcount=\count276
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcor
 eimage.code.tex
@@ -499,8 +632,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen193
-\pgf@nodesepend=\dimen194
+\pgf@nodesepstart=\dimen197
+\pgf@nodesepend=\dimen198
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfco
 mp-version-1-18.sty
@@ -521,10 +654,10 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code
 .tex)
-\pgffor@iter=\dimen195
-\pgffor@skip=\dimen196
-\pgffor@stack=\toks31
-\pgffor@toks=\toks32
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
 ))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/tikz.code.tex
@@ -533,34 +666,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count267
-\pgfplotmarksize=\dimen197
+\pgf@plot@mark@count=\count277
+\pgfplotmarksize=\dimen257
 )
-\tikz@lastx=\dimen198
-\tikz@lasty=\dimen199
-\tikz@lastxsaved=\dimen256
-\tikz@lastysaved=\dimen257
-\tikz@lastmovetox=\dimen258
-\tikz@lastmovetoy=\dimen259
-\tikzleveldistance=\dimen260
-\tikzsiblingdistance=\dimen261
+\tikz@lastx=\dimen258
+\tikz@lasty=\dimen259
+\tikz@lastxsaved=\dimen260
+\tikz@lastysaved=\dimen261
+\tikz@lastmovetox=\dimen262
+\tikz@lastmovetoy=\dimen263
+\tikzleveldistance=\dimen264
+\tikzsiblingdistance=\dimen265
 \tikz@figbox=\box55
 \tikz@figbox@bg=\box56
 \tikz@tempbox=\box57
 \tikz@tempbox@bg=\box58
-\tikztreelevel=\count268
-\tikznumberofchildren=\count269
-\tikznumberofcurrentchild=\count270
-\tikz@fig@count=\count271
+\tikztreelevel=\count278
+\tikznumberofchildren=\count279
+\tikznumberofcurrentchild=\count280
+\tikz@fig@count=\count281
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count272
-\pgfmatrixcurrentcolumn=\count273
-\pgf@matrix@numberofcolumns=\count274
+\pgfmatrixcurrentrow=\count282
+\pgfmatrixcurrentcolumn=\count283
+\pgf@matrix@numberofcolumns=\count284
 )
-\tikz@expandcount=\count275
+\tikz@expandcount=\count285
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarytopaths.code.tex
@@ -576,17 +709,17 @@ Package: expl3 2020-08-07 L3 programming layer (loader)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdf
 mode.def
 File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count276
+\l__kernel_color_stack_int=\count286
 \l__pdf_internal_box=\box59
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xpars
 e-generic.tex
-\l__xparse_current_arg_int=\count277
-\g__xparse_grabber_int=\count278
-\l__xparse_m_args_int=\count279
-\l__xparse_v_nesting_int=\count280
+\l__xparse_current_arg_int=\count287
+\g__xparse_grabber_int=\count288
+\l__xparse_m_args_int=\count289
+\l__xparse_v_nesting_int=\count290
 ))
 Package: tikzsymbols 2019/02/08 v4.10c Some symbols created using tikz and LaTeX
 3.
@@ -605,7 +738,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
 aryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen262
+\arrowsize=\dimen266
 ))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarydecorations.pathmorphing.code.tex
@@ -613,14 +746,14 @@ z/libraries/tikzlibrarydecorations.pathmorphing.code.tex
 z/libraries/tikzlibrarydecorations.code.tex
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 decorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen263
-\pgfdecoratedremainingdistance=\dimen264
-\pgfdecoratedinputsegmentcompleteddistance=\dimen265
-\pgfdecoratedinputsegmentremainingdistance=\dimen266
-\pgf@decorate@distancetomove=\dimen267
-\pgf@decorate@repeatstate=\count281
-\pgfdecorationsegmentamplitude=\dimen268
-\pgfdecorationsegmentlength=\dimen269
+\pgfdecoratedcompleteddistance=\dimen267
+\pgfdecoratedremainingdistance=\dimen268
+\pgfdecoratedinputsegmentcompleteddistance=\dimen269
+\pgfdecoratedinputsegmentremainingdistance=\dimen270
+\pgf@decorate@distancetomove=\dimen271
+\pgf@decorate@repeatstate=\count291
+\pgfdecorationsegmentamplitude=\dimen272
+\pgfdecorationsegmentlength=\dimen273
 )
 \tikz@lib@dec@box=\box60
 )
@@ -630,7 +763,7 @@ ions/pgflibrarydecorations.pathmorphing.code.tex))
 z/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-\l__tikzsymbols_Moai_thickness_dim=\dimen270
+\l__tikzsymbols_Moai_thickness_dim=\dimen274
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/tikz-cd/tikzlibrarycd.c
 ode.tex
@@ -645,10 +778,10 @@ File: tikzlibraryquotes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
 aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowinset=\dimen271
-\pgfarrowlength=\dimen272
-\pgfarrowwidth=\dimen273
-\pgfarrowlinewidth=\dimen274
+\pgfarrowinset=\dimen275
+\pgfarrowlength=\dimen276
+\pgfarrowwidth=\dimen277
+\pgfarrowlinewidth=\dimen278
 ))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarybending.code.tex
@@ -661,18 +794,18 @@ File: pgfmodulebending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodule
 nonlineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgftransformnonlinearflatness=\dimen275
+\pgftransformnonlinearflatness=\dimen279
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibr
 arycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@curvilinear@time@a=\dimen276
-\pgf@curvilinear@length@a=\dimen277
-\pgf@curvilinear@length@b=\dimen278
-\pgf@curvilinear@length@c=\dimen279
-\pgf@curvilinear@length@d=\dimen280
+\pgf@curvilinear@time@a=\dimen280
+\pgf@curvilinear@length@a=\dimen281
+\pgf@curvilinear@length@b=\dimen282
+\pgf@curvilinear@length@c=\dimen283
+\pgf@curvilinear@length@d=\dimen284
 )
-\pgf@arrows@the@rigidity=\dimen281
+\pgf@arrows@the@rigidity=\dimen285
 ))
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tik
 z/libraries/tikzlibrarypositioning.code.tex
@@ -754,7 +887,7 @@ LaTeX Warning: You have requested package `math-symbols',
 Package: maths 2018/06/16 Mathematics Macros
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/genmisc/mathdots.sty
 Package: mathdots 2004/07/02 version 0.6.
-\MD@unit=\dimen282
+\MD@unit=\dimen286
 LaTeX Info: Redefining \ddots on input line 120.
 LaTeX Info: Redefining \vdots on input line 122.
 
@@ -765,29 +898,7 @@ LaTeX Info: Redefining \dddot on input line 145.
 LaTeX Info: Redefining \ddddot on input line 145.
 ) (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/oberdiek/stackrel.sty
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-))
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds
-.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks33
-)) (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/cancel/cancel.sty
+) (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ))
 (C:/localtexmf/tex/latex/math/math-theorems.sty
@@ -798,7 +909,7 @@ LaTeX Warning: You have requested package `math-theorems',
 Package: maths 2018/06/16 Mathematics Theorems
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count282
+\etb@tempcnta=\count292
 )
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/ntheorem/ntheorem.sty
 Style `ntheorem', Version 1.33 <2011/08/15>
@@ -810,22 +921,22 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \theorem@@style=\toks35
 \theorembodyfont=\toks36
 \theoremnumbering=\toks37
-\theorempreskipamount=\skip56
-\theorempostskipamount=\skip57
-\theoremframepreskipamount=\skip58
-\theoremframepostskipamount=\skip59
-\theoreminframepreskipamount=\skip60
-\theoreminframepostskipamount=\skip61
+\theorempreskipamount=\skip57
+\theorempostskipamount=\skip58
+\theoremframepreskipamount=\skip59
+\theoremframepostskipamount=\skip60
+\theoreminframepreskipamount=\skip61
+\theoreminframepostskipamount=\skip62
 \theorem@preskip=\toks38
 \theorem@postskip=\toks39
 \theorem@framepreskip=\toks40
 \theorem@framepostskip=\toks41
 \theorem@inframepreskip=\toks42
 \theorem@inframepostskip=\toks43
-\theoremindent=\dimen283
-\theorem@indent=\dimen284
-\theoremrightindent=\dimen285
-\theorem@rightindent=\dimen286
+\theoremindent=\dimen287
+\theorem@indent=\dimen288
+\theoremrightindent=\dimen289
+\theorem@rightindent=\dimen290
 \theoremheaderfont=\toks44
 \theoremseparator=\toks45
 \theoremprework=\toks46
@@ -834,260 +945,127 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \qedsymbol=\toks49
 \theoremkeyword=\toks50
 \qedsymbol=\toks51
-\thm@topsep=\skip62
-\thm@topsepadd=\skip63
+\thm@topsep=\skip63
+\thm@topsepadd=\skip64
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count283
-\c@currNonectr=\count284
-\mysavskip=\skip64
+\c@endNonectr=\count293
+\c@currNonectr=\count294
+\mysavskip=\skip65
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input 
 line 1175.
-\thm@amstmpdepth=\dimen287
-\tagwidth=\dimen288
+\thm@amstmpdepth=\dimen291
+\tagwidth=\dimen292
 )
-\c@currproofctr=\count285
-\c@endproofctr=\count286
-\c@proof=\count287
-\c@currtheoremctr=\count288
-\c@endtheoremctr=\count289
-\c@theorem=\count290
-\c@currlemmactr=\count291
-\c@endlemmactr=\count292
-\c@currcorollaryctr=\count293
-\c@endcorollaryctr=\count294
-\c@currpropositionctr=\count295
-\c@endpropositionctr=\count296
-\c@currconjecturectr=\count297
-\c@endconjecturectr=\count298
-\c@currcriterionctr=\count299
-\c@endcriterionctr=\count300
-\c@currassertionctr=\count301
-\c@endassertionctr=\count302
-\c@currfactctr=\count303
-\c@endfactctr=\count304
-\c@currhypothesisctr=\count305
-\c@endhypothesisctr=\count306
-\c@currdefinitionctr=\count307
-\c@enddefinitionctr=\count308
-\c@currconditionctr=\count309
-\c@endconditionctr=\count310
-\c@curraxiomctr=\count311
-\c@endaxiomctr=\count312
-\c@axiom=\count313
-\c@currpostulatectr=\count314
-\c@endpostulatectr=\count315
-\c@currpropertyctr=\count316
-\c@endpropertyctr=\count317
-\c@currterminologyctr=\count318
-\c@endterminologyctr=\count319
-\c@curralgorithmctr=\count320
-\c@endalgorithmctr=\count321
-\c@currproblemctr=\count322
-\c@endproblemctr=\count323
-\c@currexamplectr=\count324
-\c@endexamplectr=\count325
-\c@currexamples*ctr=\count326
-\c@endexamples*ctr=\count327
-\c@examples*=\count328
-\c@currexercisectr=\count329
-\c@endexercisectr=\count330
-\c@exercise=\count331
-\c@currquestionctr=\count332
-\c@endquestionctr=\count333
-\c@currassumptionctr=\count334
-\c@endassumptionctr=\count335
-\c@currremarkctr=\count336
-\c@endremarkctr=\count337
-\c@currnotectr=\count338
-\c@endnotectr=\count339
-\c@currobservationctr=\count340
-\c@endobservationctr=\count341
-\c@currnotationctr=\count342
-\c@endnotationctr=\count343
-\c@currclaimctr=\count344
-\c@endclaimctr=\count345
-\c@currsummaryctr=\count346
-\c@endsummaryctr=\count347
-\c@summary=\count348
-\c@curracknowledgementctr=\count349
-\c@endacknowledgementctr=\count350
-\c@currcasectr=\count351
-\c@endcasectr=\count352
-\c@case=\count353
-\c@curroptionctr=\count354
-\c@endoptionctr=\count355
-\c@option=\count356
-\c@currconclusionctr=\count357
-\c@endconclusionctr=\count358
-\c@conclusion=\count359
-\c@currsolutionctr=\count360
-\c@endsolutionctr=\count361
-\c@solution=\count362
+\c@currproofctr=\count295
+\c@endproofctr=\count296
+\c@proof=\count297
+\c@currtheoremctr=\count298
+\c@endtheoremctr=\count299
+\c@theorem=\count300
+\c@currlemmactr=\count301
+\c@endlemmactr=\count302
+\c@currcorollaryctr=\count303
+\c@endcorollaryctr=\count304
+\c@currpropositionctr=\count305
+\c@endpropositionctr=\count306
+\c@currconjecturectr=\count307
+\c@endconjecturectr=\count308
+\c@currcriterionctr=\count309
+\c@endcriterionctr=\count310
+\c@currassertionctr=\count311
+\c@endassertionctr=\count312
+\c@currfactctr=\count313
+\c@endfactctr=\count314
+\c@currhypothesisctr=\count315
+\c@endhypothesisctr=\count316
+\c@currdefinitionctr=\count317
+\c@enddefinitionctr=\count318
+\c@currconditionctr=\count319
+\c@endconditionctr=\count320
+\c@curraxiomctr=\count321
+\c@endaxiomctr=\count322
+\c@axiom=\count323
+\c@currpostulatectr=\count324
+\c@endpostulatectr=\count325
+\c@currpropertyctr=\count326
+\c@endpropertyctr=\count327
+\c@currterminologyctr=\count328
+\c@endterminologyctr=\count329
+\c@curralgorithmctr=\count330
+\c@endalgorithmctr=\count331
+\c@currproblemctr=\count332
+\c@endproblemctr=\count333
+\c@currexamplectr=\count334
+\c@endexamplectr=\count335
+\c@currexamples*ctr=\count336
+\c@endexamples*ctr=\count337
+\c@examples*=\count338
+\c@currexercisectr=\count339
+\c@endexercisectr=\count340
+\c@exercise=\count341
+\c@currquestionctr=\count342
+\c@endquestionctr=\count343
+\c@currassumptionctr=\count344
+\c@endassumptionctr=\count345
+\c@currremarkctr=\count346
+\c@endremarkctr=\count347
+\c@currnotectr=\count348
+\c@endnotectr=\count349
+\c@currobservationctr=\count350
+\c@endobservationctr=\count351
+\c@currnotationctr=\count352
+\c@endnotationctr=\count353
+\c@currclaimctr=\count354
+\c@endclaimctr=\count355
+\c@currsummaryctr=\count356
+\c@endsummaryctr=\count357
+\c@summary=\count358
+\c@curracknowledgementctr=\count359
+\c@endacknowledgementctr=\count360
+\c@currcasectr=\count361
+\c@endcasectr=\count362
+\c@case=\count363
+\c@curroptionctr=\count364
+\c@endoptionctr=\count365
+\c@option=\count366
+\c@currconclusionctr=\count367
+\c@endconclusionctr=\count368
+\c@conclusion=\count369
+\c@currsolutionctr=\count370
+\c@endsolutionctr=\count371
+\c@solution=\count372
 )
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/kvsetkeys/kvsetkeys.s
-ty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.s
-ty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/letltxmacro/letltxmacro
-.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-)
-\@linkdim=\dimen289
-\Hy@linkcounter=\count363
-\Hy@pagecounter=\count364
- (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-\Hy@SavedSpaceFactor=\count365
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count366
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen290
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc
-.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
-
-))
-\Fld@menulength=\count367
-\Field@Width=\dimen291
-\Fld@charsize=\dimen292
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-)
-\Hy@abspage=\count368
-\c@Item=\count369
-\c@Hfootnote=\count370
-)
-Package hyperref Info: Driver (autodetected): hluatex.
- (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2020-05-15 v7.00e Hyperref driver for luaTeX
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
-File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.s
-ty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/atveryend/atveryend.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-)
-\Fld@listcount=\count371
-\c@bookmark@seq@number=\count372
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfil
-echeck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniquec
-ounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
-6.
-)
-\Hy@SectionHShift=\skip65
-) (./functional_analysis.aux)
+(./functional_analysis.aux)
 \openout1 = functional_analysis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 22
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 24
 .
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-
-ABD: EveryShipout initializing macros
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count373
-\scratchdimen=\dimen293
-\scratchbox=\box81
-\nofMPsegments=\count374
-\nofMParguments=\count375
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count376
-\MPscratchDim=\dimen294
-\MPnumerator=\count377
-\makeMPintoPDFobject=\count378
-\everyMPtoPDFconversion=\toks53
-)
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
-5.
-)
-\AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring OFF on input line 22.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+\AtBeginShipoutBox=\box81
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1099,26 +1077,49 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count379
+\c@section@level=\count373
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./functional_analysis.out) (./functional_analysis.out)
 \@outlinefile=\write4
 
 \openout4 = functional_analysis.out
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+
+ABD: EveryShipout initializing macros
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count374
+\scratchdimen=\dimen293
+\scratchbox=\box82
+\nofMPsegments=\count375
+\nofMParguments=\count376
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count377
+\MPscratchDim=\dimen294
+\MPnumerator=\count378
+\makeMPintoPDFobject=\count379
+\everyMPtoPDFconversion=\toks53
+)
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
+5.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27.
 
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/jknappen/ursfs.fd
@@ -1139,36 +1140,36 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 Chapter 1.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on in
-put line 31.
+put line 33.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input 
-line 44.
+line 46.
 
-Overfull \hbox (2.49951pt too wide) in paragraph at lines 48--49
+Overfull \hbox (2.49951pt too wide) in paragraph at lines 50--51
 []\TU/lmr/m/n/10 A normed space $[]$ is a \TU/lmr/m/it/10 Ba-nach space
  []
 
 [5]
 Package hyperref Info: bookmark level for unknown example defaults to 0 on input
- line 71.
+ line 73.
 
-Overfull \hbox (66.17001pt too wide) in paragraph at lines 106--108
+Overfull \hbox (66.17001pt too wide) in paragraph at lines 108--110
 []
  []
 
 
-Overfull \hbox (7.19785pt too wide) in paragraph at lines 115--116
+Overfull \hbox (7.19785pt too wide) in paragraph at lines 117--118
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 Y$ \TU/lmr/m/n/10 be a normed space.
  []
 
 [6]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input
- line 143.
+ line 145.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on inp
-ut line 149.
+ut line 151.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input l
-ine 161.
+ine 163.
 
-Overfull \hbox (6.59134pt too wide) detected at line 170
+Overfull \hbox (6.59134pt too wide) detected at line 172
 [][] \OT1/cmr/m/n/10 = [][] [][] []  d\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = [][]
  [] [][] []  d\OML/cmm/m/it/10  [] [] [][] [][] []  \OT1/cmr/m/n/10 d\OML/cmm/
 m/it/10  \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 S[]
@@ -1182,11 +1183,11 @@ Missing character: There is no ק (U+05E7) in font [lmroman10-bold]:+tlig;!
 Missing character: There is no ג (U+05D2) in font [lmroman10-bold]:+tlig;!
 ]
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inpu
-t line 195.
+t line 197.
 Package hyperref Info: bookmark level for unknown fact defaults to 0 on input li
-ne 213.
+ne 215.
 Package hyperref Info: bookmark level for unknown notation defaults to 0 on inpu
-t line 223.
+t line 225.
  [8] [9] [10] [11] [12]
 Underfull \vbox (badness 2158) has occurred while \output is active []
 
@@ -1194,95 +1195,113 @@ Underfull \vbox (badness 2158) has occurred while \output is active []
 [14]
 Chapter 2.
 
-Overfull \hbox (8.1265pt too wide) in paragraph at lines 462--463
+Overfull \hbox (8.1265pt too wide) in paragraph at lines 464--465
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 2 [][]$\TU/lmr/m/n/10
  . A func-tion $\OML/cmm/m/it/10 p [] [] X \OMS/cmsy/m/n/10 !
  []
 
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input l
-ine 473.
+ine 475.
 [15
 
 ] [16] [17]
-Overfull \hbox (16.43663pt too wide) in paragraph at lines 638--639
+Overfull \hbox (16.43663pt too wide) in paragraph at lines 640--641
 []\TU/lmr/m/n/10 A \TU/lmr/m/it/10 Ba-nach limit \TU/lmr/m/n/10 is a lin-ear fun
 c-tional $\OML/cmm/m/it/10 f [] [] `[] \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (45.7261pt too wide) detected at line 650
+Overfull \hbox (45.7261pt too wide) detected at line 652
 []
  []
 
 [18] [19]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on i
-nput line 722.
+nput line 724.
  [20] [21]
-Overfull \hbox (2.4339pt too wide) in paragraph at lines 814--818
+Overfull \hbox (2.4339pt too wide) in paragraph at lines 816--820
 \TU/lmr/m/n/10 This is sup-ported in $[]$. We can then ex-tend $\OML/cmm/m/it/1
 0 v$ \TU/lmr/m/n/10 to $\OMS/cmsy/m/n/10 C []$\TU/lmr/m/n/10 . By Weirstrass
 ’
  []
 
 
-Overfull \hbox (20.20364pt too wide) in paragraph at lines 814--818
+Overfull \hbox (20.20364pt too wide) in paragraph at lines 816--820
 \TU/lmr/m/n/10 ap-prox-i-ma-tion there are trigono-met-ric poly-no-mi-als $[][]
 $ such that $\OML/cmm/m/it/10 p[] []
  []
 
 [22] [23]
-Overfull \hbox (16.0408pt too wide) detected at line 911
+Overfull \hbox (16.0408pt too wide) detected at line 913
 [] [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 f [] \OMS/cmsy/m/n/10  \OML/cmm/m/
 it/10 f [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f [] \OMS/cmsy/m/n/10 ^^@ \OML/cm
 m/m/it/10 f [] []
  []
 
 [24] [25]
-Overfull \hbox (50.01497pt too wide) detected at line 1013
+Overfull \hbox (50.01497pt too wide) detected at line 1015
 [] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10  [] []  [] [] \OT1/cmr/m/n/10 = \OML
 /cmm/m/it/10 n[]
  []
 
 [26] [27] [28]
-Overfull \hbox (12.67294pt too wide) in paragraph at lines 1134--1135
+Overfull \hbox (12.67294pt too wide) in paragraph at lines 1136--1137
 []\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/it/10 be Ba-nach spaces
  []
 
 [29] [30]
-Overfull \hbox (21.32007pt too wide) in paragraph at lines 1231--1232
+Overfull \hbox (21.32007pt too wide) in paragraph at lines 1233--1234
 []\TU/lmr/m/n/10 Write 
  []
 
 [31] [32]
-Overfull \hbox (1.85548pt too wide) in paragraph at lines 1356--1357
+Overfull \hbox (1.85548pt too wide) in paragraph at lines 1358--1359
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 P [] [] X \OMS/cmsy/m/n/10 ! \OML/cmm/m/
 it/10 X$ \TU/lmr/m/n/10 be a pro-
  []
 
-[33]
+[33] [34] [35]
+Overfull \hbox (8.39612pt too wide) in paragraph at lines 1491--1493
+[]\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/n/10 be normed spaces.
+ []
+
+
+Overfull \hbox (2.83018pt too wide) in paragraph at lines 1505--1506
+[]\TU/lmr/m/it/10 If $\OML/cmm/m/it/10 X$ \TU/lmr/m/it/10 is a finite-dimensiona
+l normed space, any lin-ear $\OML/cmm/m/it/10 T [] [] X \OMS/cmsy/m/n/10 !
+ []
+
+[36] [37] [38]
+Overfull \hbox (4.74754pt too wide) in paragraph at lines 1648--1649
+[]\TU/lmr/m/it/10 There are $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/it/10 of di-men-si
+on $\OML/cmm/m/it/10 n$ \TU/lmr/m/it/10 such that $\OML/cmm/m/it/10 d[] [] \OMS
+/cmsy/m/n/10 
+ []
+
 \tf@thm=\write6
 
 \openout6 = functional_analysis.thm
- [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1401.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1401.
+[39]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1651.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1651.
  (./functional_analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1401.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1651.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1651.
 Package rerunfilecheck Info: File `functional_analysis.out' has not changed.
-(rerunfilecheck)             Checksum: BF855830388B8E1884C209A9D5457F01;3994.
+(rerunfilecheck)             Checksum: EF067DF3BE69CE26B7BBFC7B222280CD;4178.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1651.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28132 strings out of 481302
+ 28242 strings out of 481302
  100000,953878 words of node,token memory allocated
- 1156 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 157 attribute, 62 glue_spe
-c, 157 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 1:2,2:711,3:221,4:50,5:337,6:34,7:2364,8:84,9:574,10:6,11:102
- 44074 multiletter control sequences out of 65536+200000
+ 1254 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 180 attribute
+, 62 glue_spec, 180 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:666,3:219,4:50,5:359,6:36,7:2364,8:84,9:701,10:6,11:102
+ 44155 multiletter control sequences out of 65536+200000
  96 fonts using 8960387 bytes
- 68i,19n,86p,828b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,20n,86p,944b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/open
 type/public/lm/lmroman7-regular.otf><//?/c:/users/eladt/appdata/local/programs/m
@@ -1316,9 +1335,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Use
 rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7
 .pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs1
 0.pfb>
-Output written on functional_analysis.pdf (34 pages, 421466 bytes).
+Output written on functional_analysis.pdf (39 pages, 454211 bytes).
 
-PDF statistics: 578 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 131072)
- 152 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 627 PDF objects out of 1000 (max. 8388607)
+ 248 named destinations out of 1000 (max. 131072)
+ 160 words of extra memory for PDF output out of 10000 (max. 100000000)
 
