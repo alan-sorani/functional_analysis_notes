@@ -130,21 +130,120 @@
 \contentsline {theorem}{{Theorem}{2.2.{31}}{}}{33}{theorem.2.2.31}%
 \contentsline {proof}{{Proof}{28}{}}{34}{proof.28}%
 \contentsline {fact}{{Fact}{2.2.{32}}{}}{34}{theorem.2.2.32}%
-\contentsline {theorem}{{Theorem}{2.2.{33}}{}}{34}{theorem.2.2.33}%
+\contentsline {definition}{{Definition}{2.2.{33}}{Quotient Space}}{34}{theorem.2.2.33}%
+\contentsline {fact}{{Fact}{2.2.{34}}{}}{34}{theorem.2.2.34}%
 \contentsline {proof}{{Proof}{29}{}}{34}{proof.29}%
-\contentsline {definition}{{Definition}{2.3.{1}}{Isomorphic Normed Spaces}}{36}{theorem.2.3.1}%
-\contentsline {theorem}{{Theorem}{2.3.{2}}{}}{36}{theorem.2.3.2}%
-\contentsline {corollary}{{Corollary}{2.3.{3}}{}}{36}{theorem.2.3.3}%
-\contentsline {corollary}{{Corollary}{2.3.{4}}{}}{36}{theorem.2.3.4}%
-\contentsline {definition}{{Definition}{2.3.{5}}{The Banach-Mazur distance}}{36}{theorem.2.3.5}%
-\contentsline {proposition}{{Proposition}{2.3.{6}}{}}{36}{theorem.2.3.6}%
-\contentsline {corollary}{{Corollary}{2.3.{7}}{}}{36}{theorem.2.3.7}%
-\contentsline {proposition}{{Proposition}{2.3.{8}}{}}{36}{theorem.2.3.8}%
-\contentsline {proof}{{Proof}{30}{}}{37}{proof.30}%
-\contentsline {theorem}{{Theorem}{2.3.{9}}{Auerbach}}{38}{theorem.2.3.9}%
-\contentsline {proof}{{Proof}{31}{}}{38}{proof.31}%
-\contentsline {corollary}{{Corollary}{2.3.{10}}{}}{38}{theorem.2.3.10}%
-\contentsline {proof}{{Proof}{32}{}}{38}{proof.32}%
-\contentsline {corollary}{{Corollary}{2.3.{11}}{}}{39}{theorem.2.3.11}%
-\contentsline {fact}{{Fact}{2.3.{12}}{F. John}}{39}{theorem.2.3.12}%
-\contentsline {fact}{{Fact}{2.3.{13}}{Gluskin}}{39}{theorem.2.3.13}%
+\contentsline {theorem}{{Theorem}{2.2.{35}}{}}{35}{theorem.2.2.35}%
+\contentsline {proof}{{Proof}{30}{}}{35}{proof.30}%
+\contentsline {corollary}{{Corollary}{2.2.{36}}{}}{35}{theorem.2.2.36}%
+\contentsline {proof}{{Proof}{31}{}}{36}{proof.31}%
+\contentsline {definition}{{Definition}{2.2.{37}}{Shauder Base}}{36}{theorem.2.2.37}%
+\contentsline {example}{{Example}{2.2.{38}}{}}{36}{theorem.2.2.38}%
+\contentsline {example}{{Example}{2.2.{39}}{}}{36}{theorem.2.2.39}%
+\contentsline {example}{{Example}{2.2.{40}}{}}{36}{theorem.2.2.40}%
+\contentsline {definition}{{Definition}{2.2.{41}}{}}{36}{theorem.2.2.41}%
+\contentsline {remark}{{Remark}{2.2.{42}}{}}{36}{theorem.2.2.42}%
+\contentsline {remark}{{Remark}{2.2.{43}}{}}{36}{theorem.2.2.43}%
+\contentsline {theorem}{{Theorem}{2.2.{44}}{}}{36}{theorem.2.2.44}%
+\contentsline {proof}{{Proof}{32}{}}{37}{proof.32}%
+\contentsline {definition}{{Definition}{2.3.{1}}{Isomorphic Normed Spaces}}{38}{theorem.2.3.1}%
+\contentsline {theorem}{{Theorem}{2.3.{2}}{}}{39}{theorem.2.3.2}%
+\contentsline {corollary}{{Corollary}{2.3.{3}}{}}{39}{theorem.2.3.3}%
+\contentsline {corollary}{{Corollary}{2.3.{4}}{}}{39}{theorem.2.3.4}%
+\contentsline {definition}{{Definition}{2.3.{5}}{The Banach-Mazur distance}}{39}{theorem.2.3.5}%
+\contentsline {proposition}{{Proposition}{2.3.{6}}{}}{39}{theorem.2.3.6}%
+\contentsline {corollary}{{Corollary}{2.3.{7}}{}}{39}{theorem.2.3.7}%
+\contentsline {proposition}{{Proposition}{2.3.{8}}{}}{39}{theorem.2.3.8}%
+\contentsline {proof}{{Proof}{33}{}}{39}{proof.33}%
+\contentsline {theorem}{{Theorem}{2.3.{9}}{Auerbach}}{40}{theorem.2.3.9}%
+\contentsline {proof}{{Proof}{34}{}}{40}{proof.34}%
+\contentsline {corollary}{{Corollary}{2.3.{10}}{}}{41}{theorem.2.3.10}%
+\contentsline {proof}{{Proof}{35}{}}{41}{proof.35}%
+\contentsline {corollary}{{Corollary}{2.3.{11}}{}}{42}{theorem.2.3.11}%
+\contentsline {fact}{{Fact}{2.3.{12}}{F. John}}{42}{theorem.2.3.12}%
+\contentsline {fact}{{Fact}{2.3.{13}}{Gluskin}}{42}{theorem.2.3.13}%
+\contentsline {theorem}{{Theorem}{2.3.{14}}{}}{42}{theorem.2.3.14}%
+\contentsline {lemma}{{Lemma}{2.3.{15}}{Riesz Lemma}}{42}{theorem.2.3.15}%
+\contentsline {proof}{{Proof}{36}{}}{42}{proof.36}%
+\contentsline {proof}{{Proof}{37}{\ref {theorem:finiteness_criterion}}}{42}{proof.37}%
+\contentsline {corollary}{{Corollary}{2.3.{16}}{}}{42}{theorem.2.3.16}%
+\contentsline {proof}{{Proof}{38}{}}{43}{proof.38}%
+\contentsline {definition}{{Definition}{3.1.{1}}{Weak Convergence}}{45}{theorem.3.1.1}%
+\contentsline {notation}{{Notation}{3.1.{2}}{}}{45}{theorem.3.1.2}%
+\contentsline {example}{{Example}{3.1.{3}}{}}{45}{theorem.3.1.3}%
+\contentsline {proposition}{{Proposition}{3.1.{4}}{}}{45}{theorem.3.1.4}%
+\contentsline {proof}{{Proof}{39}{}}{45}{proof.39}%
+\contentsline {proposition}{{Proposition}{3.1.{5}}{}}{45}{theorem.3.1.5}%
+\contentsline {proof}{{Proof}{40}{}}{45}{proof.40}%
+\contentsline {proposition}{{Proposition}{3.1.{6}}{}}{46}{theorem.3.1.6}%
+\contentsline {proof}{{Proof}{41}{}}{46}{proof.41}%
+\contentsline {example}{{Example}{3.1.{7}}{Schur's Theorem}}{46}{theorem.3.1.7}%
+\contentsline {definition}{{Definition}{3.1.{8}}{The Weak Topology}}{46}{theorem.3.1.8}%
+\contentsline {proposition}{{Proposition}{3.1.{9}}{}}{46}{theorem.3.1.9}%
+\contentsline {proof}{{Proof}{42}{}}{47}{proof.42}%
+\contentsline {proposition}{{Proposition}{3.1.{10}}{}}{48}{theorem.3.1.10}%
+\contentsline {corollary}{{Corollary}{3.1.{11}}{}}{48}{theorem.3.1.11}%
+\contentsline {proof}{{Proof}{43}{}}{48}{proof.43}%
+\contentsline {proposition}{{Proposition}{3.1.{12}}{}}{48}{theorem.3.1.12}%
+\contentsline {proof}{{Proof}{44}{}}{48}{proof.44}%
+\contentsline {corollary}{{Corollary}{3.1.{13}}{}}{48}{theorem.3.1.13}%
+\contentsline {corollary}{{Corollary}{3.1.{14}}{Mazur}}{48}{theorem.3.1.14}%
+\contentsline {proof}{{Proof}{45}{}}{49}{proof.45}%
+\contentsline {theorem}{{Theorem}{3.1.{15}}{Banach-Saks, 1}}{49}{theorem.3.1.15}%
+\contentsline {proof}{{Proof}{46}{}}{49}{proof.46}%
+\contentsline {definition}{{Definition}{3.1.{16}}{}}{49}{theorem.3.1.16}%
+\contentsline {proposition}{{Proposition}{3.1.{17}}{}}{49}{theorem.3.1.17}%
+\contentsline {proposition}{{Proposition}{3.1.{18}}{}}{50}{theorem.3.1.18}%
+\contentsline {lemma}{{Lemma}{3.1.{19}}{}}{50}{theorem.3.1.19}%
+\contentsline {proof}{{Proof}{47}{}}{50}{proof.47}%
+\contentsline {proposition}{{Proposition}{3.1.{20}}{}}{50}{theorem.3.1.20}%
+\contentsline {proof}{{Proof}{48}{}}{50}{proof.48}%
+\contentsline {example}{{Example}{3.1.{21}}{}}{50}{theorem.3.1.21}%
+\contentsline {example}{{Example}{3.1.{22}}{}}{50}{theorem.3.1.22}%
+\contentsline {example}{{Example}{3.1.{23}}{}}{50}{theorem.3.1.23}%
+\contentsline {proposition}{{Proposition}{3.1.{24}}{}}{51}{theorem.3.1.24}%
+\contentsline {proof}{{Proof}{49}{}}{51}{proof.49}%
+\contentsline {theorem}{{Theorem}{3.1.{25}}{Banach Alaoglu}}{51}{theorem.3.1.25}%
+\contentsline {proof}{{Proof}{50}{}}{51}{proof.50}%
+\contentsline {corollary}{{Corollary}{3.1.{26}}{}}{51}{theorem.3.1.26}%
+\contentsline {proof}{{Proof}{51}{}}{51}{proof.51}%
+\contentsline {corollary}{{Corollary}{3.1.{27}}{}}{52}{theorem.3.1.27}%
+\contentsline {proof}{{Proof}{52}{}}{52}{proof.52}%
+\contentsline {example}{{Example}{3.1.{28}}{}}{52}{theorem.3.1.28}%
+\contentsline {theorem}{{Theorem}{3.1.{29}}{}}{52}{theorem.3.1.29}%
+\contentsline {proof}{{Proof}{53}{}}{52}{proof.53}%
+\contentsline {corollary}{{Corollary}{3.1.{30}}{}}{53}{theorem.3.1.30}%
+\contentsline {exercise}{{Exercise}{3}{}}{53}{exercise.3}%
+\contentsline {example}{{Example}{3.1.{31}}{}}{53}{theorem.3.1.31}%
+\contentsline {theorem}{{Theorem}{3.1.{32}}{Eberlein-Šmulian}}{53}{theorem.3.1.32}%
+\contentsline {proof}{{Proof}{54}{}}{53}{proof.54}%
+\contentsline {corollary}{{Corollary}{3.1.{33}}{Banach-Saks, strong form}}{53}{theorem.3.1.33}%
+\contentsline {proof}{{Proof}{55}{}}{53}{proof.55}%
+\contentsline {theorem}{{Theorem}{3.1.{34}}{}}{54}{theorem.3.1.34}%
+\contentsline {example}{{Example}{3.1.{35}}{}}{54}{theorem.3.1.35}%
+\contentsline {theorem}{{Theorem}{3.1.{36}}{Hall's Marriage Theorem}}{54}{theorem.3.1.36}%
+\contentsline {lemma}{{Lemma}{3.1.{37}}{}}{54}{theorem.3.1.37}%
+\contentsline {proof}{{Proof}{56}{}}{54}{proof.56}%
+\contentsline {proof}{{Proof}{57}{\ref {theorem:hahr_measure}}}{54}{proof.57}%
+\contentsline {definition}{{Definition}{3.2.{1}}{Locally Convex Space (LCS)}}{55}{theorem.3.2.1}%
+\contentsline {remark}{{Remark}{3.2.{2}}{}}{56}{theorem.3.2.2}%
+\contentsline {example}{{Example}{3.2.{3}}{}}{56}{theorem.3.2.3}%
+\contentsline {example}{{Example}{3.2.{4}}{}}{56}{theorem.3.2.4}%
+\contentsline {example}{{Example}{3.2.{5}}{}}{56}{theorem.3.2.5}%
+\contentsline {example}{{Example}{3.2.{6}}{}}{56}{theorem.3.2.6}%
+\contentsline {remark}{{Remark}{3.2.{7}}{}}{57}{theorem.3.2.7}%
+\contentsline {example}{{Example}{3.2.{8}}{}}{57}{theorem.3.2.8}%
+\contentsline {theorem}{{Theorem}{3.2.{9}}{}}{57}{theorem.3.2.9}%
+\contentsline {remark}{{Remark}{3.2.{10}}{}}{57}{theorem.3.2.10}%
+\contentsline {proof}{{Proof}{58}{}}{57}{proof.58}%
+\contentsline {remark}{{Remark}{3.2.{11}}{}}{58}{theorem.3.2.11}%
+\contentsline {example}{{Example}{3.2.{12}}{}}{58}{theorem.3.2.12}%
+\contentsline {definition}{{Definition}{3.2.{13}}{Extreme Point}}{58}{theorem.3.2.13}%
+\contentsline {example}{{Example}{3.2.{14}}{}}{59}{theorem.3.2.14}%
+\contentsline {example}{{Example}{3.2.{15}}{}}{59}{theorem.3.2.15}%
+\contentsline {corollary}{{Corollary}{3.2.{16}}{}}{59}{theorem.3.2.16}%
+\contentsline {proof}{{Proof}{59}{}}{59}{proof.59}%
+\contentsline {remark}{{Remark}{3.2.{17}}{}}{59}{theorem.3.2.17}%
+\contentsline {theorem}{{Theorem}{3.2.{18}}{Krein-Milman}}{59}{theorem.3.2.18}%
+\contentsline {corollary}{{Corollary}{3.2.{19}}{}}{59}{theorem.3.2.19}%
+\contentsline {proof}{{Proof}{60}{}}{59}{proof.60}%

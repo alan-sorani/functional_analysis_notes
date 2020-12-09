@@ -1398,7 +1398,117 @@ By the closed graph theorem, $P$ is then continuous.
 \end{enumerate}
 \end{fact}
 
-%TODO fill in third hour
+\subsection{Quotient Spaces}
+
+\begin{definition}[Quotient Space]
+Let $X$ be a Banach space and $E \leq X$ a closed subspace. We define \emph{the quotient space}
+\[\quot{X}{E} = \set{x + E}{x \in X} = \set{\brs{x}}{x \in X}\]
+where we identify $x \sim y$ iff $x-y \in E$.
+This is a Banach space with
+\[\norm{x + E} \ceq \inf_{y \sim x} \norm{y} = \inf_{e \in E} \norm{x-e} = d\prs{x,E} \text{.}\]
+\end{definition}
+
+\begin{fact}
+If $X$ is a Banach space and $E$ is closed, then $\quot{X}{E}$ is a Banach spaces.
+\end{fact}
+
+\begin{proof}
+One should check that $\quot{X}{E}$ is a vector space and that $\norm{\cdot}$ defines a norm on it. We prove completeness.
+
+Let $\prs{x_n}_{n \in \mbb{N}_+} \subseteq X$ such that $\sum_{n \in \mbb{N}_+} \norm{\brs{x_n}} < \infty$. It suffices to show that $\prs{x_n}_{n \in \mbb{N}_+}$ is convergent. Pick $y_n \sim x_n$ such that $\norm{y_n} \leq \norm{\brs{x_n}} + \frac{1}{2^n}$.
+Then
+\[\sum_{n \in \mbb{N}_+} \norm{y_n} \leq \sum_{n \in \mbb{N}_+} \norm{\brs{x_n}} + \sum_{n \in \mbb{N}_+} \frac{1}{2^n} < \infty \text{.}\]
+Since $X$ is complete, we get $\sum_{n \in \mbb{N}_+} y_n = y$ for some $y \in X$. Then
+\begin{align*}
+\norm{\sum_{n \in [N]} \brs{x_n} - \brs{y}} &= \norm{\brs{\sum_{n \in \brs{N}} x_n - y}}
+\\&= \norm{\brs{\sum_{n \in \brs{N}} y_n - y}}
+\\&\leq \norm{\sum_{n \in [N]} y_n - y}
+\\&\xrightarrow{N\to\infty} 0 \text{.}
+\end{align*}
+Hence $\quot{X}{E}$ is complete.
+\end{proof}
+
+\begin{theorem}\label{theorem:isomorphism_theorem}
+Let $X,Y$ be Banach spaces and let $T \in \mcal{L}\prs{X,Y}$ be surjective. There is an isomorphism
+\[\quot{X}{\ker T} \cong Y \text{.}\]
+\end{theorem}
+
+\begin{proof}
+Let $E \ceq \ker T$ and define
+\begin{align*}
+S \colon \quot{X}{E} &\to Y \\
+\brs{x} &\mapsto Tx \text{.}
+\end{align*}
+Note that
+\[\brs{x} = \brs{y} \iff x-y \in E = \ker T \iff T\prs{x-y} = 0 \iff Tx = Ty \iff S\prs{\brs{x}} = S\prs{\brs{y}}\]
+so $S$ is well-defined and injective.
+$S$ is surjective since $T$ is surjective
+
+Let $\brs{x} \in \quot{X}{E}$. For every $\eps > 0$ there's $y \in \quot{X}{E}$ such that $\brs{y} =\brs{x}$ and $\norm{y} \leq \norm{\brs{x}} + \eps$.
+Then
+\begin{align*}
+\norm{S\prs{\brs{x}}} &= \norm{S\prs{\brs{y}}}
+\\&= \norm{Ty}
+\\&\leq \norm{T}\norm{y}
+\\&\leq \norm{T} \prs{\norm{\brs{x}}+\eps} \text{.}
+\end{align*}
+Letting $\eps > 0$ we get $\norm{S} \leq \norm{T}$ (in fact there's equality $\norm{S} = \norm{T}$).
+Hence $S$ is continuous.
+
+By the open mapping theorem a continuous bijection is an isomorphism, hence so is $S$.
+\end{proof}
+
+\begin{corollary}
+Let $X$ be a Banach space and let $E,F \leq X$ be closed subspaces such that $X = E \oplus F$. It holds that
+\[\quot{X}{E} \cong F \text{.}\]
+\end{corollary}
+
+\begin{proof}
+Let $P \colon X \to F$ be the projection onto $F$ parallel to $E$. This is a surjective and continuous (which follows from the open graph theorem), hence \ref{theorem:isomorphism_theorem} gives
+\[\quot{X}{E} = \quot{X}{\ker P} \cong F \text{.}\]
+\end{proof}
+
+\subsection{Shauder Bases}
+
+\begin{definition}[Shauder Base]
+A sequence $\prs{e_n}_{n \in \mbb{N}_+}$ is a Banach space $X$ is a \emph{(Shauder) base} if for every $x \in X$ there are unique $\prs{\alpha_n}_{n \in \mbb{N}_+} \subseteq \mbb{F}$ such that
+\[x = \sum_{n \in \mbb{N}_+} \alpha_n e_n \text{.}\]
+\end{definition}
+
+\begin{example}
+In a Hilbert space, an orthonormal base is a (Shauder) base, and $\alpha_n = \trs{x, e_n}$.
+\end{example}
+
+\begin{example}
+In $\ell_p$ for $p \in \left[ 1, \infty \right)$, the vectors $e_n$ defined by $\prs{e_n}_i = \delta_{n,i}$, form a base.
+Indeed
+$a = \prs{a_1, a_2, a_3, \ldots}$
+can be written uniquely as $\sum_{n \in \mbb{N}_+} a_n e_n$.
+\end{example}
+
+\begin{example}
+In $\mscr{C}\brs{0,1}$, take $e_n\prs{t} = t^n$ for every $n \in \mbb{N}$. We know by the Weierstrass approximation theorem that $\overline{\spn\set{e_n}{n \in \mbb{N}}} = \mscr{C}\brs{0,1}$.
+
+However, $\prs{e_n}_{n \in \mbb{N}}$ is not a basis. If $f = \sum_{n = 0}^{\infty} a_n t^n$ then $f \in \mscr{C}^\infty$. Hence we cannot write any $f \in \mscr{C}\brs{0,1} \setminus \mscr{C}^\infty\brs{0,1}$ as $\sum_{n \in \mbb{N}} a_n t^n$.
+\end{example}
+
+\begin{definition}
+Given a basis $\prs{e_n}_{n \in \mbb{N}_+}$, define $\alpha_n \colon X \to \mbb{F}$ by
+\[x = \sum_{n \in \mbb{N}_+} \alpha_n\prs{x} e_n\]
+and
+\begin{align*}
+P_N \colon X &\to X \\
+X &\mapsto \sum_{n \in \brs{N}} \alpha_n\prs{x} e_n \text{.}
+\end{align*}
+\end{definition}
+
+\begin{remark}
+In Hilbert spaces with an orthonormal basis it holds that $\norm{\alpha_n} = 1$ and $\norm{P_N} = 1$.
+\end{remark}
+
+\begin{remark}
+If $X$ has a countable base, it's separable. One might ask if any separable space has a base. Enlfó showed in 1973 that the answer is no.
+\end{remark}
 
 \begin{theorem}
 If $\prs{e_n}_{n \in \mbb{N}_+}$ is a base for a Banach space $X$. There exists $C>0$ such that $\norm{P_k} \leq C$, and $\alpha_n \in X^*$.
@@ -1486,6 +1596,8 @@ so $\norm{\alpha_n} \leq \frac{2 C}{\norm{e_n}}$.
 \end{proof}
 
 \section{Finite-Dimensional Spaces}
+
+\subsection{Definitions}
 
 \begin{definition}[Isomorphic Normed Spaces]
 Let $X,Y$ be normed spaces.
@@ -1648,6 +1760,710 @@ If $\dim X = n$ it holds that $d_{\mrm{BM}}\prs{X, \ell_2^n} \leq \sqrt{n}$. So,
 There are $X,Y$ of dimension $n$ such that $d_{\mrm{BM}}\prs{X,Y} \geq \frac{n}{1000000}$.
 \end{fact}
 
-%TODO fill in 3rd hour
+\subsection{Geometric Interpretation}
+
+Let $X = \prs{\mbb{R}^n, \norm{\cdot}}$ and let
+\[K = \set{x}{\norm{x} \leq 1}\]
+which is convex.
+
+Aurbach's theorem says that we can apply a linear transformation to a convex body such that the image contains $\pm e_i$ for every base element $e_i$, and such that the $1$-norm of points in the image is less than $1$.
+%TODO add image
+
+\begin{theorem}\label{theorem:finiteness_criterion}
+Let $X$ be a Banach space. Then $\dim X < \infty$ if and only if $\bar{B}_X \ceq \bar{B}\prs{0,1}$ is compact.
+\end{theorem}
+
+\begin{lemma}[Riesz Lemma]
+Let $X$ be a normed space and let $E \subsetneq X$ be a closed subspace. Then for every $\eps > 0$ there's $x_\eps \in X$ such that $\norm{x_\eps} = 1$ and $d\prs{x_\eps, E} \geq 1 - \eps$.
+\end{lemma}
+
+\begin{proof}
+Fix $x \in X \setminus E$ and write $d \ceq d\prs{x, E} > 0$. Choose $e \in E$ such that $\norm{x-e} \leq d\prs{1+\eps}$ and define $x_\eps = \frac{x-e}{\norm{x-e}}$. Then $\norm{x_\eps} = 1$ and for all $y \in E$ it holds that
+\[\norm{x_{\eps} - y} = \frac{\norm{x-e - y \norm{x-e}}}{\norm{x-e}} \geq \frac{d}{d\prs{1+\eps}}= \frac{1}{1+\eps} \geq 1 - \eps \text{.}\]
+\end{proof}
+
+\begin{proof}[\ref{theorem:finiteness_criterion}]
+If $X$ is finite-dimensional, it's isomorphic to $\mbb{R}^n$, so the closed unit ball is compact.
+
+Assume $\dim X = \infty$, we want to show that $\bar{B}_X \ceq \bar{B}\prs{0,1}$ is not compact. Let $x_1 \in X$ with $\norm{x_1} = 1$, and let $E_1 = \spn\set{x_1} \neq X$. This is closed and by Riesz's lemma there's $x_2 \in X \setminus E_1$ such that $\norm{x_2} = 1$ and $d\prs{x_2, E_1} \geq 0.9$. Set $E_2 = \spn\set{x_1, x_2} \neq X$ which is closed. By Riesz lemma there's again $x_3 \in X \setminus E_2$ of norm $1$ such that $d\prs{x_3, E_2} \geq 0.9$, and so on. Then
+$\prs{x_n}_{n \in \mbb{N}_+} \subseteq \bar{B}_X$ but \[\norm{x_n - x_m} \geq d\prs{x_n, E_n} \geq d\prs{x_n, E_{n-1}} \geq 0.9\] so there is no convergent subsequence, so $\bar{B}_X$ is not compact.
+\end{proof}
+
+\begin{corollary}
+If $\dim X = \infty$ and $A \subseteq X$ is compact, it holds that $\int A = \ns$.
+\end{corollary}
+
+\begin{proof}
+Otherwise, $\bar{B}\prs{X_0, \frac{r}{2}} \subseteq B\prs{x_0, r} \subseteq A$ so $\bar{B}\prs{x_0, \frac{r}{2}} = \frac{r}{2} \bar{B}_X + x_0$ is compact, so $\bar{B}_X$ is compact, a contradiction.
+\end{proof}
+
+The above corollary raises a problem. Compact sets are comfortable to work with, and one wants to have compact sets other than those with empty interior. To fix this we later define new topologies on Banach spaces.
+
+%LECTURE 6
+
+\chapter{Weak Topologies}
+
+\section{Weak Topologies}
+
+\subsection{Definitions}
+
+\begin{definition}[Weak Convergence]
+Let $X$ be a Banach space and let $\prs{x_n}_{n \in \mbb{N}} \subseteq X$ and $x \in X$. We say $x_n \xrightarrow{n\to\infty} x$ weakly if for every $f \in X^*$ it holds that $f\prs{x_n} \xrightarrow{n\to\infty} f\prs{x}$.
+\end{definition}
+
+\begin{notation}
+We denote weak convergence by $x_n \rightharpoonup x$, by $\underset{n\to\infty}{\mrm{w\text{-}lim}} x_n = x$ or by $x_n \xrightarrow{w} x$.
+\end{notation}
+
+\begin{example}
+Let $H$ be a Hilbert space and let $\prs{e_n}_{n \in \mbb{N}} \subseteq H$ be orthonormal. Every $f \in H^*$ is of the form $f\prs{x} = \trs{x,y}$ and by Bessel it holds that
+\[\sum_{n \in \mbb{N}} \abs{\trs{y,e_n}}^2 \leq \norm{y}^2 < \infty \text{.}\]
+Then $\trs{y, e_n} \to 0$ so $f\prs{e_n} = \trs{e_n, y} \xrightarrow{n\to\infty} 0 = f\prs{0}$.
+Then $e_n \overset{n\to\infty}{\rightharpoonup} 0$. But, of course $\norm{e_n - e_m} = \sqrt{2}$ for every $n,m$ different, then $\prs{e_n}_{n \in \mbb{N}}$ doesn't converge (strongly).
+\end{example}
+
+\begin{proposition}
+A weak limit is unique.
+\end{proposition}
+
+\begin{proof}
+Assume that for every $f \in X^*$ it holds that $f\prs{x_n} \xrightarrow{n\to\infty} f\prs{x}, f\prs{y}$. Then $f\prs{x} = f\prs{y}$ for every $f \in X^*$, and by Hahn-Banach it follows that $x=y$.
+\end{proof}
+
+\begin{proposition}
+\begin{enumerate}
+\item If $x_n \overset{n\to\infty}{\rightharpoonup} x$ then $\prs{x_n}_{n \in \mbb{N}}$ is bounded.
+\item If $x_n \overset{n\to\infty}{\rightharpoonup} x$ then $\norm{x} \leq \liminf_{n\to\infty} \norm{x_n}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item For every $f$ we have $f\prs{x_n} \xrightarrow{n\to\infty} f\prs{x}$. Hence $\prs{f\prs{x_n}}_{n \in \mbb{N}}$ is bounded. By uniform boundedness, $\prs{x_n}_{n \in \mbb{N}}$ is bounded.
+\item By Hahn-Banach there's $f \in X^*$ such that $\norm{f} = 1$ and $f\prs{x} = \norm{x}$. Now
+\begin{align*}
+\norm{x} &< \abs{f\prs{x}}
+\\&= \lim_{n\to\infty} \abs{f\prs{x_n}}
+\\&\leq \liminf_{n\to\infty} \norm{f} \norm{x_n}
+\\&= \liminf_{n\to\infty} \norm{x_n} \text{.}
+\end{align*}
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}
+Let $S$ be a compact metric space and let $X = \mcal{C}\prs{S}$. Let $\prs{f_n}_{n \in \mbb{N}}, f \in X$. Then the following are equivalent.
+\begin{enumerate}
+\item $f_n \overset{n\to\infty}{\rightharpoonup} f$.
+\item $f_n\prs{s} \xrightarrow{n\to\infty} f\prs{s}$ for all $s$, and $\sup_{n \in \mbb{N}}\sup_{s \in S} \abs{f_n\prs{s}} < \infty$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item 
+We prove 2 assuming 1.
+Pick $\delta_s \in \mcal{C}\prs{S}^*$ which is $\delta_s\prs{f} = f\prs{s}$. We know $\delta_s \prs{f_n} \xrightarrow{n\to\infty} \delta_s\prs{f}$. Also, $\sup_{n \in \mbb{N}} \sup_{s \in S} \abs{f_n\prs{s}} = \sup_{n \in \mbb{N}} \norm{f_n} < \infty$ by the proposition.
+
+We prove the other direction. By measure theory, $\phi \in \mcal{C}\prs{S}^*$ is of the form $\phi\prs{f} = \int f \diff \mu$. Now $\phi\prs{f_n} \xrightarrow{n\to\infty} \phi\prs{f}$ by dominated convergence.
+\end{enumerate}
+\end{proof}
+
+\begin{example}[Schur's Theorem]
+In $\ell_1$, weak convergence implies strong convergence.
+\end{example}
+
+\begin{definition}[The Weak Topology]
+The weak topology on a Banach space $X$ is that with the sub-base $\set{V_{f,a,\delta}}{\substack{f \in X^* \\ a \in \mbb{F} \\ \delta > 0}}$ where
+\[V_{f,a,\delta} = \set{x \in X}{\abs{f\prs{x} - a} < \delta} \text{.}\]
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item A local base for every $z \in X$ is given by sets of the form
+\[U_{f_i, z, \delta} \ceq \set{x \in X}{\forall i \in [m] \colon \abs{f_i\prs{x} - f_i\prs{z}}}\]
+for $\delta > 0$ and $f_1, \ldots, f_m \in X^*$.
+\item The weak topology is the weakest topology on $X$ such that every $f \in X^*$ is continuous.
+\item $x_n \xrightarrow{n\to\infty} x$ in the weak topology if and only if $x_n \overset{n\to\infty}{\rightharpoonup} x$.
+\item The weak topology is weaker then the norm topology. It is strictly weaker if and only if $\dim X = \infty$.
+\item The weak topology is Hausdorff.
+\item $+ \colon X \times X \to X$ and $\cdot \colon \mbb{F} \times X \to X$ are continuous in the weak topology.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item
+Let $U$ is weakly open and $z \in U$. Then
+\[z \in \bigcap_{i \in [m]} V_{f_i, a_i, \delta_i} \subseteq U \text{.}\]
+Then $f_i\prs{z} \in B_{\mbb{F}}\prs{a_i, \delta_i}$ so we can choose $\delta > 0$ such that $B_{\mbb{F}}\prs{f_i\prs{z}, \delta} < B_{\mbb{F}}\prs{a_i, \delta_i}$ for all $i \in [m]$. Then $z \in U_{f_i, z, \delta} \subseteq U$.
+
+\item Fix $f \in X^*$. For every $a \in \mbb{F}$ and $\delta > 0$ we have
+\[V_{f,a,\delta} = f^{-1}\prs{B_{\mbb{F}}\prs{a,\delta}}\]
+is weakly-open. Hence $f$ is weakly-continuous. If every $f \in X^*$ is continuous with respect to some topology $\tau$, then $V_{f,a,\delta} \in \tau$ by the same argument, so the weak topology $w$ is contained in $\tau$.
+
+\item Assume convergence in the weak topology. Since every $f \in X^*$ is continuous in the weak topology, we have weak convergence.
+
+For the other direction, assume $x_n \overset{n\to\infty}{\rightharpoonup} x$. Fix $U_{f_i, x, \delta}$. Then
+\[\forall i \in [m] \colon f_i\prs{x_n} \xrightarrow{n\to\infty} f_i\prs{x} \text{,}\]
+so
+\[\exists n_0 \in \mbb{N} \forall n \geq n_0 \colon \abs{f_i\prs{x_n} - f_i\prs{x}} < \delta \text{.}\]
+Then
+\[\forall n \geq n_0 \colon x_n \in U_{f_i, x, \delta} \text{.}\]
+\item We prove that if $\dim X = \infty$ then every weakly-open set $U$ is unbounded. In particular $B\prs{0,1}$ is not weakly open.
+
+It's enough to prove the statement in the case $U = U_{f, x, \delta}$. Note that by linear algebra there's $y \neq 0$ such that $f_i\prs{0}$ for all $i \in [m]$. Then $x+ty \in U_{f_i, x, \delta}$ for all $t \in \mbb{F}$, so $U_{f_i, x, \delta}$ is unbounded.
+
+The case where $\dim X < \infty$ is an exercise.
+
+\item Fix $x,y \in X$ different. There's $f \in X^*$ such that $f\prs{x} \neq f\prs{y}$. Write $f = \abs{f\prs{x} - f\prs{y}}$. Then
+\[U_{f, x, \frac{\delta}{2}}  \cap U_{f, y, \frac{\delta}{2}} = \ns\]
+where $x$ is in the first set and $y$ in the second.
+
+\item We prove that $+$ is continuous. It's enough to note
+\[U_{f_i, x, \frac{\delta}{2}} + U_{f_i, y, \frac{\delta}{2}} \subseteq U_{f_i, x+y, \delta}\]
+which follows from the triangle inequality in $\mbb{F}$.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}
+If $\dim X = \infty$ then $\exists A \subseteq X$ such that $0 \in \bar{A}^{\mrm{w}}$ but there is no $\prs{x_n}_{n \in \mbb{N}} \subseteq A$ such that $x_n \overset{n\to\infty}{\rightharpoonup} 0$.
+\end{proposition}
+
+\begin{corollary}
+Let $X$ be a Banach space such that $\dim X = \infty$ and let $w$ be the weak topology on it. $\prs{X,w}$ is not metrisable.
+\end{corollary}
+
+\begin{proof}
+Choose subspaces $E_1 \subseteq E_2 \subseteq \ldots$ such that $\dim E_n = n$. Let 
+\[A = \bigcup_{n \in \mbb{N}_+} \set{x \in E_n}{\norm{x} = n}  \text{.}\]
+Fix an open set $U$ around zero and assume WLOG that $U = U_{f_i, 0, \delta}$.
+There's $y \in E_{m+1}$ such that $f_i\prs{y} = 0$ for every $i \in [m]$. Then
+\[\prs{m+1} \frac{y}{\norm{y}} \in U_{f_i, 0, \delta} \cap A \neq \ns\]
+so $0 \in \bar{A}^{\mrm{w}}$.
+
+Assume $\prs{x_n}_{n \in \mbb{N}} \subseteq A$ converges weakly to zero. Then $\norm{x_n} \leq m$ for some $m$, so $\prs{x_n}_{n \in \mbb{N}} \subseteq E_m$. Since $\dim E_m < \infty$ we have $x_n \xrightarrow{n\to\infty} 0$ in norm, which is impossible since $\norm{x} \geq 1$.
+\end{proof}
+
+\begin{proposition}
+Let $K \subseteq X$ be convex. Then $K$ is closed iff it's weakly-closed.
+\end{proposition}
+
+\begin{proof}
+If $K$ is weakly-closed it's closed because the weak topology is weaker.
+
+Assume $K$ is norm-closed. Fix $x_0 \notin K$ Choose $d > 0$ such that $B\prs{x_0, d} \cap K = \ns$. By Convex separation there exists $f \in X^*$ such that $\sup_{a \in K} f\prs{a} \leq \inf_{b \in B\prs{x_0, \delta}} f\prs{b}$.
+Pick any $y \in X$ such that $f\prs{y} > 0$ and $\norm{y} =1$. Then
+\[f\prs{x_0} = f\prs{x_0 - \frac{d}{2} y} + f\prs{\frac{d}{2} y}\]
+where $x_0 - \frac{d}{2} y \in B\prs{x_0, d}$ so $f\prs{x_0} > c + 0 = c$.
+But now
+\[U = \set{x}{f\prs{x} > c}\]
+is weakly-open, $x_0 \in U$ and $U \cap K = \ns$. Hence $K$ is weakly-closed.
+\end{proof}
+
+\begin{corollary}
+\begin{enumerate}
+\item $\bar{B}\prs{0,1}$ is weakly-closed.
+\item If $\prs{x_n}_{n \in \mbb{N}} \subseteq K$ where $K$ is convex and closed, and $x_n \overset{n\to\infty}{\rightharpoonup} x$, then $x \in K$.
+\end{enumerate}
+\end{corollary}
+
+\begin{corollary}[Mazur]
+If $x_n \overset{n\to\infty}{\rightharpoonup} x$ then $\exists \prs{y_n}_{n \in \mbb{N}}$ such that
+\begin{enumerate}
+\item $y_k \in \conv\prs{x_n}_{n \in \mbb{N}}$ for every $k \in \mbb{N}$.
+\item $y_n \xrightarrow{n\to\infty} x$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Take $K = \overline{\conv\prs{x_n}_{n \in \mbb{N}}}$. This is convex and closed so it's w-closed. Then $K = \overline{\conv\prs{x_n}_{n \in \mbb{N}}}^{\mrm{w}}$. Therefore $x \in \overline{\prs{x_n}_{n \in \mbb{N}}}^{\mrm{w}} \subseteq K$. Hence there's $\prs{y_n}_{n \in \mbb{N}} \subseteq \conv\prs{x_n}_{n \in \mbb{N}}$ such that $y_n \xrightarrow{n\to\infty} x$.
+\end{proof}
+
+\begin{theorem}[Banach-Saks, 1]\label{theorem:banach_saks_1}
+Let $H$ be a Hilbert space and let $\prs{x_n}_{n \in \mbb{N}}$ weakly convergent to $x$. Then there's a subsequence $\prs{x_{n_k}}_{k \in \mbb{N}}$ such that
+\[\frac{1}{k} \sum_{i \in [k]} x_{n_i} \xrightarrow{k\to\infty} x \text{.}\]
+\end{theorem}
+
+\begin{proof}
+Assume without loss of generality that $x = 0$.
+We have
+\begin{align*}
+I \ceq \norm{\frac{1}{k} \sum_{i \in [k]} x_{n_i}}^2 &= \trs{\frac{1}{k} \sum_{i \in [k]} x_{n_i}, \frac{1}{k} \sum_{j \in [k]} x_{n_j}}
+\\&\leq \frac{1}{k^2} \sum_{i \in [k]} \norm{x_{n_i}}^2 + \frac{2}{k^2} \sum_{i,j \in [k]} \abs{\trs{x_{n_i}, x_{n_j}}} \text{.}
+\end{align*}
+Choose $x_{n_1} = x_1$. Assume we already choose $x_{n_i}$ for $i \in [k-1]$. Since $x_n \overset{n\to\infty}{\rightharpoonup} 0$ we have $\trs{x_m, x_{n_i}} \xrightarrow{m\to\infty} 0$ for all $i \in [k-1]$. Hence we can choose $x_{n_k}$ such that $\abs{\trs{x_{n_k}, x_{n_i}}} \leq \frac{1}{2^k}$ for all $i \in [k-1]$. Since $x_n \overset{n\to\infty}{\rightharpoonup} 0$, we have also $\norm{x_n} \leq $ for some $C > 0$.
+Then
+\begin{align*}
+I &\leq \frac{1}{k^2} C k + \frac{2}{k^2} \sum_{i,j \in [k]} \frac{1}{2^j}
+\\&= \frac{C}{K} + \frac{2}{k^2} \sum_{j \in [k]} \frac{j}{2^j}
+\\&\xrightarrow{k\to\infty} 0 \text{.}
+\end{align*}
+\end{proof}
+
+\subsection{Weak-* Topologies}
+
+\begin{definition}
+Let $X$ be a Banach space and let $F \leq X^*$. \emph{The $\sigma\prs{X,F}$ topology on $X$} is the weakest topology such that every $f \in F$ is continuous.
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item A local base at $X$ for the $\sigma\prs{X, F}$ topology is given by sets
+\[U_{f_i, x, \delta} \ceq \set{y \in X}{\forall i \in [m] \colon \abs{f_i\prs{y} - f_i\prs{x}} < \delta}\]
+for $f_1, \ldots, f_m \in F$ and $\delta > 0$.
+\item $\sigma\prs{X,F} \subseteq w$.
+\item $+,\cdot$ are continuous with respect to the $\sigma\prs{X,F}$ topology.
+\item $\prs{X, \sigma\prs{X,F}}$ is Hausdorff if $F$ separates points.
+\end{enumerate}
+\end{proposition}
+
+\begin{proposition}
+If $f \in X^*$ then $f \colon \prs{X, \sigma\prs{X,F}} \to \mbb{F}$ is continuous if and only if $f \in F$.
+\end{proposition}
+
+\begin{lemma}
+Let $V$ be a vector space over $\mbb{F}$ and let $f_1, \ldots, f_m, g \colon V \to \mbb{F}$ be linear functionals. Assume that for every $x$, $f_1\prs{x} = \ldots = f_m\prs{x} = 0$ implies $g\prs{x} = 0$.
+Then $g \in \spn\set{f_i}{i \in [m]}$.
+\end{lemma}
+
+\begin{proof}
+Define
+\begin{align*}
+T \colon V &\to \mbb{F}^m \\
+x &\mapsto \prs{f_i\prs{x}}_{i \in [m]}
+\end{align*}
+and
+\begin{align*}
+\phi \colon \im T &\to \mbb{F} \\
+Tx &\mapsto g\prs{x} \text{.}
+\end{align*}
+$\phi$ is well-defined because $Tx = Ty$ implies $\forall i \in [m] \colon f_i\prs{x} = f_i\prs{y}$ which implies $f_i\prs{x-y} = 0$ so $g\prs{x-y} = 0$, so $g\prs{x} = g\prs{y}$.
+We know $\phi\prs{a_1,\ldots,a_m} = \sum_{i \in [m]} \lambda_i a_i$ so
+\[g\prs{x} = \phi\prs{Tx} = \phi\prs{f_1\prs{x},\ldots,f_m\prs{x}} = \sum_{i \in [m]} \lambda_i f_i\prs{x} \text{.}\]
+\end{proof}
+
+\begin{proposition}
+If $f \in X^*$ then $f \colon \prs{X, \sigma\prs{X,F}} \to \mbb{F}$ is continuous if and only if $f \in F$.
+\end{proposition}
+
+\begin{proof}
+Assume $f$ is continuous. It holds that $f\prs{0} = 0$ so continuity implies
+\[f^{-1}\prs{B\prs{0,1}} \supseteq U_{f_i, 0, \delta}\]
+for $f_1, \ldots, f_m \in F$. So, if $\abs{f_i\prs{z}} < \delta$ for all $i \in [m]$ then $abs{f\prs{z}} < 1$.
+If $f_i\prs{z} = 0$ for all $i \in [m]$ then for all $\lambda > 0$ it holds that $\abs{f_i\prs{\lambda z}} < \delta$, so $\abs{\lambda} \abs{f\prs{z}} = \abs{f\prs{\lambda z}} < 1$, so $f\prs{z} = 0$. By the lemma, $f \in \spn\set{f_1, \ldots, f_m} \subseteq F$, as required.
+\end{proof}
+
+\begin{example}
+$\sigma\prs{X, X^*} = w$.
+\end{example}
+
+\begin{example}
+Fix $X$ a Banach space. The topology $\sigma\prs{X^*, X}$ on $X^*$ is called the weak-* topology on $X^*$. This is denoted $w^*$ and is the weakest topology on $X^*$ such that $f \mapsto f\prs{x}$ are all continuous.
+\end{example}
+
+\begin{example}
+Let $X = \mcal{C}\prs{\brs{-1,1}}$. Then $X^* = M\prs{\brs{-1,1}}$ is the space of measures on $\brs{-1,1}$.
+Choose $\mu_n \in X^*$ by $\mu_n\prs{f} = \int f \diff \mu_n = \frac{n}{2} \int_{\brs{-\frac{1}{n}, \frac{1}{n}}} f \diff t$.
+The for every $f \in X$ it holds that $\mu_n\prs{f} \xrightarrow{n\to\infty} f\prs{0} = \delta_0\prs{f}$, so $\mu_n \xrightarrow{w^*} \delta_0$.
+
+But, $\mu_n \cancel{\xrightarrow{w}} \delta_0$. Indeed, choose $\phi \in X^{**}$ by $\phi\prs{\mu} = \mu\prs{\set{0}}$,
+it holds that
+\[\phi\prs{\mu_n} = \mu\prs{\set{0}} = 0 \cancel{\rightarrow} 1 = \delta_0\prs{\set{0}} = \phi\prs{\delta_0} \text{.}\]
+\end{example}
+
+\begin{proposition}
+$\sigma\prs{X^*, X^{**}} = \sigma\prs{X^*, X}$ if and only if $X$ is reflexive.
+\end{proposition}
+
+\begin{proof}
+If $X$ is reflexive, clearly $\sigma\prs{X^*, X^{**}} = \sigma\prs{X^*, X}$.
+
+On the other hand, assume $X$ isn't reflexive and fix $\phi \in X^{**} \setminus X$. Then $\phi$ is continuous on $\prs{X^*, w}$ but not on $\prs{X^*, w^*}$, so $w \neq w^*$.
+\end{proof}
+
+%lecture 7 2.12.2020
+
+\begin{theorem}[Banach Alaoglu]
+For every Banach space $X$, $\prs{\bar{B}_{X^*}, w^*}$ is compact.
+\end{theorem}
+
+\begin{proof}
+Let
+\[S = \prod_{x \in X} \bar{B}_{\mbb{F}}\prs{0, \norm{x}}\]
+with the product topology.
+We identify this with
+\[\set{g \colon X \to \mbb{F}}{\forall x \in X \colon \abs{g\prs{x}} \leq \norm{x}} \text{.}\]
+Then
+\[\bar{B}_{X^*} \subseteq S\]
+and in fact
+\[\bar{B}_{X^*} = \set{g \in S}{\text{$g$ is linear}} \text{.}\]
+In fact, \[\prs{\bar{B}_{X^*}, w^*} \subseteq \prs{S, \text{product}}\]
+by definition of the product topology.
+By Tychonoff, $S$ is compact, so we just need to show that $\bar{B}_{X^*}$ is closed in it. For every $x,y \in X$ and $\lambda \in \mbb{F}$ define
+\begin{align*}
+\phi_{x,y,\lambda} \colon S &\to \mbb{F} \\
+g \mapsto g\prs{\lambda x + y} - \prs{\lambda g\prs{x} + g\prs{y}} \text{.}
+\end{align*}
+Then $\phi_{x,y,\lambda}$ is continuous by definition of the product topology.
+Then
+\[\bar{B}_{X^*} = \set{g \in S}{\text{$g$ is linear}} = \bigcap_{x,y,\lambda} \ker \phi_{x,y,\lambda}\]
+is closed, so by the above it's compact.
+\end{proof}
+
+\begin{corollary}
+$A \subseteq X^*$ is $w^*$ compact if and only if it's $w^*$-closed and bounded.
+\end{corollary}
+
+\begin{proof}
+Assume $A$ is $w^*$-closed bounded, so there's $r>0$ such that $A \subseteq r \cdot \bar{B}_X$. $r \bar{B}_X$ is compact and $A$ is $w^*$, hence $A$ is $w^*$-compact.
+
+For the other direction, assume $A$ is $w^*$-compact. For every $x \in X$ define
+\[\mrm{ev}_x\prs{A} = \set{f\prs{x}}{f \in A} \subseteq \mbb{F} \text{,}\]
+which is compact as the continuous image of a compact set.
+Hence this is bounded in $\mbb{F}$.
+By the uniform boundedness principle, $A$ is then bounded.
+\end{proof}
+
+\begin{corollary}
+If $X$ is reflexive, $A \subseteq X$ is $w$-compact if and only if it's $w$-closed and bounded.
+\end{corollary}
+
+\begin{proof}
+This is true because when $X$ is reflexive, $\prs{X, w} = \prs{\prs{X^*}^*, w^*}$.
+\end{proof}
+
+\begin{example}
+Let $X = \ell_\infty$ and define $\phi \in X^*$ by
+\[f_n\prs{a_i}_{i \in \mbb{N}} = a_n \text{.}\]
+Then $\abs{f_n\prs{a}} \leq \norm{a}$ and specifically $\norm{f_n} \leq 1$ so $\prs{f_n}_{n \in \mbb{N}} \subseteq \bar{B}_{X^*}$.
+
+Assume $f_{n_k} \xrightarrow{w^*} f$ for some subsequence.
+Define $\prs{a_m}_{m \in \mbb{N}}$ by
+\[a_m = \fcases{\prs{-1}^k & m = n_k \\ 17 & \forall k \in \mbb{N} \colon m \neq n_k} \text{.}\]
+Then $\prs{a_m}_{m \in \mbb{N}} \in \ell_\infty$. Note that
+\[f_{n_k}\prs{a} = \prs{-1}^k \not{\xrightarrow[k\to\infty]{}} f\prs{a} \text{,}\]
+which is a contradiction.
+Hence no subsequence of $\prs{f_n}_{n \in \mbb{N}}$ is convergent.
+This isn't a contradiction to Banach-Alaoglu since in $\prs{X^*, w^*}$ compactness doesn't imply sequential compactness.
+
+In separable spaces however, compactness and sequential compactness are equivalent, which is more comfortable.
+\end{example}
+
+\begin{theorem}
+Assume $X$ is separable. Then $\prs{\bar{B}_{X^*}, w^*}$ is metrisable.
+\end{theorem}
+
+\begin{proof}
+Let $\set{x_n}_{n \in \mbb{N}}$ be a countable dense set in $X$.
+Define a metric on $X^*$ by
+\[d\prs{f,g} = \sum_{n \in \mbb{N}} \frac{\min\prs{\abs{f\prs{x_n} - g\prs{x_n}}, 1}}{2^n} \text{.}\]
+We claim $d$ is indeed a metric, which is a standard proof. We do show that $d$ separates points. Assume $d\prs{f,g} = 0$. Then $\abs{f\prs{x_n} - g\prs{x_n}} = 0$ for all $n \in \mbb{N}$, so $f,g$ agree on a dense set and hence $f=g$.
+
+We claim that $i \colon \prs{\bar{B}_{X^*}, w^*} \to \prs{\bar{B}_{X^*}, d}$ is continuous.
+Let $g_0 \in \bar{B}_{X^*}$ and $\eps > 0$. Choose $N$ such that $\frac{1}{2^n} < \frac{\eps}{2}$. Define
+\[U \ceq \set{f \in \bar{B}_{X^*}}{\forall i \in [N] \colon \abs{f\prs{x_i} - g_0\prs{x_i}} < \frac{\eps}{2}} \in w^* \text{.}\]
+We claim $U \subseteq B_d\prs{q_0, \eps}$, which implies continuity. Indeed, for every $f \in U$ we have
+\[\forall f \in U \colon d\prs{f,g} = \sum_{n \in \mbb{N}} \frac{\min\prs{\abs{f\prs{x_n} - g_0\prs{x_n}}, 1}}{2^n} \leq \sum_{n \in [N]} \frac{\abs{f\prs{x_n} - g_0 \prs{x_n}}}{2^n} + \sum_{n = N+!}^{\infty} \frac{1}{2^n} \leq \sum_{n \in [N]} \frac{\eps}{2^{n+1}} +  \frac{1}{2^n} < \frac{\eps}{2} + \frac{\eps}{2} = \eps \text{.}\]
+
+Hence $i$ is continuous. But by Banach-Alaoglu $\prs{\bar{B}_{X^*}, w^*}$ is compact, and $\prs{\bar{B}_{X^*}, d}$ is Hausdorff, hence $i$ is in fact a homeomorphism. Hence $\prs{\bar{B}_{X^*}, w^*}$ is metrisable.
+\end{proof}
+
+\begin{corollary}
+If $X$ is separable, $\bar{B}_{X*}$ is sequentially compact, i.e. every bounded sequence $\prs{f_n} \subseteq x^*$ has a $w^*$-convergent subsequence.
+\end{corollary}
+
+\begin{exercise}
+If $\dim X = \infty$, $\prs{X^*, w^*}$ is not metrisable.
+\end{exercise}
+
+\begin{example}
+Let $S$ be a compact metric space and let $X = \mcal{C}\prs{S}$. Then $X$ is separable, which is clear e.g. for $S = \brs{0,1}$, but is true in general as we see later.
+$\prs{\bar{B}_{X^*}, w^*}$ is metrisable and compact. We identify this with the space of Borel measures on $S$.
+Let $\mrm{P}\prs{S}$ denote the space of probability measures on $S$. We have by definition of the norm that
+\[\mrm{P}\prs{S} \subseteq \bar{B}_{M\prs{s}}\]
+where $M\prs{S}$ is the space of measures on $S$.
+In fact,
+\[\mrm{P}\prs{S} = \set{\mu \in \bar{B}_{M\prs{S}}}{\forall f \in \mcal{S} \colon f \geq 0 \implies \int f \diff \mu \geq 0} \text{,}\]
+so $\mrm{P}\prs{S}$ is closed in $\bar{B}_{M\prs{S}}$, so $\prs{\mrm{P}\prs{S}, w^*}$ is compact and metrisable.
+
+Hence, every sequence $\prs{\mu_n}_{n \in \mbb{N}}$ of probability measures on a compact set $S$ has a $w^*$-convergent subsequence.
+\end{example}
+
+\begin{theorem}[Eberlein-Šmulian]
+For every Banach space $X$, $A \subseteq X$ is $w$-compact if and only if $A$ is $w$-sequentially-compact.
+\end{theorem}
+
+\begin{proof}
+If $A \subseteq X$ is $w$-compact, it follows similarly to the proof of the last theorem that $A$ is $w$-sequentially-compact.
+
+The other direction is much harder but also much less useful.
+\end{proof}
+
+\begin{corollary}[Banach-Saks, strong form]
+Let $H$ be a Hilbert space and let $\prs{x_n}_{n \in \mbb{N}} \subseteq H$ be bounded. There exists a subsequence $\frak{1}{k}\prs{x_{n_k}}_{k \in \mbb{N}}$ converge (in norm).
+\end{corollary}
+
+\begin{proof}
+Since $\prs{x_n}_{n \in \mbb{N}}$ is bounded, it's contained in some ball $r \cdot \bar{B}_H$ which is $w^*$-compact by Banach-Alaoglu and then $w$-compact since a Hilbert space is reflexive. Then $r \bar{B}_H$ is $r$-sequentially-compact, so there's a subsequence $\prs{x_{n_k}}_{k \in \mbb{N}}$ that is convergent to some $x$.
+By the first form of Banach-Saks there's a subsequence $\prs{x_{n_{k_{\ell}}}}_{\ell \in \mbb{N}}$ such that
+\[\frac{1}{\ell} \sum_{i \in \brs{\ell}} x_{n_{k_{i}}} \xrightarrow{\ell\to\infty} x\]
+in norm.
+\end{proof}
+
+\subsection{Application: Haar Measures}
+
+Let $\prs{X,d}$ be a compact metric space and let $G$ be a group that acts isometrically on $X$.
+
+\begin{theorem}\label{theorem:hahr_measure}
+There exists a Borel probability measure $\mu$ on $X$ such that $\mu\prs{A} = \mu\prs{gA}$ for all $g \in G$ and $A \subseteq X$ borel. $\mu$ is called the Haar measure.
+\end{theorem}
+
+\begin{example}
+\begin{enumerate}
+\item $\mbb{R}^n$ acts on $\mbb{R}^n/\mbb{Z}^n$ by translations. The Haar measure here is the Lebesgue measure.
+\item $\mcal{O}\prs{n}$, the group of orthogonal $n\times n$ matrices, acts on $S^{n-1} \subseteq \mbb{R}^n$. The Haar measure is the uniform measure on $S^{n-1}$.
+\end{enumerate}
+\end{example}
+
+\begin{theorem}[Hall's Marriage Theorem]
+Let $H$ be a bipartite graph with vertex sets $V$ and $W$. Assume that for every $A \subseteq V$ it holds that
+\[\abs{n\prs{A}} = \abs{\set{w \in W}{\exists v \in A \colon w \sim v}} \geq \abs{A} \text{.}\]
+Then there's $\phi \colon V \to W$ injective such that $v \sim \phi\prs{v}$ for all $v \in V$.
+\end{theorem}
+
+\begin{lemma}
+Recall that $N_\eps \subseteq X$ is called an $\eps$-net if for every $x \in X$ there's $y \in N_\eps$ such that $d\prs{x,y} \leq \eps$.
+Then for every $\eps > 0$ there exists a finite $\eps$-net. We say that $N_\eps$ is a minimal $\eps$-net if $\abs{N_{\eps}}$ is minimal. We claim that if $N_\eps, \tilde{N}_\eps$ are minimal $\eps$-nets, there's a bijection $\phi \colon N_\eps \to \tilde{N}_\eps$ such that $d\prs{y, \phi\prs{y}} \leq 2 \eps$.
+\end{lemma}
+
+\begin{proof}
+Take a graph $H$ with vertices $N_\eps \sqcup \tilde{N}_\eps$ and edges $y \sim z \iff \bar{B}\prs{y,\eps} \cap \bar{B}\prs{z,\eps} \neq \ns$. For every $\Gamma \subseteq N_\eps$ the set $\prs{N_\eps \setminus A} \cup n\prs{A}$ is also an $\eps$-net. Indeed, $y \notin A$ implies $y \in \prs{N_{\eps} \setminus A} \cup n\prs{A}$, and $y \in A$ implies $z \in \prs{N_\eps \setminus A} \cup n\prs{A}$ since $z \sim y$.
+
+Then $\abs{\prs{N_\eps \setminus A} \cup n\prs{A}} \geq \abs{N_\eps}$ so $\abs{n\prs{A}} \geq \abs{A}$.
+By Hall's theorem there's then $\phi \colon N_\eps \to \tilde{N}_\eps$ such that
+\[\forall y \in N_\eps \colon y \sim \phi\prs{y} \implies d \prs{y, \phi\prs{y}} \leq 2 \eps \text{.}\]
+\end{proof}
+
+\begin{proof}[\ref{theorem:hahr_measure}]
+For $N_\eps$ a minimal $\eps$-net, and $\eps > 0$, define
+\[\mu_\eps = \frac{1}{\abs{N_\eps}} \sum_{y \in N_\eps} \delta_y\]
+which is the uniform probability measure on $N_\eps$.
+By Alaoglu / Prokhorov, there's a sequence $\eps_i \to 0$ such that $\mu_{\eps_i} \xrightarrow{w^*} \mu$. We claim $\mu$ is a Haar measure. We show that
+\[\forall f \in \mcal{C}\prs{X} \forall g \in G \colon \int g\prs{gx} \diff \mu\prs{x} = \int f\prs{x} \diff \mu\prs{x} \text{,}\]
+which gives the result.
+
+Note that weak convergence and the definition of $\mu_{\eps}$ imply
+\begin{align*}
+\int f\prs{gx} \diff \mu\prs{x} &= \lim_{i\to\infty} \int f\prs{gx} \diff \mu_{\eps_i}\prs{x}
+\\&= \lim_{i\to\infty} \frac{1}{\abs{N_{\eps_i}}} \sum_{y \in N_{\eps_i}} f\prs{gy}
+\\& \lim_{i\to\infty} \frac{1}{\abs{N_{\eps_i}}} \sum_{y \in g N_{\eps_i}} f\prs{y} \text{.}
+\end{align*}
+Similarly,
+\[\\int \prs{x} \diff \mu\prs{x} = \lim_{i\to\infty} \frac{1}{\abs{N_{\eps_i}}} \sum_{y \in N_{\eps_i}} f\prs{y} \text{.}\]
+Because $g$ acts by an isometry, $g N_{\eps_i}$ is a minimal $\eps$-net.
+
+$f$ is continuous on a compact set $X$, so it's uniformly continuous on it. Fix $\eta > 0$, there's $\eps > 0$ such that $d\prs{x,y} < \eps$ implies $\abs{f\prs{x} - f\prs{y}} < \eta$.
+For large enough $i$ we have $\eps_i < \frac{\eps}{2}$. Then, for every $y \in N_{\eps_i}$ we have
+\[d\prs{y,\phi\prs{y}} \leq 2 \eps_i < \eps\]
+where $\phi \colon N_{\eps_i} \to g N_{\eps_i}$ is the map from the lemma.
+Then
+\[\abs{f\prs{y} - f\prs{\phi\prs{y}}} < \eta\]
+so
+\[\abs{\frac{1}{\abs{N_{\eps_i}}} \sum_{y \in g\prs{N_{\eps_i}}} f\prs{y} - \frac{1}{\abs{N_{\eps_i}}} \sum_{y \in N_{\eps_i}} f\prs{y}}
+\leq \frac{1}{\abs{N_{\eps_i}}} \sum_{y \in N_{\eps_i}} \abs{f\prs{\phi\prs{y}} - f\prs{y}} < \eta \text{.}\]
+Then
+\[\forall \eta > 0 \colon \abs{\int f\prs{gx} \diff \mu - \int f\prs{x} \diff \mu} < \eta\]
+so
+\[\int f\prs{gx} \diff \mu = \int f\prs{x} \diff \mu\]
+so $\mu$ is a Haar measure.
+\end{proof}
+
+%lecture 8, 9.12.2020
+
+\section{Locally-Convex Spaces}
+
+\begin{definition}[Locally Convex Space (LCS)]
+A \emph{locally-convex space (LCS)} $X$ is a vector space over $\mbb{R}$ with a topology $\tau$ such that
+\begin{enumerate}
+\item $\prs{X,\tau}$ is Hausdorff.
+\item $+ \colon X \times X \to X$ and $\cdot \colon \mbb{R} \times X \to X$ are continuous.
+\item $0$ has a local base of convex sets.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}
+For every $y \in X$, the map $x \mapsto x + y$ is a homeomorphism, so having a local base of convex sets at $0$ implies there's a local base of convex sets at every point.
+\end{remark}
+
+\begin{example}
+Let $\prs{X, \norm{\cdot}}$ be a Banach space with the norm topology. It obviously satisfies the first two conditions to be an LCS. Balls $\set{x}{\norm{X} < \eps}$ are a convex local base at $0$, so $X$ is an LCS.
+\end{example}
+
+\begin{example}
+Let $X$ be a Banach space, let $F \subseteq X^*$ which separates points and consider $\prs{X, \sigma\prs{X,F}}$. This is an LCS. It's Hausdorff since $F$ separates points. We've seen addition and multiplication by scalars are continuous. We've seen that a local base at $0$ is given by sets
+\[U_{f_i, 0, \eps} = \set{x \in X}{\forall i \in [m] \colon \abs{f_i\prs{x}} < \eps} \text{.}\]
+These are convex sets.
+\end{example}
+
+\begin{example}
+Recall $X = \mcal{C}^1\prs{\brs{0,1}}$ with the norm
+\[\norm{f} = \max \abs{f} + \max \abs{f'}\]
+is a Banach space, where $f_n \xrightarrow{\norm{\cdot}} f$ iff $f_n \to f$ and $f'_n \to f'$ uniformly.
+
+We can generalise this and look at $X = \mcal{C}^k\prs{\brs{0,1}}$ and $\norm{f} = \sum_{i = 0}^k \max \abs{f^{\prs{i}}}$. Here convergence in norm is equivalent to uniform convergence of all the derivatives.
+\end{example}
+
+\begin{example}
+Let $X = \mcal{C}^\infty\prs{\brs{0,1}}$. Set
+\[\norm{f}_n = \max_{t \in \brs{0,1}} \abs{f^{\prs{n}}\prs{t}}\]
+and take the weakest topology on $X$ such that all $\norm{\cdot}_n$ are continuous.
+A local base at $g$ is given by
+\[U_{g,N,\eps} = \set{f \in X}{\forall n \in \set{0,\ldots,N} \colon \norm{f-g}_n < \infty} \text{.}\]
+
+$X$ is metrisable with metric
+\[d\prs{f,g} = \sum_{n=0}^{\infty} \frac{\min\prs{{\norm{f-g}_n, 1}}}{2^n} \text{.}\]
+This is the subspace topology from embedding $\mcal{C}\prs{\brs{0,1}}$ in $\mcal{C}\prs{\brs{0,1}}^{\mbb{N}}$ by taking a function $h$ to its derivatives.
+
+We have $f_n \to f$ in $X$ iff $f^{\prs{i}}_n \to f^{\prs{i}}$ uniformly for all $i$.
+This is an LCS because the $U_{g,N,\eps}$ define a convex local base.
+\end{example}
+
+\begin{remark}
+For any sequence $\prs{\norm{\cdot}_n}_{n \in \mbb{N}}$ of semi-norms we can do exactly the same as in the above example, with the assumption that if $\norm{x}_n = 0$ for all $n$ then $x = 0$. Such an LCS is called a Fréchet space.
+\end{remark}
+
+\begin{example}
+Let $D \ceq \set{x \in \mbb{R}^d}{\norm{x}_2 < 1} \subseteq \mbb{R}^d$. Take $X = \mcal{C}\prs{D}$. This is a Fréchet space with $\norm{f}_n = \max_{\norm{t}_2 < 1 - \frac{1}{n}} \abs{f\prs{t}}$.
+If $\norm{f}_n = 0$ for all $n$ indeed $f = 0$.
+We have $f_n \to f$ iff $f_n \to f$ uniformly on each $\set{\norm{x}_2 < 1 - \frac{1}{n}}$ iff $f_n \to f$ uniformly on all compact subsets $K \subseteq D$.
+\end{example}
+
+\begin{theorem}
+Let $X$ be an LCS, $K \subseteq X$ convex and closed and $a \notin K$. There exists $f \colon X \to \mbb{R}$ continuous and linear such that
+\[\sup_{x \in K} f\prs{x} < f\prs{a} \text{.}\]
+\end{theorem}
+
+\begin{remark}
+We can also separate open sets, we can separate a close set from a compact set, etc. as  in the case of Banach spaces.
+\end{remark}
+
+\begin{proof}
+Without loss of generality assume $a = 0$ and let $W$ be an open neighbourhood of $0$ disjoint from $K$. Without loss of generality, by local convexity, we may assume $W$ is convex. Let $U = W \cap \prs{-W}$ which is a symmetric open neighbourhood of $0$ disjoint from $K$. $U$ is also convex, as the intersection of two convex sets.
+
+We show that $0 \in U$ is internal. For $y \in X$, the map $t \mapsto t\cdot y$ from $\mbb{R}$ to $X$ is continuous. So, $V_y \ceq \set{t \in \mbb{R}}{ty \in U}$ is open in $\mbb{R}$. We have $0 \in V_y$ and $V_y$ is open, so there's $\eps > 0$ such that $\prs{-\eps,\eps} \subseteq V_y$. Hence $ty \in U$ for all $\abs{t} < \eps$.
+
+We now have two convex disjoint sets $U,K$ where $U$ has an internal point. Hence there's $f \colon X \to \mbb{R}$ linear and non-zero such that
+\[\sup_{x \in K} f\prs{x} \leq \inf_{u \in U} f\prs{u} \text{.}\]
+Fix $y \in X$ such that $f\prs{y} < 0$ and $t > 0$ such that $ty \in U$. Then
+\[\sup_{x \in K} f\prs{x} \leq \inf_{u \in U} f\prs{u} \leq f\prs{ty} = t f\prs{y} < 0 = f\prs{0} \text{.}\]
+
+We're left to show $f$ is continuous.
+Fix $\prs{\alpha,\beta} \subseteq \mbb{R}$ and $x \in f^{-1}\prs{\prs{\alpha,\beta}}$.
+Choose $0 < r < \min\prs{\beta - f\prs{x}, f\prs{x} - \alpha}$. Denote $-m = \sup_{x \in K} f\prs{x}$, where $m > 0$.
+For every $y \in x + \frac{r}{m} U$ we have
+\begin{align*}
+f\prs{y} &= f\prs{x + \frac{r}{m} U}
+\\&= f\prs{x} + \frac{r}{m} f\prs{u}
+\\&\geq f\prs{x} - \frac{r}{m} \prs{-m}
+\\&= f\prs{x} - r
+\\&> f\prs{x} - \prs{f\prs{x} - \alpha}
+\\&= \alpha \text{.}
+\end{align*}
+Similarly $f\prs{y} < \beta$: Since $U$ is symmetric we have $-u \in U$ so
+\begin{align*}
+f\prs{y} &= f\prs{x} - \frac{r}{m} f\prs{-u}
+\\&\leq f\prs{x} - \frac{r}{m} \prs{-m}
+\\&= f\prs{x} + r
+\\&< f\prs{x} + \prs{\beta - f\prs{x}}
+\\&= \beta \text{.}
+\end{align*}
+
+Then
+\[x + \frac{r}{m} U \subseteq f^{-1}\prs{\prs{\alpha,\beta}}\]
+so
+\[f^{-1}\prs{\prs{\alpha,\beta}}\]
+is open, hence $f$ is continuous.
+\end{proof}
+
+\begin{remark}
+We actually showed that i $f \colon X \to \mbb{R}$ is linear and bounded from below on an open set, it's continuous.
+\end{remark}
+
+\begin{example}
+Let $p \in \prs{0,1}$ and let $X = L^p\prs{\brs{0,1}}$.
+Define
+$\norm{f} = \norm{f}_p^p = \int_0^1 \abs{f}^p$.
+This is \emph{not} a norm since $\norm{\lambda f} \neq \abs{\lambda} \norm{f}$. But, $\norm{f+g} \leq \norm{f} + \norm{g}$ since $\prs{a+b}^p < a^p + b^p$ for $p \in \prs{0,1}$.
+Then $d\prs{f,g} = \norm{f-g}$ Then $\prs{X,d}$ is a complete metric space, but it's not locally convex since $X^* = \set{0}$ as we now show.
+
+Assume towards a contradiction that $0 \neq \Phi \in X^*$. Choose $f \in X$ such that $a \ceq \Phi\prs{f} > 0$, and write $b \ceq \norm{f}$. By the mean value theorem, there's $t_0$ such that $\int_0^{t_0} \abs{f}^p = \frac{b}{2}$.
+
+Take $g = 2 f \chi_{\brs{0,t_0}}$ and $h = 2 f\chi_{\brs{t_0, 1}}$. Then
+\[a = \Phi\prs{f} = \Phi\prs{\frac{g+h}{2}} = \frac{\Phi\prs{g} + \Phi\prs{h}}{2} \text{.}\]
+Then $\Phi\prs{g} \geq a$ or $\Phi\prs{h} \geq a$.
+Also,
+\[\norm{g} = \int_0^1 \abs{g}^p = \int_0^{t_0} \abs{2f}^p = 2^p \cdot \frac{b}{2} = \frac{b}{2^{1-p}}\]
+and similarly $\norm{h} = \frac{b}{2^{1-p}} = \norm{g}$.
+Hence we can choose $f_1$ to be either $g or h$ (take $g$ if $\Phi\prs{g} \geq a$ and otherwise take $h$) such that $\Phi\prs{f_1} \geq a$ and $\norm{f_1} = \frac{b}{2^{1-p}}$.
+
+Repeating this, we get a sequence $\prs{f_n}_{n \in \mbb{N}_+} \subseteq X$ such that $\Phi\prs{f_n} \geq a$ and $\norm{f_n} = \frac{b}{\prs{2^{1-p}}^n} \xrightarrow{n\to\infty} 0$.
+Since $\Phi\prs{f_n} \not{\to} 0$ we get that $\Phi$ is not continuous.
+\end{example}
+
+\begin{definition}[Extreme Point]
+Let $X$ be a vector space and let $K \subseteq X$ be convex. A point $a \in K$ is \emph{an extreme point of $K$} if
+\[\forall \lambda \in \prs{0,1} \forall y,z \in K \colon a = \prs{1-\lambda} y + \lambda z \implies y = z = a \text{.}\]
+\end{definition}
+
+\begin{example}
+Let $H$ be a Hilbert space and let $K = \bar{B}_{H}$. Then $\mrm{Ext}\prs{K}$, the set of extreme points of $K$, is the set $\set{x \in H}{\norm{x} = 1}$.
+
+Assume $\norm{x} = 1$, and write $x = \prs{1-\lambda} y + \lambda z$ where $\lambda \in \prs{0,1}$ and $y,z \in K$. Then
+\[1 = \norm{x} = \norm{\prs{1-\lambda}y + \lambda z} \leq \prs{1-\lambda}\norm{y} + \lambda\norm{z} \leq \prs{1-\lambda} + \lambda = 1\]
+so there are equalities, so there's equality in the triangle inequality, which implies $x,y,z$ are colinear, but $\norm{y} = \norm{z}$ since there's equality in the above inequality, hence $y=z=x$.
+
+For the other direction, assume $\norm{x} < 1$ and fix $y \perp x$ non-zero.
+Write
+\[x = \frac{\prs{x+ty} + \prs{x-ty}}{2} \text{,}\]
+and $x\pm ty \in K$ for $t$ small enough.
+\end{example}
+
+\begin{example}
+Let $X = c_0$ and $K = \bar{B}_{c_0}$. Assume $a \in K$. Then $a_n \xrightarrow{n\to\infty} 0$ so there's $m \in \mbb{N}$ such that $\abs{a_m} < \frac{1}{2}$. Now write
+\[a = \frac{\prs{a + \frac{1}{2} e_m} + \prs{a - \frac{1}{2} e_m}}{2}\]
+where $a \pm \frac{1}{2} e_m \in K$ by assumption on $a_m$. Hence $a$ is not an extreme point, so $\mrm{Ext}\prs{k} = \ns$.
+\end{example}
+
+\begin{corollary}
+$c, c_0$ are not isometric.
+\end{corollary}
+
+\begin{proof}
+If $T \colon c \to c_0$ is an isometry then $T\prs{\bar{B}_c} = \bar{B}_{c_0}$ and so $T\prs{\mrm{Ext}\prs{\bar{B}_c}} = \mrm{Ext}\prs{\bar{B}_{c_0}}$. But, $\mrm{Ext}\prs{\bar{B}_{c_0}} = \ns$ and $\prs{1}_{n \in \mbb{N}} \in \mrm{Ext}\prs{\bar{B}_c}$.
+\end{proof}
+
+\begin{remark}
+$c, c_0$ are isomorphic. Define
+\begin{align*}
+T \colon c_0 &\to c \\
+\prs{a_i}_{i \in \mbb{N}} &\mapsto \prs{a_0 + a_{i+1}}_{i \in \mbb{N}} \text{.}
+\end{align*}
+This is an isomorphism.
+\end{remark}
+
+\begin{theorem}[Krein-Milman]
+If $X$ is an LCS and $K \subseteq X$ is compact and convex, then $K = \overline{\mrm{conv}\prs{\mrm{Ext}\prs{K}}}$.
+\end{theorem}
+
+\begin{corollary}
+There is no space $X$ such that $X^* = c_0$ (isometrically).
+\end{corollary}
+
+\begin{proof}
+If $X^* = c_0$, we can look at $\bar{B}_{c_0} \subseteq \prs{c_0, w^*}$ which is convex and compact (by Banach-Alaoglu).
+By Krein-Milman, $\bar{B}_{c_0} = \overline{\mrm{conv}\prs{\mrm{Ext}\prs{\bar{B}_{c_0}}}} = \ns$, a contradiction.
+\end{proof}
+
+%TODO fill in lecture 8 3rd hour
 
 \end{document}

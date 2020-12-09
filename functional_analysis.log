@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  18 NOV 2020 11:25
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  9 DEC 2020 21:40
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -1260,55 +1260,112 @@ Overfull \hbox (1.85548pt too wide) in paragraph at lines 1358--1359
 it/10 X$ \TU/lmr/m/n/10 be a pro-
  []
 
-[33] [34] [35]
-Overfull \hbox (8.39612pt too wide) in paragraph at lines 1491--1493
+[33] [34]
+Overfull \hbox (47.43835pt too wide) detected at line 1443
+[] \OT1/cmr/m/n/10 = []  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 x \OMS/cmsy/m/
+n/10 ^^@ \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E \OT1/cmr/m/n/
+10 = [] \OML/cmm/m/it/10 T  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 T [] \OT1/c
+mr/m/n/10 = 0  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 Tx \OT1/cmr/m/n/10 = \OM
+L/cmm/m/it/10 Ty  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 S [] \OT1/cmr/m/n/10 
+= \OML/cmm/m/it/10 S []
+ []
+
+[35] [36] [37]
+Overfull \hbox (8.39612pt too wide) in paragraph at lines 1603--1605
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/n/10 be normed spaces.
  []
 
 
-Overfull \hbox (2.83018pt too wide) in paragraph at lines 1505--1506
+Overfull \hbox (2.83018pt too wide) in paragraph at lines 1617--1618
 []\TU/lmr/m/it/10 If $\OML/cmm/m/it/10 X$ \TU/lmr/m/it/10 is a finite-dimensiona
 l normed space, any lin-ear $\OML/cmm/m/it/10 T [] [] X \OMS/cmsy/m/n/10 !
  []
 
-[36] [37] [38]
-Overfull \hbox (4.74754pt too wide) in paragraph at lines 1648--1649
+[38] [39] [40] [41]
+Overfull \hbox (4.74754pt too wide) in paragraph at lines 1760--1761
 []\TU/lmr/m/it/10 There are $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/it/10 of di-men-si
 on $\OML/cmm/m/it/10 n$ \TU/lmr/m/it/10 such that $\OML/cmm/m/it/10 d[] [] \OMS
 /cmsy/m/n/10 
  []
 
+[42] [43] [44
+
+]
+Chapter 3.
+[45]
+Overfull \hbox (9.00955pt too wide) in paragraph at lines 1864--1866
+\TU/lmr/m/n/10 We know $\OML/cmm/m/it/10 [] [] [] [] []$\TU/lmr/m/n/10 . Also,
+ $[][] [][] [] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 <
+ []
+
+[46] [47]
+Overfull \hbox (2.45264pt too wide) in paragraph at lines 1983--1984
+[]\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 H$ \TU/lmr/m/it/10 be a Hilbert space an
+d let $[][]$
+ []
+
+[48] [49] [50] [51]
+Overfull \hbox (167.38614pt too wide) detected at line 2166
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 U [] [
+] d [] \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10  [] [] \OT1/cmr/m/n/10 + [] []
+ \OMS/cmsy/m/n/10  [] [] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 < [] \OT1/cmr/m
+/n/10 + [] = \OML/cmm/m/it/10 "[]
+ []
+
+[52]
+
+Package amsfonts Warning: Obsolete command \frak; \mathfrak should be used inste
+ad on input line 2203.
+
+LaTeX Font Info:    Trying to load font information for U+euf on input line 2203
+.
+(C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[53] [54]
+Overfull \hbox (21.00235pt too wide) in paragraph at lines 2286--2287
+[]\TU/lmr/m/n/10 A \TU/lmr/m/it/10 locally-convex space (LCS)
+ []
+
+[55] [56] [57] [58]
 \tf@thm=\write6
 
 \openout6 = functional_analysis.thm
-[39]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1651.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1651.
+ [59]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2469.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2469.
  (./functional_analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1651.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1651.
-Package rerunfilecheck Info: File `functional_analysis.out' has not changed.
-(rerunfilecheck)             Checksum: EF067DF3BE69CE26B7BBFC7B222280CD;4178.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1651.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2469.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2469.
+
+
+Package rerunfilecheck Warning: File `functional_analysis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `functional_analysis.out':
+(rerunfilecheck)             Before: D244DE11EF9C32240A708E06BE5B5270;5479
+(rerunfilecheck)             After:  DFA5CF53186A51ABBDEB765DDED7868B;5643.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2469.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28242 strings out of 481302
+ 28441 strings out of 481302
  100000,953878 words of node,token memory allocated
- 1254 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 180 attribute
-, 62 glue_spec, 180 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:666,3:219,4:50,5:359,6:36,7:2364,8:84,9:701,10:6,11:102
- 44155 multiletter control sequences out of 65536+200000
- 96 fonts using 8960387 bytes
- 68i,20n,86p,944b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 1552 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 256 attribute
+, 62 glue_spec, 256 attribute_list, 2 write nodes
+   avail lists: 2:720,3:219,4:50,5:469,6:25,7:2519,8:120,9:746,10:10,11:112
+ 44186 multiletter control sequences out of 65536+200000
+ 99 fonts using 9129731 bytes
+ 68i,20n,86p,944b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/open
 type/public/lm/lmroman7-regular.otf><//?/c:/users/eladt/appdata/local/programs/m
 iktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/c:/users/eladt/appdata/
-local/programs/miktex/fonts/opentype/public/lm/lmromanslant10-regular.otf><//?/c
-:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-b
-old.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/
+local/programs/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/
+eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmromanslant10-regu
+lar.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/
 lm/lmroman12-bold.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/op
 entype/public/lm/lmroman10-regular.otf><//?/c:/users/eladt/appdata/local/program
 s/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><//?/c:/users/eladt/appda
@@ -1330,14 +1387,16 @@ lic/amsfonts/cm/cmr7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/EladT/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/EladT/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/EladT/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Use
-rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7
-.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs1
-0.pfb>
-Output written on functional_analysis.pdf (39 pages, 454211 bytes).
+grams/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/EladT/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/User
+s/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
+.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/symbols/msbm7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/font
+s/type1/public/rsfs/rsfs10.pfb>
+Output written on functional_analysis.pdf (59 pages, 588154 bytes).
 
-PDF statistics: 627 PDF objects out of 1000 (max. 8388607)
- 248 named destinations out of 1000 (max. 131072)
- 160 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 876 PDF objects out of 1000 (max. 8388607)
+ 409 named destinations out of 1000 (max. 131072)
+ 232 words of extra memory for PDF output out of 10000 (max. 100000000)
 
