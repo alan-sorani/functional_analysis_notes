@@ -247,3 +247,12 @@
 \contentsline {theorem}{{Theorem}{3.2.{18}}{Krein-Milman}}{59}{theorem.3.2.18}%
 \contentsline {corollary}{{Corollary}{3.2.{19}}{}}{59}{theorem.3.2.19}%
 \contentsline {proof}{{Proof}{60}{}}{59}{proof.60}%
+\contentsline {definition}{{Definition}{3.2.{20}}{Extremal Set}}{59}{theorem.3.2.20}%
+\contentsline {lemma}{{Lemma}{3.2.{21}}{}}{60}{theorem.3.2.21}%
+\contentsline {lemma}{{Lemma}{3.2.{22}}{}}{60}{theorem.3.2.22}%
+\contentsline {proof}{{Proof}{61}{}}{60}{proof.61}%
+\contentsline {proof}{{Proof}{62}{\ref {theorem:krein_milman}}}{60}{proof.62}%
+\contentsline {example}{{Example}{3.2.{23}}{}}{60}{theorem.3.2.23}%
+\contentsline {proof}{{Proof}{63}{}}{60}{proof.63}%
+\contentsline {example}{{Example}{3.2.{24}}{}}{61}{theorem.3.2.24}%
+\contentsline {proof}{{Proof}{64}{}}{61}{proof.64}%

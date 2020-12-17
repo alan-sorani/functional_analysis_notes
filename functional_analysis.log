@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  9 DEC 2020 21:40
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  17 DEC 2020 15:52
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -1327,45 +1327,44 @@ Overfull \hbox (21.00235pt too wide) in paragraph at lines 2286--2287
 []\TU/lmr/m/n/10 A \TU/lmr/m/it/10 locally-convex space (LCS)
  []
 
-[55] [56] [57] [58]
+[55] [56] [57] [58] [59] [60]
+Overfull \hbox (13.02602pt too wide) in paragraph at lines 2544--2547
+[]\TU/lmr/m/n/10 We now show that in-deed $[] [] \OT1/cmr/m/n/10 = \U/msb/m/n/1
+0 T$\TU/lmr/m/n/10 . De-fine $\OML/cmm/m/it/10 I [][]\OT1/cmr/m/n/10 = []$\TU/l
+mr/m/n/10 .
+ []
+
 \tf@thm=\write6
 
 \openout6 = functional_analysis.thm
- [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2469.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2469.
+[61]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2550.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2550.
  (./functional_analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2469.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2469.
-
-
-Package rerunfilecheck Warning: File `functional_analysis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `functional_analysis.out':
-(rerunfilecheck)             Before: D244DE11EF9C32240A708E06BE5B5270;5479
-(rerunfilecheck)             After:  DFA5CF53186A51ABBDEB765DDED7868B;5643.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2469.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2550.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2550.
+Package rerunfilecheck Info: File `functional_analysis.out' has not changed.
+(rerunfilecheck)             Checksum: DFA5CF53186A51ABBDEB765DDED7868B;5643.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2550.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28441 strings out of 481302
+ 28454 strings out of 481302
  100000,953878 words of node,token memory allocated
- 1552 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 256 attribute
-, 62 glue_spec, 256 attribute_list, 2 write nodes
-   avail lists: 2:720,3:219,4:50,5:469,6:25,7:2519,8:120,9:746,10:10,11:112
- 44186 multiletter control sequences out of 65536+200000
+ 1594 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 265 attribute
+, 62 glue_spec, 265 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:704,3:219,4:56,5:478,6:56,7:2519,8:120,9:746,10:10,11:116
+ 44188 multiletter control sequences out of 65536+200000
  99 fonts using 9129731 bytes
  68i,20n,86p,944b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/open
 type/public/lm/lmroman7-regular.otf><//?/c:/users/eladt/appdata/local/programs/m
 iktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/c:/users/eladt/appdata/
-local/programs/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/
-eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmromanslant10-regu
-lar.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/
+local/programs/miktex/fonts/opentype/public/lm/lmromanslant10-regular.otf><//?/c
+:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-b
+old.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/
 lm/lmroman12-bold.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/op
 entype/public/lm/lmroman10-regular.otf><//?/c:/users/eladt/appdata/local/program
 s/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><//?/c:/users/eladt/appda
@@ -1394,9 +1393,9 @@ s/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
 ymbols/msbm10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/symbols/msbm7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/font
 s/type1/public/rsfs/rsfs10.pfb>
-Output written on functional_analysis.pdf (59 pages, 588154 bytes).
+Output written on functional_analysis.pdf (61 pages, 610751 bytes).
 
-PDF statistics: 876 PDF objects out of 1000 (max. 8388607)
- 409 named destinations out of 1000 (max. 131072)
- 232 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 930 PDF objects out of 1000 (max. 8388607)
+ 420 named destinations out of 1000 (max. 131072)
+ 240 words of extra memory for PDF output out of 10000 (max. 100000000)
 

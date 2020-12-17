@@ -2451,7 +2451,7 @@ T \colon c_0 &\to c \\
 This is an isomorphism.
 \end{remark}
 
-\begin{theorem}[Krein-Milman]
+\begin{theorem}[Krein-Milman]\label{theorem:krein_milman}
 If $X$ is an LCS and $K \subseteq X$ is compact and convex, then $K = \overline{\mrm{conv}\prs{\mrm{Ext}\prs{K}}}$.
 \end{theorem}
 
@@ -2464,6 +2464,87 @@ If $X^* = c_0$, we can look at $\bar{B}_{c_0} \subseteq \prs{c_0, w^*}$ which is
 By Krein-Milman, $\bar{B}_{c_0} = \overline{\mrm{conv}\prs{\mrm{Ext}\prs{\bar{B}_{c_0}}}} = \ns$, a contradiction.
 \end{proof}
 
-%TODO fill in lecture 8 3rd hour
+\begin{definition}[Extremal Set]
+Let $K$ be a convex subset of a vector space $X$. A subset $E \subseteq K$ is called an \emph{extremal set of $K$} if it's convex and
+\[\forall \lambda \in \prs{0,1} \forall y,z \in K \colon \prs{1-\lambda}y + \lambda z \in E \implies y,z \in E \text{.}\]
+\end{definition}
+
+\begin{lemma}
+In an LCS $X$, if $K$ is convex, $\bar{K}$ is also convex.
+\end{lemma}
+
+\begin{lemma}
+Let $K \subseteq X$ be a compact and convex subset of an LCS. Then for every extremal set $E \subseteq K$ it holds that $E \cap \mrm{Ext}\prs{K} \neq \ns$.
+\end{lemma}
+
+\begin{proof}
+Define
+\[Z \ceq \set{A \in \mcal{P}\prs{E} \setminus \set{\ns}}{\text{$A$ is closed and extremal}} \text{.}\]
+Then $Z \neq \ns$ since $E \in Z$. If $\prs{A_\alpha}_{\alpha} \subseteq Z$ is a chain in $Z$ then $A = \bigcap_{\alpha} A_\alpha$ is closed and extremal. We show it's also non-empty. We have $A_{\alpha_1} \cap \ldots \cap A_{\alpha_k}$ for every $k$ values of $\alpha$, since $\prs{A_\alpha}_\alpha$ is a chain.
+
+By Zorn's lemma there's $A \in Z$ minimal. Assume $x_0,y_0 \in A$ are different. There's $f \in X^*$ such that $f\prs{x_0} \neq f\prs{y_0}$. Write $m \ceq \max_A f$ and $B \ceq \set{x \in A}{f\prs{x} = m}$. Then $B$ is closed and convex (by linearity), and extremal: Assume $y,z \in K$ and $\lambda \in \prs{0,1}$. Then $\prs{1-\lambda} y + \lambda z \in B \subseteq A$ and since $A$ is extremal we have $y,z \in A$. But, \[m = f\prs{\prs{1-\lambda}y  + \lambda z} = \prs{1-\lambda} f\prs{y} + \lambda f\prs{z} \leq \prs{1-\lambda} m + \lambda m = m\]
+so there's in fact equality so $f\prs{y} = f\prs{z} = m$, so $y,z \in B$.
+By minimality of $A$ we have $B = A$. Then $\rest{f}{A} \equiv m$, a contradiction to $f\prs{x_0} = f\prs{y_0}$.
+Then $A = \set{x_0}$ for some $x_0$, which is then $x_0 \in E \cap \mrm{Ext}\prs{K}$.
+\end{proof}
+
+\begin{proof}[\ref{theorem:krein_milman}]
+Let $\hat{K} = \overline{\cong\prs{\mrm{Ext}\prs{K}}}$. This is closed and is convex as the closure of a convex set. Also $\hat{K} \subseteq K$ because $K$ itself is convex and closed.
+
+Assume towards a contradiction that $a \in K \setminus \hat{K}$ and let $f \in X^*$ such that $\max_{x \in \hat{K}} f\prs{x} < f\prs{a}$.
+Let $m \ceq \max_K f$ and $E \ceq \set{x \in K}{f\prs{x} = m}$ where the latter is a closed extremal set as in the lemma.
+By the lemma, there's $p \in \mrm{Ext}\prs{K} \cap E$, so
+\begin{align*}
+m &= f\prs{p}
+\\&\leq \sup_{x \in \mrm{Ext}\prs{K}} f\prs{x}
+\\&\leq \sup_{x \in \hat{K}} f\prs{x}
+\\&< f\prs{a}
+\\&\leq m \text{,}
+\end{align*}
+from which $m < m$, a contradiction. Hence $\hat{K} = K$.
+\end{proof}
+
+\begin{example}
+Let $S$ be a compact metric space and let $P\prs{S}$ be a borel probability measure on $S$.
+Discrete measures (finitely-supported) are $w^*$-dense in $P\prs{S}$.
+\end{example}
+
+\begin{proof}
+$P\prs{S}$ is convex, and $\mrm{Ext}\prs{P\prs{S}} = \set{\delta_x}{x \in S}$ which we show soon.
+Then $P\prs{S}$ is $w^*$-compact by the Banach-Alaoglu theorem. Then by Krein-Milman
+\[P\prs{S} = \overline{\conv\set{\delta_x}{x \in S}}^{w^*} \text{.}\]
+
+Assume $\mu \in \mrm{Ext}\prs{P\prs{S}}$. If $\mu$ is not a $\delta$-measure there's $A \subseteq S$ borel such that $\mu\prs{A} \in \prs{0,1}$. Define a measure $\nu$ by
+\[\nu\prs{B} = \mu\prs{B \cap A} \prs{1-t} - \mu\prs{B \cap A^C} t \text{.}\]
+Note that $\nu\prs{S} = t\prs{1-t} - \prs{1-t}t = 0$, but $\nu\prs{A} = t \prs{1-t} \neq 0$ so $\nu\neq 0$.
+We have
+\[\mu = \frac{\prs{\mu + \nu} + \prs{\mu - \nu}}{2} \text{.}\]
+We have $\prs{\mu + \nu}\prs{S} = \prs{\mu - \nu}\prs{S} = 1$. We want to show $\mu \pm \nu \geq 0$ from which we get that $\mu$ is not an extreme point.
+Indeed,
+\begin{align*}
+\prs{\mu + \nu}\prs{B} &= \mu\prs{B \cap A} + \mu\prs{B \cap A^C} + \mu\prs{B \cap A} \prs{1-t} - \mu\prs{B \cap A^C} t \\&=
+\mu\prs{B \cap A} \prs{2-t} + \mu\prs{B \cap A^C} \prs{1-t} \geq 0
+\end{align*}
+and similarly for $\mu - \nu$. Then $\mu \pm \nu \in P\prs{S}$ and we get the result.
+\end{proof}
+
+\begin{example}
+A theorem by Birkhoff says the following.
+
+Let \[D = \set{A \in \mbb{C}^{n \times n}}{\substack{\forall i,j \in [n] \colon a_{i,j} \geq 0 \\ \sum_{j} a_{i,j} = 1 \\ \sum_i a_{i,j} = 1}}\]
+which we call \emph{doubly-stochastic matrices}
+and let $\mbb{T}$ be $n \times n$ permutation matrices.
+Then $D = \conv\prs{\mbb{T}}$.
+
+\begin{proof}
+We should show that $\mrm{Ext}\prs{D} = \mbb{T}$, then by Krein-Milman
+\[D = \overline{\conv\prs{\mrm{Ext}\prs{D}}} = \overline{\conv\prs{\mbb{T}}} \text{.}\]
+Since $\mbb{T}$ is finite, $\conv\prs{\mbb{T}}$ is compact and so is closed. Then the above equation gives $D = \conv\prs{\mbb{T}}$.
+
+We now show that indeed $\mrm{Ext}\prs{D} = \mbb{T}$. Define $I \ceq \set{\prs{i,j} \in [n]^2}{a_{i,j} \in \prs{0,1}}$. We want to show that $I \neq \ns$ implies $A \notin \mrm{Ext}\prs{D}$.
+We can pick some $\prs{i,j}$, then choose another $\prs{i,j'}$ in $I$ by definition of $I$. We can then pick another pair of indices with the same value of $j'$, and continue by alternately changing the column and row numbers. This eventually closes a cycle of even length.
+Take $B$ by adding $\prs{-1}^k$ in the $k$\textsuperscript{th}. Then $A = \frac{\prs{A + \eps B} + \prs{A - \eps B}}{2}$ is in $D$ for small enough $\eps$.
+\end{proof}
+\end{example}
 
 \end{document}
