@@ -2547,4 +2547,401 @@ Take $B$ by adding $\prs{-1}^k$ in the $k$\textsuperscript{th}. Then $A = \frac{
 \end{proof}
 \end{example}
 
+\section{Banach Algebras}
+
+\subsection{Definition \& Examples}
+
+%LECTURE 23.12.2020
+
+\begin{definition}[Banach Algebra]
+A \emph{Banach Algebra} $A$ is a Banach space with a bilinear map $\cdot \colon A \times A \to A$ such that the following hold.
+\begin{enumerate}
+\item $\cdot$ is associative.
+\item There's $e \in A$ such that $e \cdot x = x \cdot e = x$ for all $x \in A$.
+\item $\norm{x \cdot y} \leq \norm{x} \norm{y}$ and $\norm{e} = 1$.
+\end{enumerate}
+\end{definition}
+
+\begin{example}
+Let $A = \mcal{C}\prs{S}$ where $S$ is a compact and Hausdorff space and with the supremum norm.
+Take on it the product $\prs{f \cdot g}\prs{s} = f\prs{s} g\prs{s}$. Here $e \prs{s} \equiv 1$ gives $\norm{e} = 1$.
+We indeed have
+\begin{align*}
+\norm{fg} &= \max_{s \in S} \prs{\abs{f\prs{s}} \abs{g\prs{s}}}
+\\&\leq \max_{s \in S} \abs{f\prs{s}} \cdot \max_{s \in S} \abs{g\prs{s}}
+\\&= \norm{f}\norm{g} \text{.}
+\end{align*}
+\end{example}
+
+\begin{example}
+Let $X$ be a Banach space and $A \ceq \mcal{L}\prs{X,X} = \mcal{L}\prs{X}$ with the operator norm. $T \cdot S$ is the composition and $e = \id$ is the unit.
+In particular if $A = M_{n \times n}\prs{\mbb{C}}$ is such an example, where $X$ is a finite-dimensional vector space.
+\end{example}
+
+\begin{remark}
+A Banach algebra can be defined over $\mbb{R}$, although we will soon deal with spectral theory where work over an algebraically-closed field is much easier. We therefore treat only Banach Algebras over $\mbb{C}$.
+\end{remark}
+
+\begin{example}
+Let $A \ceq \ell^1 \prs{\mbb{Z}}$. Take the product to be the convolution
+\[\prs{a * b}_n \ceq \sum_{k \in \mbb{Z}} a_k b_{n-k} \text{.}\]
+With $e = e_0$ this is indeed a Banach algebra.
+Indeed
+\begin{align*}
+\norm{a * b}_1 &= \sum_{n \in \mbb{Z}} \abs{\sum_{k \in \mbb{Z}} a_k b_{n-k}}
+\\&\leq
+\sum_{n \in \mbb{Z}} \sum_{k \in \mbb{Z}} \abs{a_k} \abs{b_{n-k}}
+\\&= \sum_{k \in \mbb{Z}} \sum_{n \in \mbb{Z}} \abs{a_k} \abs{b_{n-k}}
+\\&= \sum_{k \in \mbb{Z}} \abs{a_k} \sum_{n \in \mbb{Z}} \abs{b_{n-k}}
+\\&=
+\sum_{k \in \mbb{Z}} \abs{a_k} \norm{b}
+\\&= \norm{a} \norm{b} \text{.}
+\end{align*}
+\end{example}
+
+\begin{example}[The Wiener Algebra]
+Let
+\[W \ceq \set{f \in \mcal{C}\prs{\mbb{T}}}{\substack{f\prs{t} = \sum_{n \in \mbb{Z}} \hat{f}\prs{n} e^{int} \\ \sum_{n \in \mbb{Z}} \abs{\hat{f}\prs{n}} < \infty}}\]
+with norm
+\[\norm{f} = \sum_{n \in \mbb{Z}} \abs{\hat{f}\prs{n}} \text{,}\]
+the point-wise product and $e \equiv 1$ as the identity.
+
+Note that
+\begin{align*}
+T \colon W &\to \ell^1\prs{\mbb{Z}} \\
+f &\mapsto \prs{\hat{f}\prs{n}}_{n \in \mbb{Z}}
+\end{align*}
+is an isometric isomorphism of Banach Algebras since
+\[\prs{\widehat{fg}\prs{n}}_{n \in \mbb{Z}} = \prs{\hat{f}\prs{n}}_{n \in \mbb{Z}} * \prs{\hat{g}\prs{n}}_{n \in \mbb{Z}} a \text{.}\]
+\end{example}
+
+\begin{definition}[Invertible Element]
+$x \in A$ is \emph{invertible} if there's $x^{-1} \in A$ such that $x = x^{-1} = x^{-1} x = e$.
+\end{definition}
+
+\begin{fact}
+\begin{enumerate}
+\item If $z_1,z_2$ are such that $z_1 x = x z_2 = e$ then $z_1 = z_2 = x^{-1}$.
+\item If $x,y$ are invertible, so is $xy$ and $\prs{xy}^{-1} = y^{-1} x^{-1}$.
+\item If $xy,yx$ are invertible, so are $x,y$. E.g. write $xy \prs{xy}^{-1} = e$ and $\prs{yx}^{-1} yx = e$ so $x$ has inverses from both sides, and by the first property has an inverse.
+\end{enumerate}
+\end{fact}
+
+\begin{proposition}
+\begin{enumerate}
+\item The set $\mcal{O}$ of invertible elements is open. In fact for every $x \in \mcal{O}$ and every $y$ such that $\norm{y} < \frac{1}{\norm{x^{-1}}}$ we have $x \cdot y \mcal{O}$.
+\item The map $\prs{}^{-1} \colon \mcal{O} \to \mcal{O}$ is continuous.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item Assume first that $x = e$. Note that
+\[\sum_{n \in \mbb{N}} \norm{y^n} \leq \sum_{n \in \mbb{N}} \norm{y}^n < \infty\]
+since $\norm{y} < 1$. By compactness, $z = \sum_{n \in \mbb{N}} y^n = \lim_{N\to\infty} \sum_{n=0}^N y^n$ exists.
+We have
+\begin{align*}
+z \prs{e-y} &= \lim_{N \to \infty} \prs{e \sum_{n=0}^N y^n - y \sum_{n=0}^N y^n}
+\\&= \lim_{N\to\infty} \prs{\sum_{n=0}^N y^n - \sum_{n=1}^{N+1} y^N}
+\\&= \lim_{N\to\infty} \prs{e - y^{N+1}}
+\\&= e \text{.}
+\end{align*}
+Similarly $\prs{e-y} z = e$.
+Generally, $x-y = x\prs{e - x^{-1} y} \in \mcal{O}$.
+\item Fix $x \in \mcal{O}$ and let $y$ such that $\norm{y} \leq \frac{1}{\norm{x^{-1}}}$.
+We have
+\begin{align*}
+\norm{x^{-1} - \prs{x-y}^{-1}} &= \norm{x^{-1} - x^{-1}\prs{e - yx^{-1}}^{-1}}
+\\&\leq \norm{x^{-1}} \norm{e - \prs{e-yx^{-1}}^{-1}}
+\\&= \norm{x^{-1}} \norm{e - \sum_{n \in \mbb{N}} \prs{yx^{-1}}^n}
+\\&= \norm{x^{-1}} \norm{\sum_{n \in \mbb{N}_+} \prs{yx^{-1}}^n}
+\\&\leq \norm{x^{-1}} \sum_{n \in \mbb{N}_+} \prs{\norm{y} \norm{x^{-1}}}^n
+\\&= \norm{x^{-1}} \frac{\norm{y} \norm{x^{-1}}}{1 - \norm{y} \norm{x^{-1}}}
+\\&\xrightarrow{y\to 0} 0 \text{.}
+\end{align*}
+\end{enumerate}
+\end{proof}
+
+\begin{definition}[Regular Value]
+$\lambda \in \mbb{C}$ is a \emph{regular value} for $x \in A$ if $x - \lambda e \in \mcal{O}$.
+\end{definition}
+
+\begin{definition}[Resolvent Set]
+The set of regular values $\rho\prs{x}$ is called the \emph{resolvent set}.
+\end{definition}
+
+\begin{definition}[Spectrum]
+The set $\sigma\prs{x} = \mbb{C} \setminus \rho\prs{x}$ is called \emph{the spectrum} of $X$.
+\end{definition}
+
+\begin{example}
+If $A = \mcal{L}\prs{X}$ and $T \in A$, the set $\sigma\prs{T}$ is the spectrum in the classical sense.
+
+In the classical setting we defined the point spectrum
+\[\sigma_p\prs{T} \ceq \set{\lambda}{T-\lambda I \text{ is not injective}} = \set{\text{eigenvalues}} \text{.}\]
+We defined also the continuous spectrum
+\[\sigma_c \ceq \set{\lambda \notin \sigma_pp\prs{T}}{\substack{\overline{\im \prs{T-\lambda I} = X} \\ \im\prs{T - \lambda I} \neq X}}\]
+and the residual spectrum
+\[\sigma_r\prs{T} \ceq \set{\lambda \notin \sigma_p\prs{T}}{\overline{\im\prs{T-\lambda I}} \neq X} \text{.}\]
+
+We have
+\[\sigma\prs{T} = \sigma_p\prs{T} \cup \sigma_c \prs{T} \cup \sigma_r\prs{T}\]
+where the equality encapsulates the fact that if $S \in \mcal{L}\prs{X}$ is bijective then $S^{-1} \in \mcal{L}\prs{X}$.
+\end{example}
+
+\begin{example}
+Let $A = \mcal{C}\prs{S}$. If $f\prs{s} \neq 0$ for all $s$, we have $\frac{1}{f} \in A$. Here
+\begin{align*}
+\sigma\prs{f} &= \set{\lambda}{\prs{f-\lambda} \text{ is not invertible}}
+\\&= \set{\lambda}{\exists s \colon \prs{f-\lambda}\prs{s} = 0}
+\\&= \set{\lambda}{\exists s \in S \colon f\prs{s} = \lambda}
+\\&= \im f \text{.}
+\end{align*}
+\end{example}
+
+\subsection{Banach-Valued Analytic Functions}
+
+\begin{definition}[Analytic Function]
+Let $D \subseteq \mbb{C}$ open and $X$ a complex Banach space. $\phi \colon D \to X$ is \emph{analytic} if for every $\lambda \in D$ the limit
+\[\lim_{n\to\infty} \frac{\phi\prs{\lambda + h} - \phi\prs{\lambda}}{h}\]
+exists.
+\end{definition}
+
+\begin{theorem}
+$\phi \colon D \to X$ is analytic if and only if for every $f \in X^*$ the function $f \circ \phi \colon D \to \mbb{C}$ is analytic.
+\end{theorem}
+
+\begin{proof}
+We show only the implication.
+Assume $\phi \colon D \to X$ is analytic. We have
+\begin{align*}
+\lim_{h\to 0} \frac{f\prs{\phi\prs{\lambda + H}} - f\prs{\phi\prs{\lambda}}}{h}
+&= \lim_{h\to 0} f \prs{\frac{\phi\prs{\lambda + h} - \phi\prs{\lambda}}{h}}
+\\&= f\prs{\phi'\prs{\lambda}}
+\end{align*}
+where the last equality is by continuity of $f$, hence the limit exists so $f \circ \phi$ is analytic.
+\end{proof}
+
+\begin{remark}
+If $\psi \colon \brs{a,b} \to X$ is continuous, we can define the 
+\[\int_a^b \psi\prs{t} \diff t\]
+using Riemann sums.
+In particular, if $\Gamma \in \mbb{C}$ is a smooth curve with parametrisation $z \colon \brs{a,b} \to \Gamma$, we can define
+\[\int_\Gamma \phi \diff z = \int_a^b \phi\prs{z\prs{t}} z'\prs{t} \diff t \text{.}\]
+\end{remark}
+
+\begin{proposition}
+Let $D \subseteq \mbb{C}$ be simply connected and let $\Gamma = \del D$. Let $\tilde{D}$ be a domain containing $\bar{D}$ and let $\phi \colon \tilde{D} \to \mbb{C}$ analytic in a neighbourhood of $\bar{D}$. Then for every $\lambda \in D$ it holds that
+\[\phi\prs{\lambda} = \frac{1}{2 \pi i} \int_\Gamma \frac{\phi\prs{\eta}}{\eta - \lambda} \diff \eta \text{.}\]
+\end{proposition}
+
+\begin{proof}
+For every $f \in X^*$ we have that $f \circ \phi$ is analytic (in the classical sense), so by Cauchy's formula
+\[f \prs{\phi\prs{\lambda}} = \frac{1}{2 \pi i} \int_\Gamma \frac{f\prs{\phi\prs{\eta}}}{\eta - \lambda} \diff \lambda \underset{\text{lineairty}}{=} \frac{1}{2 \pi i} \int_\Gamma f\prs{\frac{\phi\prs{\eta}}{\eta - \lambda}} \underset{\text{lineairty}}{=} f\prs{\frac{1}{2 \pi i} \int_\Gamma \frac{\phi\prs{\eta}}{\eta - \lambda} \diff \eta} \text{.}\]
+We are done since $X^*$ separates points.
+\end{proof}
+
+\begin{corollary}[Generalised Cauchy Formula]
+Let $\phi \colon D \to X$ be analytic. Then $\phi$ is infinitely-differentiable and
+\[\phi^{\prs{n}}\prs{\lambda} = \frac{n!}{2 \pi i}\int_\Gamma \frac{\phi\prs{\eta}}{\prs{\eta - \lambda}^{n+1}} \diff \eta \text{.}\]
+\end{corollary}
+
+\begin{proof}
+Differentiate Cauchy's formula $n$ times.
+\end{proof}
+
+\begin{corollary}[Taylor Series]
+Let $\phi \colon D \to X$ be analytic in a neighbourhood of $\lambda \in D$. Let $d$ be the distance from $\lambda$ to the nearest singular point of $\phi$. Then if $\abs{\mu - \lambda} < d$ we have
+\begin{align*}
+\phi\prs{\mu} &= \sum_{n \in \mbb{N}} \frac{\phi^{\prs{n}} \prs{\lambda}}{n!} \prs{\mu - \lambda}^n \text{.}
+\end{align*}
+In particular
+\[d = R \ceq \prs{\limsup_{n\to\infty} \norm{\frac{\phi^{\prs{n}}\prs{\lambda}}{n!}}^{\frac{1}{n}}}^{-1} \text{.}\]
+\end{corollary}
+
+\begin{proof}
+Expand the right-hand side of Cauchy's formula to a power series.
+\end{proof}
+
+\begin{definition}[Spectral Radius]
+If $x \in A$, \emph{the spectral radius of $A$} is \[r\prs{x} \ceq \lim_{n\to\infty} \norm{x^n}^{\frac{1}{n}} \text{.}\]
+\end{definition}
+
+\begin{lemma}[Fekete's Lemma]
+If $\prs{a_n}_{n \in \mbb{N}_+} \subseteq R$ and $a_{n+m} \leq a_n + a_m$, the limit
+\[\lim_{n\to\infty} \frac{a_n}{n} = \inf_{n \in \mbb{N}_+} \frac{a_n}{n} \text{.}\]
+\end{lemma}
+
+\begin{proof}
+Write $L \ceq \inf_{n\in\mbb{N}_+} \frac{a_n}{n}$. Fix $\eps > 0$ and choose $m$ such that $\frac{a_m}{m} \leq L+\eps$. For every $n \in \mbb{N}_+$ we can write $n = qm + r$ where $r \in \set{0,\ldots, m-1}$. Then \[\frac{a_n}{n} = \frac{a_{m+m+\ldots + m + r}}{n} \leq \frac{q a_m + a_r}{n} \leq \frac{q m\prs{L+\eps}}{n} + \frac{a_r}{n} \leq L + \eps + \frac{a_r}{n} \leq L + \eps + \frac{\max_{a_0, \ldots, a_{m-1}}}{n} \xrightarrow{n\to\infty} L + \eps \text{.}\]
+Hence
+\[\limsup_{n\to\infty} \frac{a_n}{n} \leq L\]
+so $\frac{a_n}{n} \xrightarrow{n\to\infty} L$.
+\end{proof}
+
+\begin{remark}
+$L$ could be $-\infty$.
+\end{remark}
+
+\begin{corollary}
+$r\prs{x} = \lim_{n\to \infty} \norm{x^n}^{\frac{1}{n}}$ exists and $r\prs{x} \in \prs{0, \norm{x}}$.
+\end{corollary}
+
+\begin{proof}
+Take $a_N = \log \norm{x^n}$ in Fekete's lemma.
+\end{proof}
+
+\begin{theorem}[Gelfand]
+Let $A$ be a Banach algebra and $x \in A$. Then
+\begin{enumerate}
+\item $\sigma\prs{x} \subseteq \mbb{C}$ is compact and non-empty.
+\item (\emph{Gelfand's Formula:}) $\max\set{\abs{\lambda}}{\lambda \in \sigma\prs{x}} = r\prs{x}$.
+\end{enumerate} 
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}
+\item We have
+\[\sigma\prs{x} = \set{\lambda}{x - \lambda e \neq \mcal{O}}\]
+and $\mcal{O}$ is open, hence $\sigma\prs{x}$ is closed. We want to show it's also non-empty.
+Define $\phi \colon \rho\prs{x} \to X$ by $\phi\prs{\lambda} = \prs{x- \lambda e}^{-1}$.
+We claim $\phi$ is analytic:
+We have
+\begin{align*}
+\frac{\phi\prs{\lambda + h} - \phi\prs{\lambda}}{h} &= \frac{\prs{x - \lambda e - he}^{-1} - \prs{x - \lambda e}^{-1}}{h}
+\\&=
+\prs{x-\lambda e - he}^{-1} \frac{\prs{x-\lambda e} - \prs{x-\lambda e - he}}{h} \prs{x-\lambda e}^{-1}
+\\&= \prs{x-\lambda e - he}^{-1} \prs{x-\lambda e}^{-1} \xrightarrow{h\to 0} \prs{x-\lambda e}^{-2} \text{.}
+\end{align*}
+Note that
+\begin{align*}
+\lim_{\abs{\lambda} \to \infty} \phi\prs{\lambda}
+&= \lim_{\abs{\lambda} \to \infty} \prs{x - \lambda e}^{-1}
+\\&= - \lim_{\abs{\lambda} \to \infty} \prs{\frac{1}{\lambda} \prs{e - \frac{x}{\lambda}}^{-1}}
+\\&= 0 \text{.}
+\end{align*}
+If $\sigma\prs{x} = \ns$ we have $\rho\prs{x} = \mbb{C}$ so $\phi \colon \mbb{C} \to X$ is a bounded entire function. Hence for every $f \in X^*$, $f \circ \phi$ is bounded and entire, so $f \circ \phi$ is constant for every $f \in X^*$. Hence $\phi$ is constant (because $X^*$ separates points).
+However, $\phi$ isn't constant, hence a contradiction.
+
+Boundedness follows from the second part.
+
+\item 
+Consider the power series $\sum_{n \in \mbb{N}} x^n \mu^n$. We have
+\begin{align*}
+\sum_{n \in \mbb{N}} x^n \mu^n &= \prs{e - \mu x}^{-1}
+\\&= -\frac{1}{\mu}\prs{x - \frac{1}{\mu e}}^{-1} \text{.}
+\end{align*}
+We find the radius of convergence for this in two ways. On one hand this is \[R = \prs{\limsup_{n\to\infty} \norm{x^n}^{\frac{1}{n}}}^{-1} = \frac{1}{r\prs{x}} \text{.}\]
+On the other hand,
+\begin{align*}
+R &= \min\set{\abs{\mu - 0}}{\mu \text{is a singular point of } \prs{e-\mu x}^{-1}} 
+\\&=
+\min \set{\abs{\mu}}{\frac{1}{\mu} \notin \rho\prs{x}}
+\\&= \frac{1}{\max\set{\abs{\lambda}}{\lambda \in \sigma\prs{x}}}\text{.}
+\end{align*}
+By comparing these values of $R$ we get the result.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[Banach-Mazur Theorem]
+:et $A$ be a Banach algebra where every $x \neq 0$ is invertible.
+Then $A \cong \mbb{C}$.
+\end{corollary}
+
+\begin{proof}
+Fix $x \in A$ and $\lambda \in \sigma\prs{x} \neq \ns$. Then $x-\lambda e$ is not invertible. Hence $x - \lambda e = 0$ so $x = \lambda e \cong \mbb{C}$ by $\lambda e \leftrightarrow \lambda$.
+\end{proof}
+
+\begin{remark}
+In the real case, the dimension of a Banach algebra with inverses is either $1$, $2$ or $4$, in which case it's either $\mbb{R}, \mbb{C}$ or the quaternions.
+\end{remark}
+
+\begin{example}[The Volterra Operator]
+Let $A = \mcal{L}\prs{\mcal{C}\brs{0,1}}$. Take $V \in A$ to be
+\[\prs{Vf}\prs{x} = \int_0^x f\prs{t} \diff t \text{.}\]
+We want to find $\sigma\prs{V}$. For this we use Gelfand's formula.
+
+Assume $f$ is such that $\norm{f} = 1$. We have
+\[\abs{\prs{V f}\prs{x}} = \abs{\int_0^x f\prs{t} \diff t} \leq \int_0^x \abs{f\prs{t}} \diff t \leq \int_0^x 1 \diff t = x \text{.}\]
+We then have
+\[\abs{\prs{V^2 f}\prs{x}} \leq \int_0^x \abs{V f\prs{t}}\diff t \leq \int_0^x t \diff t  = \frac{x^2}{2}\]
+and similarly
+\[\abs{V^n\prs{f}\prs{x}} \leq \frac{x^n}{n!} \text{.}\]
+Hence $\norm{V^n f} \leq \frac{1}{n!}$.
+Hence
+$\norm{V^n} \leq \frac{1}{n!}$ (in fact, there's equality as one can check by starting with the constant function $1$).
+So, \[r\prs{V} = \lim_{n\to\infty} \norm{V^n}^{\frac{1}{n}} = \lim_{n\to\infty} \prs{\frac{1}{n!}}^{\frac{1}{n}} = 0 \text{.}\]
+So $\sigma\prs{V} = 0\set{0}$.
+\end{example}
+
+\begin{definition}[Quasi-Nilpotent Element]
+An element $V \in A$ such that $\sigma\prs{V} = \set{0}$ is called \emph{quasi-nilpotent}.
+\end{definition}
+
+\begin{remark}
+The Volterra operator $V$ is quasi-nilpotent but not nilpotent.
+\end{remark}
+
+\subsection{Ideals}
+
+\begin{definition}[Ideal]
+$I \leq A$ is an ideal if it's a linear subspace and for every $x \in A$ we have $xI,Ix \subseteq I$.
+\end{definition}
+
+From now on, assume $A$ is a commutative Banach algebra.
+
+\begin{fact}
+$x \in A$ is not invertible if and only if there exists a proper ideal $I \lneq A$ such that $x \in I$.
+\end{fact}
+
+\begin{proposition}
+If $I \lneq A$ is a proper ideal, so is $\bar{I}$.
+\end{proposition}
+
+\begin{proof}
+$\bar{I}$ is a subspace. If $x \in \bar{I}$ and $y \in A$, there's $\prs{x_n}_{n \in \mbb{N}} \subseteq I$ such that $x_n \xrightarrow{n\to\infty} x$. Then $x_n y \xrightarrow{n\to\infty} xy$ but $x_n y \in I$ for all $n \in \mbb{N}$, so $xy \in \bar{I}$.
+
+Since $I$ is proper, $I \cap \mcal{O} = \ns$. Since $\mcal{O}$ is open we get $\bar{I} \cap \mcal{O} = \ns$ so $\bar{I}$ is proper.
+\end{proof}
+
+\begin{definition}[Maximal Ideal]
+$M \leq X$ is called a \emph{maximal ideal} if $M$ is a proper ideal which is maximal with respect to inclusion.
+\end{definition}
+
+\begin{proposition}
+A maximal ideal is closed.
+\end{proposition}
+
+\begin{proof}
+Otherwise, take $I = \bar{M}$ which is a proper ideal.
+\end{proof}
+
+\begin{fact}
+Every ideal is contained in a maximal ideal.
+\end{fact}
+
+\begin{proof}
+Use Zorn's lemma.
+\end{proof}
+
+\begin{example}
+Let $A = \mcal{C}\prs{S}$. We want to find the maximal ideals in $A$.
+
+For $s \in S$, let $M_s \ceq \set{f \in A}{f\prs{s} = 0}$.
+Here $M_s$ is a maximal ideal, e.g. since $\codim M_s = 1$. We see that by defining $\mrm{ev}_s\prs{f} = f\prs{s}$ and since \[\quot{A}{M_s} = \quot{A}{\mrm{ev}_s} \cong \im \mrm{ev}_s \cong \mbb{C} \text{.}\]
+
+Assume $M$ is a maximal ideal, we want to show it's of the form $M_s$ for some $s \in S$.
+Assume towards a contradiction this isn't the case. Then $M \nsubseteq M_s$ for all $s \in S$ so there's $f_s \in M$ such that $f_s\prs{s} \neq 0$. There's $U_s$ an open neighbourhood of $s$ such that $f_s \neq 0$ on $U_s$. By compactness, we have finitely-many $\prs{U_{s_i}}_{i \in [n]}$. Let
+\[g = \sum_{i \in [n]} f_{s_i}^2 = \sum_{i \in [n]} f_{s_i} \overline{f_{s_i}} \text{,}\]
+which is in $M$ since all $f_{s_i}, \overline{f_{s_i}}$ are.
+But, $g > 0$ so $g$ is invertible, so $M = A$, a contradiction.
+\end{example}
+
+\begin{fact}
+\begin{enumerate}
+\item If $A$ is an algebra and $I \leq A$, there's a quotient algebra $\quot{A}{I}$. 
+\item Every ideal $K \leq \quot{A}{I}$ is of the form $K = \quot{J}{I}$ where $J \ideal A$ contains $I$.
+\end{enumerate}
+\end{fact}
+
 \end{document}
