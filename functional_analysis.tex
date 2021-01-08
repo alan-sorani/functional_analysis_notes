@@ -2944,4 +2944,749 @@ But, $g > 0$ so $g$ is invertible, so $M = A$, a contradiction.
 \end{enumerate}
 \end{fact}
 
+%LECTURE 30.12.2020
+
+\begin{fact}
+Let $A$ be a commutative Banach algebra and $I \lneq A$ a proper closed ideal. We know $\quot{A}{I}$ is a Banach space with $\norm{\brs{x}} = \inf_{z \in I} \norm{x+z}$, and an algebra with the product $\brs{x} \cdot \brs{y}$.
+\end{fact}
+
+\begin{proposition}
+$\quot{A}{I}$ is a Banach algebra.
+\end{proposition}
+
+\begin{proof}
+Fix $\brs{x}, \brs{y} \in \quot{A}{I}$ and $\eps > 0$. Choose $z_1, z_2 \in I$ such that
+$\norm{\brs{x}} > \norm{x + z_1} - \eps$ and $\norm{\brs{y}} \geq \norm{y + z_2} - \eps$.
+Then
+\begin{align*}
+\norm{\brs{x} \brs{y}} &= \norm{\brs{x + z_1} \brs{y + z_2}}
+\\&= \norm{\brs{\prs{x + z_1} \prs{y + z_2}}}
+\\&\leq \norm{\prs{x + z_1} \prs{y + z_2}}
+\\&\leq \norm{x + z_1} \cdot \norm{y + z_2}
+\\&\leq \prs{\norm{\brs{x}} + \eps} \prs{\norm{\brs{y}} + \eps} \text{,}
+\end{align*}
+and taking $\eps \to 0$ we get $\norm{\brs{x} \brs{y}} \leq \norm{\brs{x}} \norm{\brs{y}}$.
+
+We should now show that $\norm{\brs{e}} = 1$. Clearly $\norm{\brs{e}} \leq \norm{e} = 1$. Assume towards a contradiction that also $\norm{\brs{e}} < 1$. Then there's $z \in I$ such that $\norm{e + z} < 1$, but then
+$-z = e - \prs{e + z} \in I$
+is invertible, so $I = A$, a contradiction.
+\end{proof}
+
+\begin{proposition}
+If $M \leq A$ is a maximal ideal, then $\codim M = 1$, i.e. $\quot{A}{M} \cong \mbb{C}$.
+\end{proposition}
+
+\begin{proof}
+Let $\brs{x} \in \quot{A}{M}$ be non-invertible. Then $\brs{x} \in K \lneq \quot{A}{M}$. By the correspondence theorem, $K = \quot{I}{M}$ where $M \leq I \lneq A$, but $M$ is maximal so $I = M$ so $K = \set{\brs{0}}$ so $\brs{x} = \brs{0}$.
+
+By Gelfand-Mazur the only Banach algebra where every element except $0$ is invertible is $\mbb{C}$, hence $\quot{A}{M} \cong \mbb{C}$.
+\end{proof}
+
+\subsection{Multiplicative Characters}
+
+\begin{definition}
+A multiplicative functional on $A$ is a linear map $\phi \colon A \to \mbb{C}$ nonzero such that $\phi\prs{xy} = \phi\prs{x} \phi\prs{y}$.
+\end{definition}
+
+\begin{proposition}
+If $\phi$ is a multiplicative character, it holds that $\phi\prs{e} = 1$ and $\norm{\phi} = 1$.
+\end{proposition}
+
+\begin{proof}
+Fix $x \in A$ such that $\phi\prs{x} \neq 0$. Then $\phi\prs{x} = \phi\prs{xe} = \phi\prs{x} \phi\prs{e}$ so $\phi\prs{e} = 1$.
+
+Now, $\norm{\phi} \geq 1$ since $\phi\prs{e} = 1$. Note that if $x$ is invertible, $1 = \phi\prs{e} = \phi\prs{x x^{-1}} = \phi\prs{x} \phi\prs{x^{-1}}$ so $\phi\prs{x} \neq 0$ (and $\phi\prs{x^{-1}} = \frac{1}{\phi\prs{x}}$).
+Fix $x \in A$ with $\norm{x} \leq 1$. For every $\lambda \in \mbb{C}$ with $\abs{\lambda} > 1$ the element $e - \frac{x}{\lambda}$ is invertible, so
+\begin{align*}
+0 &\neq \phi\prs{e - \frac{x}{\lambda}} = \phi\prs{e} - \frac{1}{\lambda} \phi\prs{x} = 1 - \frac{\phi\prs{x}}{\lambda}
+\end{align*}
+so
+$\phi\prs{x} \neq \lambda$. Hence $\abs{\phi\prs{x}} < 1$ so $\norm{\phi} \leq 1$.
+\end{proof}
+
+\begin{theorem}
+The map $\ker \colon \phi \mapsto \ker \phi$ is a bijection between (multiplicative) characters and maximal ideals.
+\end{theorem}
+
+\begin{proof}
+\begin{itemize}
+\item We know $\ker \phi$ is an ideal as the kernel of a homomorphism. It's maximal since $\quot{A}{\ker \phi} \cong \mbb{C}$.
+
+\item If $\ker \phi = \ker \psi$ then $\phi = \lambda \psi$, but since $\phi\prs{e} = \psi\prs{e} = 1$ we get $\lambda = 1$ and $\phi = \psi$.
+
+\item Fix a maximal ideal $M$ and consider the projection
+\[\phi \colon A \to \quot{A}{M} \cong \mbb{C} \text{.}\]
+$\phi$ is a character and $\ker \phi = M$.
+\end{itemize}
+\end{proof}
+
+\begin{corollary}
+Let $A$ be a Banach algebra. $x \in A$ is invertible if and only if $\phi\prs{x} \neq 0$ for every character $\phi$.
+\end{corollary}
+
+\begin{proof}
+If $x$ is invertible, we've seen previously that $\phi\prs{x} \neq 0$ (with inverse $\phi\prs{x^{-1}}$).
+
+If $x$ isn't invertible, there's a proper ideal $I \lneq A$. $I$ is contained in a maximal ideal $M$. $M$ is a kernel of $\phi \colon A \to \quot{A}{M} \cong \mbb{C}$, and since $x \in M$ we have $\phi\prs{x} = 0$.
+\end{proof}
+
+Recall
+\[W = \set{f \in \mcal{C}\prs{\mbb{T}}}{f = \sum_{n \in \mbb{Z}} \hat{f}\prs{n} e^{i n x}, \, \sum_{n \in \mbb{Z}} \abs{\hat{f}\prs{n}} < \infty} \text{.}\]
+
+\begin{theorem}[Wiener]
+If $f \in W$ and $f\prs{t} \neq 0$ for all $t \in \mbb{T}$, then $\frac{1}{f} \in W$.
+\end{theorem}
+
+\begin{proof}
+Assume $\phi \colon W \to \mbb{C}$ is a character. Write $a \ceq \phi\prs{e^{it}}$. Then
+\begin{align*}
+\abs{a} = \abs{\phi\prs{e^{it}}} \leq \norm{\phi} \norm{e^{it}} = 1 \cdot 1 = 1 \text{,}
+\end{align*}
+but also
+\begin{align*}
+\abs{\frac{1}{a}} = \abs{\phi\prs{e^{-it}}} \leq \norm{\phi} \norm{e^{-it}} = 1 \text{,}
+\end{align*}
+so $\abs{a} = 1$. Write $a = e^{i \theta}$.
+Now
+\begin{align*}
+\phi\prs{e^{int}} = \phi\prs{e^{it}}^n = \prs{e^{i \theta}}^n = e^{i n \theta} \text{.}
+\end{align*}
+For any trigonometric polynomial we therefore have $\phi\prs{p} = p\prs{\theta}$. Since trigonometric polynomials are dense and $\phi$ is continuous we get $\phi\prs{f} = f\prs{\theta}$ for all $f \in W$.
+If $f\prs{t} \neq 0$ for all $t \in \mbb{T}$ then $\phi\prs{f} \neq 0$ for every character $\phi$, so $f$ is invertible in $W$.
+\end{proof}
+
+\subsection{The Gelfand Transform}
+
+\begin{proposition}
+Let $X$ be any Banach space. There exists a compact Hausdorff space $K$ such that there's an isometric embedding $X \rmono \mcal{C}\prs{K}$.
+\end{proposition}
+
+\begin{proof}
+Let $\iota \colon X \rmono X^{**}$ send $x$ to $\mrm{ev}_x$. Take $K = \prs{\bar{B}_{X^*}, w^*}$ which is compact by Banach-Alaoglu.
+Define $\Phi \colon X \to \mcal{C}\prs{K}$ by
+$\Phi\prs{x} = \rest{\mrm{ev}_x}{\bar{B}_{X^*}}$. This is linear and
+\begin{align*}
+\norm{\Phi\prs{x}} = \max_{\phi \in \bar{B}_{X^*}} \abs{\mrm{ev}_x\prs{\phi}} = \max_{\norm{\phi} \leq 1} \abs{\mrm{ev}_x\prs{\phi}} = \norm{\mrm{ev}_x}^{**} = \norm{x} \text{.}
+\end{align*}
+\end{proof}
+
+Given a commutative Banach algebra $A$, we want to find an embedding (of Banach algebras) $\Gamma \colon A \to \mcal{C}\prs{\chi}$ where $\chi$ is a compact Hausdorff space.
+This isn't always possible, however under some conditions this exists, and under some conditions which we shall describe, it's an isomorphism.
+
+\begin{proposition}
+Let $\chi = \chi\prs{A}$ be the space of (multiplicative) characters on $A$, which is contained in $A^*$ since we've seen that characters are continuous. Then $\prs{\chi, w^*}$ is a compact Hausdorff space.
+\end{proposition}
+
+\begin{proof}
+We have
+\[\chi = \set{\phi \in \bar{B}_{A^*}}{\substack{\forall x,y \in A \colon \phi\prs{xy} = \phi\prs{x} \phi\prs{y} \\ \phi\prs{e} = 1}}\]
+where $\bar{B}_{A^*}$ is a compact Hausdorff space by Banach Alaoglu. The conditions are closed, so $\chi$ is closed within $\bar{B}_{A^*}$ and is so a compact Hausdorff space.
+\end{proof}
+
+\begin{definition}[The Gelfand Trasnform]
+Let
+\begin{align*}
+\Gamma \colon A &\to \mcal{C}\prs{\chi} \\
+x &\mapsto \mrm{ev}_x \text{.}
+\end{align*}
+We sometimes denote $\hat{x} \ceq \Gamma\prs{x}$.
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item $\Gamma$ is a well-defined homomorphism which isn't identically $0$.
+\item $x$ is invertible in $A$ if and only if $\hat{x}\prs{\phi} \neq 0$ for all $\phi \in \chi$.
+\item $\sigma\prs{x} = \im \hat{x} = \set{\hat{x}\prs{\phi}}{\phi \in \chi}$.
+\item $\norm{\hat{x}}_{\mcal{C}\prs{\chi}} = r\prs{x} \leq \norm{x}$ so $\norm{r} \leq 1$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item $\Gamma$ is well-defined by definition of the $w^*$ topology. We have
+\[\widehat{xy}\prs{\phi} = \phi\prs{xy} = \phi\prs{x} \phi\prs{y} = \hat{x}\prs{\phi} \hat{y} \prs{\phi} \text{,}\]
+so
+\[\Gamma\prs{xy} = \overline{xy} = \hat{x} \hat{y} = \Gamma\prs{x} \Gamma\prs{y} \text{.}\]
+Similarly, $\Gamma$ is linear.
+
+We have $\hat{e}\prs{\phi} = \phi\prs{e} = 1$ so $\Gamma\prs{e} = 1 \neq 0$ so $\Gamma$ is not identically $0$.
+
+\item We've seen that above in different notation.
+
+\item $\lambda \in \sigma\prs{x}$ if and only if $x - \lambda e$ is not invertible, if and only if there's $\phi \in \chi$ such that \[\hat{x}\prs{\phi} - \lambda = \hat{x} \prs{\phi} - \lambda \hat{e}\prs{\phi} = \widehat{\prs{x-\lambda e}}\prs{\phi} = 0 \text{,}\]
+if and only if there's $\phi \in \chi$ such that $\hat{x}\prs{\phi} = \lambda$,
+if and only if $\lambda \in \im \hat{x}$.
+
+\item By the previous part and by Gelfand's formula, we have
+\[\norm{\hat{x}} = \max_{\phi \in \chi} \abs{\hat{x}\prs{\phi}} = \max_{\lambda \in \sigma\prs{x}} \abs{\lambda} = r\prs{x} \text{.}\]
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}
+Assume $\tau$ is a topology on $\chi$ such that $\prs{\chi, \tau}$ is compact and every $\hat{x}$ is continuous. Then $\tau = w^*$.
+\end{proposition}
+
+\begin{proof}
+Since every $\hat{x} \prs{\phi} = \phi\prs{x}$ is continuous, we know $w^* \leq \tau$.
+But $\tau$ is compact and $w^*$ is Hausdorff, so $\tau = w^*$.
+\end{proof}
+
+\begin{example}
+Let $A = \mcal{C}\prs{S}$ where $S$ is compact and Hausdorff.
+We saw the every maximal ideal $M \ideal A$ is of the form $\mfrak{m}_s = \set{f \in A}{f\prs{s} = 0}$ where $s \in S$.
+Hence $\chi\prs{A} = \set{\mrm{ev}_s}{s \in S}$.
+So
+\begin{align*}
+\Gamma \colon A &\to \mcal{C}\prs{\chi} \\
+f &\mapsto \hat{f}
+\end{align*}
+and
+\[\Gamma\prs{f}\prs{\mrm{ev}_s} = \hat{f}\prs{\mrm{ev}_s} = \mrm{ev}_s\prs{f} = f\prs{s} \text{.}\]
+Note that we have a homeomorphism $\chi\prs{A} \cong S$ by $\mrm{ev}_s \leftrightarrow s$ by the proposition. Under the identification $\chi\prs{A}$, the map $\Gamma \colon A \to \mcal{C}\prs{S}$ is the identity.
+\end{example}
+
+\begin{example}
+Let $A = W$ be the Wiener algebra. Then $\chi\prs{W} = \set{\mrm{ev}_t}{t \in \mbb{T}}$. Then $\chi\prs{W} \cong \mbb{T}$ so we can think of $\Gamma \colon W \to \mcal{C}\prs{\mbb{T}}$ as the identity. Here $\Gamma$ is injective but not surjective. But, $\overline{\Gamma\prs{W}} = \mcal{C}\prs{\mbb{T}}$ for example since the image contains trigonometric trigonometric polynomials.
+\end{example}
+
+\begin{example}[The Disc Algebra]
+Let
+\[\mbb{D} = \set{z \in \mbb{C}}{\abs{z} < 1}\]
+and
+\[A = A\prs{\mbb{D}} = \set{f \in \mcal{C}\prs{\bar{\mbb{D}}}}{\text{$f$ is analytic on $\mbb{D}$}}\]
+with
+$\norm{f} = \max_{z \in \overline{\mbb{D}}} \abs{f\prs{z}}$.
+Show as an exercise that
+\[\chi\prs{A} = \set{\mrm{ev}_a}{a \in \bar{\mbb{D}}} \text{.}\]
+Again $\chi\prs{A} \cong \bar{\mbb{D}}$ and $\Gamma \colon A \to \mcal{C}\prs{\bar{\mbb{D}}}$ can be thought of as the identity. This time $\overline{\Gamma\prs{A}} = \Gamma\prs{A} \neq \mcal{C}\prs{\bar{\mbb{D}}}$. 
+\end{example}
+
+\begin{example}
+Define
+\begin{align*}
+T \mbb{C}^n &\to \mbb{C}^n \\
+\prs{x_1, \ldots, x_n} &\mapsto \prs{x_2, \ldots, x_n, 0} \text{.}
+\end{align*}
+
+Take
+\[A = \set{\sum_{i=0}^{n-1} c_i T^i}{c_i \in \mbb{C}} \subseteq \mcal{L}\prs{\mbb{C}^n} = M_{n \times n}\prs{\mbb{C}} \text{.}\]
+This is closed under multiplication since $T^n = 0$ and is complete since $\dim A < \infty$.
+
+Assume $\phi \in \chi\prs{A}$. Then $0 = \phi\prs{e} = \phi\prs{T^n} = \phi\prs{T}^n$ so $\phi\prs{T} = 0$. Then
+\[\phi\prs{\sum_{i=0}^{n-1} c_i T^i} = \sum_{i = 0}^{n-1} c_i \phi\prs{T}^i = c_0 \text{.}\]
+Hence $\chi\prs{A} = \set{\mrm{ev}_0}$. Hence $\mcal{C}\prs{\chi\prs{A}} \cong \mbb{C}$.
+Hence
+$\Gamma \colon A \to \mbb{C}$ is given by $\Gamma\prs{\sum_{i=0}^{n-1} c_i T^i} = c_0$. Hence $\Gamma$ is not injective in this case.
+\end{example}
+
+\begin{definition}[The Radical of a Banach Algebra]
+The set
+\[\ker \Gamma = \set{x \in A}{\hat{x} = 0} = \set{x \in A}{r\prs{x} = 0} = \set{x \in A}{\text{$x$ is quasi-nilpotent}} = \set{x \in A}{\sigma\prs{x} = \set{0}}\]
+is called the radical of $A$.
+\end{definition}
+
+\begin{definition}[Semisimple Banach Algebra]
+If $\ker \Gamma = \set{0}$, $A$ is called seim-simple.
+\end{definition}
+
+\subsection{$\mbb{C}^*$ Algebras}
+
+We want to understand when $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric isomorphism.
+
+On $\mcal{C}\prs{\chi}$ there is complex conjugation. We want an analogue for abstract algebras.
+
+\begin{definition}[$*$-Algebra]
+Let $A$ be a Banach algebra. $A$ is called a $*$-algebra if there exists a map $* \colon A \to A$ such that
+\begin{enumerate}
+\item $x^{**} = x$.
+\item $\prs{x+\lambda y}^* = x^* + \bar{\lambda} y$.
+\item $\prs{xy}^* = y^* x^*$.
+\item $\norm{x^*} = \norm{x}$.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[$\mbb{C}^*$-Algebra]
+$A$ is called a $\mbb{C}^*$-algebra if it's a $*$-algebra such that $\norm{x^* x} = \norm{x}^2$.
+\end{definition}
+
+We want to show that if $A$ is a commutative $\mbb{C}^*$-algebra then $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric $*$-isomorphism.
+
+\begin{remark}
+\begin{enumerate}
+\item $e^* = e^* e^{**} = \prs{e^* e}^* = e^{**} = e$.
+\item If $\norm{x}^2 \leq \norm{x^* x}$, the property $\norm{x^*} = \norm{x}$ follows
+since
+\[\norm{x}^2 \leq \norm{x^* x} \leq \norm{x^*} \norm{x}\]
+implies $\norm{x} \leq \norm{x^*}$ and by applying the same for $x^*$ we get $\norm{x} = \norm{x^*}$.
+
+Then $\norm{x^* x} \leq \norm{x^*} \norm{x} = \norm{x}^2$ so the $\mbb{C}^*$ identity also follows. 
+\end{enumerate}
+\end{remark}
+
+\begin{example}
+Let $A = \mcal{C}\prs{S}$. This is a $\mbb{C}^*$-algebra with $f^* = \bar{f}$. We have
+\begin{align*}
+\norm{f^* f} = \max \abs{\bar{f} \cdot f} = \max \abs{f}^2 = \prs{\max \abs{f}}^2 = \norm{f}^2 \text{.}
+\end{align*}
+\end{example}
+
+\begin{example}
+Let $A = W$ be the Wiener algebra with $f^* = \bar{f}$. This is a $*$-algebra but not a $\mbb{C}^*$-algebra. Take $f = e^{it} + 2^{it} - e^{3 it}$. Then $\bar{f} f = 3 - e^{2 it} - e^{-2 it}$. So $\norm{f} = 3$ and $\norm{\bar{f} f} = 5$ so $\norm{\bar{f} f} < \norm{f}^2$.
+\end{example}
+
+\begin{example}[Important Example]
+Let $H$ be a Hilbert space and let $A =\mcal{L}\prs{H}$. Let $T^*$ be the adjoint of $T$ satisfying $\trs{Tx, y} = \trs{x, T^* y}$. We've seen the first three conditions for $A$ to be a $*$-algebra. We have
+\[\norm{Tx}^2 = \trs{Tx, Tx} = \trs{x, T^* T x} \leq \norm{x} \norm{T^* T x} \leq \norm{T^* T} \norm{x}^2\]
+so
+\[\norm{T x} \leq \sqrt{\norm{T^* T}} \cdot \norm{x}\]
+so $\norm{T} \leq \sqrt{\norm{T^* T}}$
+so
+$\norm{T}^2 \leq \norm{T^* T}$.
+By the above remark it follows that $A$ is a $\mbb{C}^*$-algebra.
+\end{example}
+
+\begin{proposition}
+In a $*$-algebra, $\lambda \in \sigma\prs{x}$ if and only if $\bar{\lambda} \in \sigma\prs{x^*}$.
+\end{proposition}
+
+\begin{proof}
+$\lambda \notin \sigma\prs{x}$ if and only if there's $y \in A$ such that $y\prs{x-\lambda e} = \prs{x-\lambda e} y = e$ if and only if there's $y \in A$ such that $\prs{x-\lambda e}^* y^*  = y^* \prs{x-\lambda e}^* = e$ if and only if $\bar{\lambda} \notin \sigma\prs{x^*}$.
+\end{proof}
+
+\begin{definition}[Self-Adjoint]
+$x \in A$ is \emph{self-adjoint} if $x = x^*$.
+\end{definition}
+
+\begin{definition}[$*$-Homomorphism]
+A homomorphism $F \colon A \to B$ is a $*$-homomorphism if it's a homomorphism of Banach algebras such that $F\prs{x^*} = F\prs{x}^*$.
+\end{definition}
+
+\begin{proposition}
+Let $A$ be a commutative $*$-algebra and assume that $\sigma\prs{x} \subseteq \mbb{R}$ for every $x \in A$ which is self-adjoint. Then
+$\Gamma \colon A \to \mcal{C}\prs{\chi}$
+is a $*$-homomorphism with dense image.
+\end{proposition}
+
+\begin{example}
+Take $A = W$. Self-adjointness of $f \in A$ means $f = \bar{f}$ so $f$ is real-valued. Then
+\[\sigma\prs{f} = \im \Gamma\prs{f} = \set{\phi\prs{f}}{\phi \in \chi} = \set{f\prs{t}}{t \in \mbb{T}} = \im f \text{,}\]
+so $f = f^*$ implies $\sigma\prs{f} \subseteq \mbb{R}$. Indeed, $\Gamma$ has a dense image.
+\end{example}
+
+\begin{proof}
+For every $x \in A$ write
+$y = \frac{x + x^*}{2}$ and $z = \frac{x-x^*}{2 i}$. Then $y^* = y$ and $z^* = z$, and we can write $x = y + iz$.
+We have
+\begin{align*}
+\Gamma\prs{x}^* &= \overline{\Gamma\prs{x}}
+\\&= \overline{\Gamma\prs{y+iz}}
+\\&= \overline{\Gamma\prs{y} + i\Gamma\prs{z}}
+\\&= \overline{\Gamma\prs{y}} - i \overline{\Gamma\prs{z}}
+\\&\underset{\im \Gamma\prs{y} = \sigma\prs{y} \subseteq \mbb{R}}{=} \Gamma\prs{y} - i \Gamma\prs{z}
+\\&= \Gamma\prs{y-iz}
+\\&= \Gamma\prs{x^*} \text{.}
+\end{align*}
+
+Let $B \ceq \im \Gamma \leq \mcal{C}\prs{\chi}$. $B$ is an algebra, is closed under complex conjugation and separates points. If $\phi \neq \psi$, there's $x$ such that $\phi\prs{x} \neq \psi\prs{x}$, so $\Gamma\prs{x} \prs{\phi} \neq \Gamma\prs{x} \prs{\psi}$.
+By Stone-Weierstrass, it follows that $\bar{B} = \mcal{C}\prs{\chi}$.
+\end{proof}
+
+\begin{theorem}[Gelfand-Naimark]
+If $A$ is a commutative $\mbb{C}^*$-algebra then $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric $*$-isomorphism.
+\end{theorem}
+
+\begin{proof}
+Assume $x = x^*$ and $\alpha + i \beta \in \sigma\prs{x}$. We want to prove $\beta = 0$. We know $\alpha - i \beta \in \sigma\prs{x}$.
+Let $t \in \mbb{R}$. We have \[\alpha + i \prs{\beta + T} \in \sigma\prs{x + i t e} \text{.}\] Then
+\[\abs{\alpha + i \prs{\beta + t}} \leq r\prs{x+ite} \leq \norm{x + ite} \text{.}\]
+Similarly
+\[\alpha - i\prs{\beta + T} \in \sigma\prs{x - ite}\]
+so
+\[\abs{\alpha - i\prs{\beta+t}} \leq \norm{x-ite} = \norm{\prs{x+ite}^*} = \norm{x+ite} \text{.}\]
+
+Multiplying the inequalities we have
+\begin{align*}
+\alpha^2 + \prs{\beta + t}^2 &\leq \norm{x + ite}^2
+\\&= \norm{\prs{x+ite}^* \prs{x+ite}}
+\\&= \norm{\prs{x-ite}\prs{x+ite}}
+\\&= \norm{x^2 + t^2 e}
+\\&< \norm{x^2} + t^2 \text{.}
+\end{align*}
+Then
+\[\alpha^2 + \beta^2 + 2\beta t + t^2 \leq \norm{x^2} + t^2\]
+for all $t \in \mbb{R}$, so $\beta = 0$ (otherwise we can make the left-hand-side as big as we want) so $\sigma\prs{t} \subseteq \mbb{R}$.
+
+We claim that $\norm{x^2} = \norm{x}^2$ for all $x \in A$. Indeed,
+\begin{align*}
+\norm{x^2}^2 &= \norm{\prs{x^2}^* x^2}
+\\&= \norm{\prs{x x^*}^* \prs{x x^*}}
+\\&= \norm{x x^*}^2
+\\&= \norm{x^* x}^2
+\\&= \norm{x}^4 \text{.}
+\end{align*}
+Then $\norm{x^{2^k}} = \norm{x}^{2^k}$ for all $k \in \mbb{N}$ so
+\[\norm{\Gamma\prs{x}} = r\prs{x} = \lim_{n\to\infty} \norm{x^n}^{\frac{1}{n}} = \lim_{k\to\infty} \norm{x^{2^k}}^{\frac{1}{2^k}} = \norm{x}\]
+so $\Gamma$ is an isometric $*$-homomorphism.
+Since $A$ is complete (as a Banach algebra), $\Gamma\prs{A}$ is complete (since $\Gamma$ is an isometry), hence $\Gamma\prs{A} \subseteq \mcal{C}\prs{\chi}$ is closed. Since it's closed and dense, it's everything.
+\end{proof}
+
+%LECTURE 6.1.2021
+
+\subsection{The Spectral Theorem}
+
+We remind the spectral theorem.
+
+\begin{theorem}[The Spectral Theorem for Normal Operators]
+Assume $T \in M_{n \times n}\prs{\mbb{C}}$ is normal (i.e. $T T^* = T^* T$).
+Then there's an orthonormal basis $\prs{e_i}_{i \in [n]}$ of eigenvectors of $T$.
+Let $\prs{\lambda_i}_{i \in [m]}$ be the eigenvalues of $T$ and $\prs{V_i}_{i \in [m]}$ the corresponding eigenspaces with orthogonal projections $\prs{E_i}_{i \in [m]}$ respectively.
+Then
+\begin{enumerate}
+\item $E_i^2 = E_i = E_i^*$.
+\item $E_i E_j = 0$ for all $i \neq j$.
+\item $\sum_{i \in [m]} E_i = \id$.
+\item $T x = T \prs{\sum_{i \in [m]} E_i x} = \sum_{i \in [m]} T E_i x = \sum_{i \in [m]} \lambda_i E_i x$ so $T = \sum_{i \in \brs{m}} \lambda_i E_i$.
+\end{enumerate}
+\end{theorem}
+
+\begin{example}
+Let $H = L_2\prs{\brs{0,1}}$ and $T \in \mcal{L}\prs{H}$ by $\prs{Tf}\prs{t} = t f\prs{t}$.
+First, if $\lambda \notin \brs{0,1}$, $T-\lambda I$ is invertible since
+\[\prs{\prs{T - \lambda I}^{-1} f}\prs{t} = \frac{f\prs{t}}{t-\lambda}\]
+which is well-defined since $\frac{1}{t - \lambda}$ is bounded.
+
+If $\lambda \in \brs{0,1}$, $T - \lambda I$ is not onto, e.g. since $1 \notin \im\prs{T-\lambda I}$ since $\frac{1}{t-\lambda} \notin L_2\prs{\brs{0,1}}$. So $\sigma\prs{T} = \brs{0,1}$.
+
+But, $\sigma_p\prs{T} = \ns$: If $Tf = \lambda f$ then for almost every $t$ it holds that $t f\prs{t} = \lambda f\prs{t}$ so $\prs{t-\lambda} f\prs{t} = 0$ so for almost very $t$, $f\prs{t} = 0$.
+
+Here there is no decomposition as in the finite case since there are no eigenspaces.
+But, for $A \subseteq \brs{0,1}$ define $E\prs{A} f = f \cdot \chi_A$. Then $E\prs{A}^2 = E\prs{A} =  E\prs{A}^*$ and
+\begin{align*}
+\sum_{i \in [N]} E\prs{\brs{\frac{i-1}{N}, \frac{i}{N}}} &= \id \\
+\sum_{i \in [N]} \frac{i}{N} E\prs{\brs{\frac{i-1}{N}, \frac{i}{N}}} &\xrightarrow{N\to\infty} T \text{.}
+\end{align*}
+
+We say that $T = \int_0^1 \lambda \diff E$. Here $\diff E$ is not a measure in the usual sense. For every $A \subseteq \brs{0,1}$ it gives an orthogonal projection. We formalise this later.
+\end{example}
+
+\begin{theorem}
+If $A \subseteq B$ are $\mbb{C}^*$-algebras and $a \in A$, then $\sigma_A\prs{a} = \sigma_B\prs{a}$.
+\end{theorem}
+
+\begin{proposition}
+If $A$ is a $\mbb{C}^*$ algebra and $a \in A$ is invertible, then $a^{-1} \in \mbb{C}^*\prs{a}$ where $\mbb{C}^*\prs{a}$ is the smallest $\mbb{C}^*$ algebra containing $a$, namely
+\[\mbb{C}^*\prs{a} = \overline{\set{p\prs{a, a^*}}}{p \in \mbb{C}\brs{x,y}} \text{.}\]
+\end{proposition}
+
+\begin{proof}
+Assume first that $a = a^*$ and consider \[B = \mbb{C}^*\prs{a, a^{-1}} \ceq \overline{\set{p\prs{a,a^{-1}}}{p \in \mbb{C}\brs{x,y}}} \text{.}\]
+$B$ is commutative, so $\Gamma \colon B \to \mcal{C}\prs{\chi\prs{B}}$ is an isometric $*$-isomorphism. Let $K = \sigma_B\prs{a}$. $K \subseteq \mbb{R}$ since $a = a^*$ and $0 \notin K$ sinice $a^{-1} \in B$. Hence $h\prs{\lambda} = \frac{1}{\lambda}$ is continuous on $K$.
+Choose $\prs{p_n}_{n \in \mbb{N}}$ polynomials such that $p_n \xrightarrow{n\to\infty} h$ uniformly on $K$. Then
+\begin{align*}
+\norm{p_n\prs{a} - a^{-1}} &= \norm{\Gamma\prs{p_n\prs{a} - a^{-1}}}
+\\&= \max_{\phi \in \chi\prs{B}} \abs{\Gamma\prs{p_n\prs{a} - a^{-1}}\prs{\phi}}
+\\&= \max_{\phi \in \chi\prs{B}} \abs{\phi\prs{p_n\prs{a} - a^{-1}}}
+\\&= \max_{\phi \in \chi\prs{B}} \abs{p_n\prs{\phi\prs{a}} - \phi\prs{a}^{-1}}
+\max_{\lambda \in \sigma_B\prs{a}} \abs{p_n\prs{\lambda} - \frac{1}{\lambda}}
+\\&\xrightarrow{n\to\infty} 0
+\text{.}
+\end{align*}
+So $p_n\prs{a} \to a^{-1}$ so $a^{-1} \in \mbb{C}^*\prs{a}$.
+
+In the general case, write $a^{-1} = \prs{a^* a}^{-1} a^*$. $a^* a$ is self-adjoint so $\prs{a^* a}^{-1} \in \mbb{C}^*\prs{a^* a} \subseteq \mbb{C}^*\prs{a}$ and $a^* \in \mbb{C}^*\prs{a}$, so we are done.
+\end{proof}
+
+\begin{theorem}[The Spectral Theorem, Form \#1]
+Let $A$ be a $\mbb{C}^*$ algebra and let $a \in A$ be normal. There's a unique isometric $*$-isomorphism $\rho \colon \mcal{C}\prs{\sigma\prs{a}} \to \mbb{C}^*\prs{a}$ such that $h\prs{\lambda} = \lambda$ implies $\rho\prs{h} = a$. Here $\rho\prs{f}$ is denoted $f\prs{a}$.
+\end{theorem}
+
+\begin{proof}
+$\mbb{C}^*\prs{a}$ is a commutative $\mbb{C}^*$-algebra (since $a$ is normal).
+So $\Gamma \colon \mbb{C}^*\prs{a} \to \mcal{C}\prs{\chi\prs{\mbb{C}^*\prs{a}}}$ is an isometric $*$-isomorphism.
+
+We claim that $\chi\prs{\mbb{C}^*\prs{a}}$ is homeomorphic to $\sigma\prs{a}$. Consider $\Gamma\prs{a} = \hat{a} \colon \chi\prs{\mbb{C}^*\prs{a}} \to \mbb{C}$. We know that $\hat{a}$ is continuous and we know that $\im \hat{a} = \sigma\prs{a}$. WE claim also that $\hat{a}$ is injective. If $\hat{a} \prs{\phi} = \hat{a} \prs{\psi}$ it holds that $\phi\prs{a} = \psi\prs{a}$ so $\phi\prs{a^*} = \overline{\phi\prs{a}} = \overline{\psi\prs{a}} = \psi\prs{a^*}$, so $\phi\prs{p\prs{a a^*}} = \psi\prs{p\prs{a a^*}}$ for every polynomial $p \in \mbb{C}\brs{x}$. So $\phi\prs{x} = \phi\prs{x}$ for all $x \in \mbb{C}^*\prs{a}$ by continuity of $\phi,\psi$.
+Hence $\hat{a}$ is continuous and bijective. Since $\chi\prs{\mbb{C}^*\prs{A}}$ is compact and $\sigma\prs{a}$ is Hausdorff it follows that $\hat{a}$ is a homeomorphism.
+
+For every $f \in \mcal{C}\prs{\sigma\prs{a}}$ define $\rho\prs{f} = \Gamma^{-1}\prs{f \circ \hat{a}} \in \mbb{C}^*\prs{a}$ which is obviously an isometric $*$-isometric.
+Not that \[\rho\prs{h} = \Gamma^{-1}\prs{h \circ \hat{a}} = \Gamma^{-1}\prs{\hat{a}} = a\text{.}\]
+If $\rho_1, \rho_2$ are two such maps, $\rho_1\prs{\lambda} = \rho_2\prs{\lambda}$ so $\rho_1\prs{\bar{\lambda}} = \rho_2\prs{\bar{\lambda}}$ so $\rho_1\prs{p\prs{\lambda, \bar{\lambda}}} = \rho_2\prs{p\prs{\lambda, \bar{\lambda}}}$ for every polynomial $p \in \mbb{C}\brs{x,y}$, so by continuity $\rho_1\prs{f} = \rho_2\prs{f}$ for all $f \in \mcal{C}\prs{\sigma\prs{a}}$.
+\end{proof}
+
+\begin{corollary}[The Spectral Mapping Theorem]
+For every $f \in \mcal{C}\prs{\sigma\prs{a}}$ it holds that $\sigma\prs{f\prs{a}} = f\prs{\sigma\prs{a}}$.
+\end{corollary}
+
+\begin{proof}
+We have \[\sigma\prs{f\prs{a}} = \sigma\prs{f} = \im f - f\prs{\sigma\prs{a}} \text{.}\]
+\end{proof}
+
+\begin{example}
+Let $T \in M_{n \times n}\prs{\mbb{C}}$ be normal and write $\sigma\prs{T} = \set{\lambda_i}_{i \in [m]}$. Let $f_i \ceq \chi_{\set{\lambda_i}} \in \mcal{C}\prs{\sigma\prs{T}}$ (this is continuous since the spectrum is discrete).
+Take $E_i = f_i\prs{T}$.
+We have
+\begin{enumerate}
+\item $f_i = f_i^2 = \bar{f}_i$ (on $\sigma\prs{T}$) so $E_i = E_i^2 = E_i^*$.
+\item $f_i f_j = 0$ for every $i \neq j$ (on $\sigma\prs{T}$) so $E_i E_j = 0$.
+\item $\sum_{i \in [m]} f_i = 1$ (...) so $\sum_{i \in [m]} E_i = I$.
+\item $\sum_{i \in [m]} \lambda_i f_i = \lambda$ so $\sum_{i \in [m]} \lambda_i E_i = T$.
+\end{enumerate}
+\end{example}
+
+\begin{proposition}
+Let $T \in \mcal{L}\prs{H}$ be normal.
+Then
+\begin{enumerate}
+\item $T$ is self-adjoint if and only if $\sigma\prs{T} \subseteq \mbb{R}$.
+\item $T$ is unitary (i.e. $T T^* = T^* T = \id$) if and only if $\sigma\prs{T} \subseteq S^1 \subseteq \mbb{C}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Take $h\prs{\lambda} = \lambda$.
+\begin{enumerate}
+\item $T = T^*$ if and only if $h\prs{T} = h\prs{T}^* = \bar{h}\prs{T}$ if and only if $h = \bar{h}$ on $\sigma\prs{T}$, if and only if $\sigma\prs{T} \subseteq \mbb{R}$.
+\item $T T^* = I$ if and only if $\prs{h \bar{h}}\prs{T} = h\prs{T} \bar{h}\prs{T} = \id = 1\prs{T}$ if and only if $h \bar{h} = 1$ on $\sigma\prs{T}$ if and only if $\abs{\lambda} = 1$ on $\sigma\prs{T}$.
+\end{enumerate}
+\end{proof}
+
+We now want to define ``$T = \int \lambda \diff E$''. For this we want $E\prs{A} = \chi_A\prs{T}$, but $\chi_A$ isn't in general continuous.
+
+\begin{lemma}
+Let $H$ be a Hilbert space and $B \colon H \times H \to \mbb{C}$ be sesquilinear and bounded.
+Then there's a unique $S \in \mcal{L}\prs{H}$ such that $\trs{Sx, y} = B\prs{x,y}$, and moreover $\norm{S} = \norm{B}$.
+\end{lemma}
+
+\begin{proof}
+Fix $x \in H$ and consider $\psi_x\prs{y} \ceq \overline{B\prs{x,y}}$ which is linear. We have
+\[\abs{\psi_x\prs{y}} = \abs{B\prs{x,y}} \leq \norm{B} \norm{x} \norm{y} \text{,}\]
+so $\norm{\psi_x} \leq \norm{B} \norm{x}$.
+By Riesz there's $x^* = Sx$ such that $\psi_x\prs{y} = \trs{y, Sx}$, but then
+\[B\prs{x,y} = \overline{\psi_x\prs{y}} = \trs{y, Sx} = \trs{Sx, y} \text{.}\]
+We know
+\[\norm{Sx} = \norm{x^*} = \norm{\psi_x} \leq \norm{B} \norm{x} \text{,}\]
+so $\norm{S} \leq \norm{B}$.
+Conversely,
+\[\abs{B\prs{x,y}} = \abs{\trs{Sx, y}} \leq \norm{S x} \norm{y} \leq \norm{S} \norm{x} \norm{y}\]
+so $\norm{B} \leq \norm{S}$.
+
+For uniqueness, if $\trs{S_1 x, y} = \trs{S_2 x, y}$ for all $x,y$ then $S_1 x - S_2 x \perp H$ so $S_1 x = S_2 x$.
+\end{proof}
+
+Every $\phi \in \mcal{C}\prs{\sigma\prs{a}}^*$ if of the form $\phi\prs{f} = \int f \diff \mu$. But then, one get integrate all measurable and bounded functions, not necessarily continuous ones. $\rho$ we defined above returns operators, so we have to go from operators through numbers and back to operators.
+
+Formally, given $x,y \in H$ we consider $\ell_{x,y}\prs{f} = \trs{f\prs{T} x, y}$. Then
+\[\abs{\ell_{x,y}\prs{f}} \leq \norm{f\prs{T}} \norm{x} \norm{y} = \norm{f}\norm{x}\norm{y}\]
+so $\norm{\ell_{x,y}} \leq \norm{x} \norm{y}$ (and there's in fact equality).
+So, $\ell_{x,y} \in \mcal{C}\prs{\sigma\prs{a}}^*$ so there's a complex measure $\mu_{x,y}$ such that
+\[\ell_{x,y}\prs{f} = \trs{f\prs{T} x, y} = \int_{\sigma\prs{T}} f \diff \mu_{x,y}\]
+for all $f \in \mcal{C}\prs{\sigma\prs{T}}$.
+Write $B\prs{\sigma\prs{T}}$ for all bounded Borel measurable functions. $\ell_{x,y}$ is sesquilinear hence so is $\mu_{x,y}$. Hence, for every $g \in B\prs{\sigma\prs{T}}$ one has that
+\[\int_{\sigma\prs{T}} g \diff \mu_{x,y}\]
+is sesquilinear in $x,y$, and bounded since
+\[\abs{\int_{\sigma\prs{T}} g \diff \mu_{x,y}} \leq \sup \abs{g} \cdot \norm{\mu_{x,y}} \leq \sup \abs{g} \cdot \norm{x} \norm{y} \text{.}\]
+
+By the lemma, there's $g\prs{T}$ such that \[\trs{g\prs{T} x, y} = \int_{\sigma\prs{T}} g \diff \mu_{x,y} \text{.}\]
+
+\begin{theorem}
+The map
+\begin{align*}
+B\prs{\sigma\prs{T}} &\to \mcal{L}\prs{H} \\
+g &\mapsto g\prs{T}
+\end{align*}
+is a $*$-homomorphism and $\norm{g\prs{T}} \leq \sup_{\sigma \prs{T}} \abs{g}$.
+\end{theorem}
+
+\begin{proof}
+\begin{description}
+\item[Linearity:]
+For every $f,g \in B\prs{\sigma\prs{T}}$ we have
+\begin{align*}
+\trs{\prs{\alpha f+g}\prs{T} x, y} &= \int \prs{\alpha f+g} \diff \mu_{x,y}
+\\&= \int \alpha f\diff \mu_{x,y} + \int g \diff\mu_{x,y}
+\\&= \trs{\alpha f\prs{T} x, y} + \trs{g\prs{T} x, y}
+\\&= \trs{\alpha f\prs{T} + g\prs{T}x, y}
+\end{align*}
+so $\prs{\alpha f + g}\prs{T} = \alpha f\prs{T} + g\prs{T}$.
+\item[$*$-preserving:]
+For $f \in \mcal{C}\prs{\sigma\prs{T}}$ we know
+\[\trs{\bar{f}\prs{T} x , y} = \trs{f\prs{T}^*x, y} \text{.}\]
+The left-hand-side equals $\int \bar{f} \diff \mu_{x,y}$.
+The right hand side equals
+\begin{align*}
+\trs{x, f\prs{T} y} &= \overline{\trs{f\prs{T} y, x}}
+\\&= \overline{\int f \diff \mu_{y,x}}
+\\&= \int \bar{f} \diff \mu_{y,x} \text{.}
+\end{align*}
+So, $\mu_{x,y} = \overline{\mu_{y,x}}$.
+
+But then, for every $f \in B\prs{\sigma\prs{T}}$ we have
+\begin{align*}
+\trs{\overline{f}\prs{T}x,y} &= \int \bar{f} \diff \mu_{x,y}
+\\&= \overline{\int f \diff \overline{\mu_{x,y}}}
+\\&= \overline{\int f \diff \mu_{y,x}}
+\\&= \overline{\trs{f\prs{T} y, x}}
+\\&= \overline{\trs{y, f\prs{T}^* x}}
+\\&= \trs{f\prs{T}^* x , y} \text{,}
+\end{align*}
+so $\bar{f}\prs{T} = f\prs{T}^*$.
+
+\item[Multiplicativity:]
+
+Fix $f,g \in \mcal{C}\prs{\sigma\prs{T}}$. We have
+\begin{align*}
+\int fg \diff \mu_{x,y} &= \trs{\prs{fg}\prs{T} x, y}
+\\&= \trs{f\prs{T} g\prs{T} x, y}
+\\&= \trs{g\prs{T} f\prs{T} x, y}
+\\&= \trs{f\prs{T} x, g\prs{T}^* y}
+\\&= \int f \diff\mu_{x, g\prs{T}^* y}
+\end{align*}
+so $g \diff \mu_{x,y} = \mu_{x, g\prs{T}^* y}$.
+Now, if $f \in B\prs{\sigma\prs{T}}$ and $g \in \mcal{C}\prs{\sigma\prs{T}}$ we have
+\begin{align*}
+\int gf \diff \mu_{x,y} &= \trs{\prs{fg}\prs{T} x, y}
+\\&= \int fg \diff \mu_{x,y}
+\\&= \int f\diff \mu_{x, g^*\prs{T} y}
+\\&= \trs{f\prs{T} x, g^*\prs{T} y}
+\\&= \trs{g\prs{T} f\prs{T} x, y}
+\\&= \int g \diff \mu_{f\prs{T} x, y} \text{,}
+\end{align*}
+so $f \diff \mu_{x,y} = \mu_{f\prs{T} x,y}$.
+
+Now if $f,g \in B\prs{\sigma\prs{T}}$ we have
+\begin{align*}
+\trs{\prs{fg}\prs{T} x,y} &= \int fg \diff \mu_{x,y}
+\\&= \int g \diff \mu_{f\prs{T} x, y}
+\\&= \trs{g\prs{T} f\prs{T} x, y} \text{,}
+\end{align*}
+so $\prs{fg}\prs{T} = g\prs{T} f\prs{T}$.
+
+\item[Norm Bound:]
+We have
+\begin{align*}
+\abs{\trs{g\prs{T} x, y}} &= \abs{\int g\diff \mu_{x,y}}
+\\&\leq \sup \abs{g} \cdot \norm{\mu_{x,y}}
+\\&\leq \sup\abs{g} \cdot \norm{x} \norm{y}
+\end{align*}
+so $\norm{g\prs{T}} \leq \sup \abs{g}$.
+\end{description}
+\end{proof}
+
+\begin{definition}[The Spectral Resolution of an Operator]
+The \emph{spectral resolution of a normal operator $T \in \mcal{L}\prs{H}$} is
+\begin{align*}
+E \colon \mrm{Borel}\prs{\sigma\prs{T}} &\to \mcal{L}\prs{H} \\
+A &\mapsto \chi_A\prs{T} \text{.}
+\end{align*}
+\end{definition}
+
+\begin{proposition}
+$E$ is resolution of the identity in the following sense:
+\begin{enumerate}
+\item $E\prs{A}^2 = E\prs{A} = E\prs{A}^*$.
+\item If $\prs{A_n}_{n \in \mbb{N}_+}$ are pairwise disjoint and $A = \bigcup_{n \in \mbb{N}} A_n$ then $E\prs{A}x = \sum_{n \in \mbb{N}_+} E\prs{A_n} x$ for all $x \in H$.
+\item $E\prs{\ns} = 0$ and $E\prs{\sigma\prs{T}} = I$.
+\item $E\prs{A \cap B} = E\prs{A} E\prs{B}$ (and specifically if $A \cap B = \ns$ by the above $E\prs{A} E\prs{B} = 0$).
+\end{enumerate}
+
+Also, the following holds.
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item $E\prs{A}$ commutes with $f\prs{T}$ for all $f \in B\prs{\sigma\prs{T}}$.
+\item If $A \subseteq \sigma\prs{T}$ is relatively open than $E\prs{A} \neq 0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item This is true since $\chi_A^2 = \chi_A = \overline{\chi_A}$ and this is a $*$-homomorphism.
+\item Note that
+\begin{align*}
+\trs{E\prs{A} x, y} &= \trs{\chi_A\prs{T} x, y}
+\\&= \int \chi_A \diff \mu_{x,y}
+\\&= \mu_{x,y} \prs{A}
+\\&=\sum_{n \in \mbb{N}_+} \mu_{x,y} \prs{A_n}
+\\&= \sum_{n \in \mbb{N}_+} \trs{E\prs{A_n} x, y} \text{.}
+\end{align*}
+This shows weak convergence, but note
+\begin{align*}
+\sum_{n \in [N]} \norm{E\prs{A_n} x}^2 = \norm{\sum_{n \in [N]} E\prs{A_n} x}^2 = \norm{E\prs{\bigcup_{n \in [N]} A_n} x}^2 \leq \norm{x}^2 \text{,}
+\end{align*}
+so $\sum_{n \in \mbb{N}_+} \norm{E\prs{A_n} x}^2 < \infty$.
+Hence
+\[\norm{\sum_{n = M}^N E\prs{A_n} x}^2 = \sum_{n=M}^N \norm{E\prs{A_n} x}^2 \xrightarrow{N,M \to \infty} 0 \text{,}\]
+so the sequence is Cauchy and so the weak convergence is a strong convergence.
+\item This is true since $\chi_\ns = 0$ and $\chi_{\sigma\prs{T}} = 1$ and this is a $*$-homomorphism.
+\item This is true since $\chi_{A \cap B} = \chi_A \chi_B$ and this is a $*$-homomorphism.
+\item This is true since $\chi_A \cdot f = f \cdot \chi_A$ and this is a $*$-homomorphism.
+\item Pick $f \in \mcal{C}\prs{\sigma\prs{T}}$ non-zero with $\supp\prs{f} \subseteq A$ (e.g. $f\prs{\lambda = d \prs{\lambda, \sigma\prs{T} \setminus A}}$).
+Then $f \cdot \chi_A = f$ so $f\prs{T} E\prs{A} = f\prs{T} \neq 0$.
+Hence $E\prs{A} \neq 0$.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}
+Let $\prs{\Omega, \mcal{E}}$ be a measurable space and let $E \colon \mcal{E} \to \mcal{L}\prs{H}$ be a resolution of the identity. Then $\mu_{x,y}\prs{A} = \trs{E\prs{A} x,y}$ are complex measure satisfying $\norm{\mu_{x,y}} \leq \norm{x} \norm{y}$ and $\mu_{x,x} \geq 0$.
+\end{proposition}
+
+\begin{proposition}
+Let $E \colon \mcal{E} \to \mcal{L}\prs{H}$ be a resolution of the identity on $\prs{\Omega, \mcal{E}}$. Fix $f \in B\prs{\Omega}$. There exists a unique $S \in \mcal{L}\prs{H}$ such that the following holds.
+\begin{itemize}
+\item If $\Omega = \bigsqcup_{n \in [N]} A_n$ and $\abs{f\prs{\lambda_1} - f\prs{\lambda_2}} < \eps$ for all $\lambda_1, \lambda_2 \in A_i$, then for every choice $t_n \in A_n$ we have
+\[\norm{S - \sum_{n \in [N]} f\prs{t_n} E\prs{A_n}} < \eps \text{.}\]
+\end{itemize}
+We write $S = \int_\Omega f \diff E$.
+\end{proposition}
+
+\begin{proof}
+Take as usual $\mu_{x,y} \prs{A} = \trs{E\prs{A} x, y}$.
+The map
+\[\prs{x,y} \mapsto \int f \diff \mu_{x,y}\]
+is sesquilinear and bounded, so there's $S$ such that $\trs{S x, y} = \int f\diff\mu_{x,y}$ for all $x,y$.
+Now,
+\begin{align*}
+\abs{\trs{\prs{S- \sum_{n \in \brs{N}} f\prs{t_n} E\prs{A_n}} x, y}} &=
+\abs{\int f \diff \mu_{x,y} - \sum_{n \in \mbb{N}_+} f\prs{t_n} \int_{A_n} \diff \mu_{x,y}}
+\\&= \abs{\sum_{n \in \brs{N}} \int_{A_n} \prs{f - f\prs{t_n}} \diff \mu_{x,y}}
+\\&\leq \eps \norm{\mu_{x,y}}
+\\&= \eps \norm{x} \norm{y} \text{.}
+\end{align*}
+From this we get
+\[\norm{S - \sum_{n \in [N]} f\prs{t_n} E\prs{A_n}} \leq \eps \text{.}\]
+\end{proof}
+
+\begin{proposition}
+Let $T$ be normal, $E$ is its spectral resolution and $f \in B\prs{\sigma\prs{T}}$. Then
+\[f\prs{T} = \int_{\sigma\prs{T}} f \diff E \text{.}\]
+\end{proposition}
+
+\begin{proof}
+\[\trs{f\prs{T} x , y} = \int_{\sigma\prs{T}} f \diff \mu_{x,y} = \trs{\prs{\int f \diff E} x, y} \text{.}\]
+\end{proof}
+
+\begin{corollary}[The Spectral Theorem]
+$I = \int_{\sigma\prs{T}} \diff E$ and $T = \int_{\sigma\prs{T}} \lambda \diff E$.
+\end{corollary}
+
+\begin{proposition}
+Let $T \in \mcal{L}\prs{H}$ be normal and let $\lambda_0 \in \sigma\prs{T}$.
+Then
+\[V_{\lambda_0} = \ker\prs{T - \lambda_0 I} = \im E \prs{\set{\lambda_0}} \text{.}\]
+
+In particular $E\prs{\set{\lambda_0}} \neq 0$ if an only if $\lambda_0 = \sigma_p\prs{T}$.
+\end{proposition}
+
+\begin{proof}
+$\prs{\lambda - \lambda_0} \chi_{\set{\lambda_0}} = 0$ so $\prs{\lambda - \lambda_0} \chi_{\set{\lambda_0}} \prs{T} = 0$. But this equals to $\prs{T- \lambda_0 I} E\prs{\set{\lambda_0}}$, so $\im E\prs{\set{\lambda_0}} \subseteq \ker \prs{T - \lambda_0 I}$.
+
+Take $A_n = \set{\lambda \in \sigma\prs{T}}{\abs{\lambda - \lambda_0} > \frac{1}{n}}$ and $f_n = \frac{1}{\lambda - \lambda_0} \chi_{A_n} \in B\prs{\sigma\prs{T}}$. Then
+\[E\prs{A_n} = \chi_{A_n}\prs{T} = \prs{f_n \cdot \prs{\lambda - \lambda_0}}\prs{T} = f_n\prs{T} \prs{T - \lambda_0 I} \text{,}\]
+so if $x \in V_{\lambda_0}$ then $E\prs{A_n} x = 0$.
+Hence
+\[E\prs{\bigcup_{n \in \mbb{N}_+} A_n} x = 0\]
+by continuity of the measure.
+But, since $\bigcup_{n \in \mbb{N}_+} = \sigma\prs{T} \setminus \set{\lambda_0}$ and $E \prs{\set{\lambda_0}} x + E\prs{\sigma\prs{T} \setminus \set{\lambda_0}} x = x$
+so $x \in \im E \prs{\set{\lambda_0}}$.
+\end{proof}
+
+
 \end{document}

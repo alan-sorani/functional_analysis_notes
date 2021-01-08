@@ -30,3 +30,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Definition \& Examples}{61}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Banach-Valued Analytic Functions}{65}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Ideals}{69}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Multiplicative Characters}{70}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}The Gelfand Transform}{72}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}$\mathbb {C}^*$ Algebras}{74}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}The Spectral Theorem}{77}{subsection.3.3.7}%

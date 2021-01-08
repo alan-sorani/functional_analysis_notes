@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  23 DEC 2020 12:24
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  8 JAN 2021 22:22
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -1131,11 +1131,11 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 {C:/Users/EladT/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2
 
 ]
-(./functional_analysis.toc)
+(./functional_analysis.toc [3])
 \tf@toc=\write5
 
 \openout5 = functional_analysis.toc
- [3] [4]
+ [4]
 Chapter 1.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on in
 put line 33.
@@ -1349,30 +1349,125 @@ n/10 + [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 L \OT1/cmr/m/n/10 + \OML/cmm/m/it
 t/10 "[]
  []
 
-[66] [67] [68]
+[66] [67] [68] [69] [70] [71] [72]
+Overfull \hbox (13.39961pt too wide) in paragraph at lines 3149--3150
+[]\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 W$ 
+\TU/lmr/m/n/10 be the Wiener al-ge-bra. Then $\OML/cmm/m/it/10  [] \OT1/cmr/m/
+n/10 = []$\TU/lmr/m/n/10 .
+ []
+
+[73]
+Overfull \hbox (101.03513pt too wide) detected at line 3184
+[] \OT1/cmr/m/n/10 ^^@ = [] = [] = [] = []
+ []
+
+
+Overfull \hbox (7.21309pt too wide) in paragraph at lines 3189--3190
+[]\TU/lmr/m/n/10 If $[] \OT1/cmr/m/n/10 ^^@ = []$\TU/lmr/m/n/10 , $\OML/cmm/m/i
+t/10 A$ \TU/lmr/m/n/10 is called
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3192.
+
+[74]
+Overfull \hbox (2.35832pt too wide) in paragraph at lines 3265--3268
+[]\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 A$ \TU/lmr/m/it/10 be a com-mu-ta-tive 
+$\OMS/cmsy/m/n/10 $\TU/lmr/m/it/10 -algebra and as-sume that $\OML/cmm/m/it/10
+  [] \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (2.24959pt too wide) in paragraph at lines 3265--3268
+\U/msb/m/n/10 R$ \TU/lmr/m/it/10 for ev-ery $\OML/cmm/m/it/10 x \OMS/cmsy/m/n/1
+0 2 \OML/cmm/m/it/10 A$ \TU/lmr/m/it/10 which is self-adjoint. Then $\OT1/cmr/m
+/n/10 ^^@ [] [] \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! C []$ \TU/lmr/m/it/10 is 
+a $\OMS/cmsy/m/n/10 $\TU/lmr/m/it/10 -homomorphism
+ []
+
+[75] [76]
+Overfull \hbox (13.9502pt too wide) in paragraph at lines 3340--3344
+[]\TU/lmr/m/it/10 As-sume
+ []
+
+
+Overfull \hbox (7.20647pt too wide) in paragraph at lines 3348--3349
+[]$\OML/cmm/m/it/10 Tx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 T [] \OT1/cmr/m/n/10 
+= [][] \OML/cmm/m/it/10 TE[]x \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 []E[]x$ 
+\TU/lmr/m/it/10 so $\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 
+[]E[]$\TU/lmr/m/it/10 . 
+ []
+
+[77] [78]
+Overfull \hbox (33.02475pt too wide) in paragraph at lines 3407--3409
+[]\TU/lmr/m/n/10 We claim that $\OML/cmm/m/it/10  []$ \TU/lmr/m/n/10 is home-o-
+mor-phic to $\OML/cmm/m/it/10  []$\TU/lmr/m/n/10 . Con-sider $\OT1/cmr/m/n/10 
+^^@ [] = [] [] [] \OML/cmm/m/it/10  [] \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (15.16417pt too wide) in paragraph at lines 3416--3417
+[]\TU/lmr/m/it/10 For ev-ery $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 C []$
+ []
+
+[79] [80] [81] [82]
+Overfull \hbox (0.4301pt too wide) in paragraph at lines 3575--3576
+[]\TU/lmr/m/n/10 The \TU/lmr/m/it/10 spec-
+ []
+
+[83]
+Overfull \hbox (8.7632pt too wide) in paragraph at lines 3621--3624
+[]\TU/lmr/m/n/10 Pick $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 C []$ \TU/lmr/m/n/
+10 non-zero with $[] [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 A$ \TU/lmr/m/n/10 (e
+.g. $\OML/cmm/m/it/10 f []$\TU/lmr/m/n/10 ).
+ []
+
+[84]
+Overfull \hbox (15.08815pt too wide) in paragraph at lines 3667--3668
+[]$\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = [][] []  d\OML/cmm/m/it/10 E$ \TU/lmr/m
+/it/10 and $\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10  []  \O
+T1/cmr/m/n/10 d\OML/cmm/m/it/10 E$\TU/lmr/m/it/10 . 
+ []
+
+
+Overfull \hbox (45.11847pt too wide) in paragraph at lines 3679--3680
+[]$[] \OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = 0$ \TU/lmr/m/n/10 so $[] \OML/cmm/
+m/it/10 [] [] \OT1/cmr/m/n/10 = 0$\TU/lmr/m/n/10 . But this equals to $[] \OML
+/cmm/m/it/10 E []$\TU/lmr/m/n/10 ,
+ []
+
 \tf@thm=\write6
 
 \openout6 = functional_analysis.thm
- [69]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2947.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2947.
+[85]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3692.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3692.
  (./functional_analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2947.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2947.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3692.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3692.
 Package rerunfilecheck Info: File `functional_analysis.out' has not changed.
-(rerunfilecheck)             Checksum: FBB2185C9FF06B906F69207822979121;6276.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2947.
+(rerunfilecheck)             Checksum: 50713961141974504AC8D15D5687FA49;6931.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3692.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28538 strings out of 481302
+ 28683 strings out of 481302
  100000,953878 words of node,token memory allocated
- 1710 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 294 attribute
-, 62 glue_spec, 294 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:784,3:219,4:64,5:535,6:64,7:2519,8:120,9:746,10:10,11:129
- 44194 multiletter control sequences out of 65536+200000
- 99 fonts using 9129731 bytes
+ 1918 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 346 attribute
+, 62 glue_spec, 346 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:825,3:219,4:64,5:621,6:65,7:2775,8:120,9:746,10:13,11:129
+ 44210 multiletter control sequences out of 65536+200000
+ 102 fonts using 9299075 bytes
  68i,20n,86p,944b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/open
@@ -1387,32 +1482,34 @@ s/miktex/fonts/opentype/public/lm/lmroman9-regular.otf><//?/c:/users/eladt/appda
 ta/local/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.otf><//?/c:/
 users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman17-reg
 ular.otf><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cmextra/cmbsy7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/EladT/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EladT/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/EladT/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/EladT/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Use
-rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib
-7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr5.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/EladT/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/EladT/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/EladT/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/User
-s/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10
-.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm5.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/EladT/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on functional_analysis.pdf (69 pages, 667832 bytes).
+ts/cm/cmbsy10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cmextra/cmbsy7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EladT/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/EladT/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EladT/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Elad
+T/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
+rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pf
+b><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmex
+tra/cmmib7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr5.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EladT/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/EladT/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/EladT/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EladT/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Us
+ers/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lin
+e10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/symbols/msam10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/symbols/msbm10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/symbols/msbm5.pfb><C:/Users/EladT/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/EladT/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on functional_analysis.pdf (85 pages, 789457 bytes).
 
-PDF statistics: 1055 PDF objects out of 1200 (max. 8388607)
- 498 named destinations out of 1000 (max. 131072)
- 272 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1262 PDF objects out of 1440 (max. 8388607)
+ 627 named destinations out of 1000 (max. 131072)
+ 304 words of extra memory for PDF output out of 10000 (max. 100000000)
 
