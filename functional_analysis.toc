@@ -33,5 +33,8 @@
 \contentsline {subsection}{\numberline {4.1.3}Ideals}{70}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}Multiplicative Characters}{72}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}The Gelfand Transform}{73}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}$\mathbb {C}^*$ Algebras}{76}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.6}$\mathrm {C}^*$ Algebras}{76}{subsection.4.1.6}%
 \contentsline {subsection}{\numberline {4.1.7}The Spectral Theorem}{79}{subsection.4.1.7}%
+\contentsline {chapter}{\numberline {5}Unbounded Operators}{89}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}The Spectral Tneorem}{95}{subsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.0.2}Self-Adjoint Extensions}{99}{subsection.5.0.2}%

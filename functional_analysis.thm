@@ -336,7 +336,7 @@
 \contentsline {definition}{{Definition}{4.1.{56}}{The Radical of a Banach Algebra}}{76}{theorem.4.1.56}%
 \contentsline {definition}{{Definition}{4.1.{57}}{Semisimple Banach Algebra}}{76}{theorem.4.1.57}%
 \contentsline {definition}{{Definition}{4.1.{58}}{$*$-Algebra}}{76}{theorem.4.1.58}%
-\contentsline {definition}{{Definition}{4.1.{59}}{$\mbb {C}^*$-Algebra}}{76}{theorem.4.1.59}%
+\contentsline {definition}{{Definition}{4.1.{59}}{$\mrm {C}^*$-Algebra}}{76}{theorem.4.1.59}%
 \contentsline {remark}{{Remark}{4.1.{60}}{}}{76}{theorem.4.1.60}%
 \contentsline {example}{{Example}{4.1.{61}}{}}{77}{theorem.4.1.61}%
 \contentsline {example}{{Example}{4.1.{62}}{}}{77}{theorem.4.1.62}%
@@ -377,3 +377,57 @@
 \contentsline {corollary}{{Corollary}{4.1.{85}}{The Spectral Theorem}}{87}{theorem.4.1.85}%
 \contentsline {proposition}{{Proposition}{4.1.{86}}{}}{87}{theorem.4.1.86}%
 \contentsline {proof}{{Proof}{99}{}}{87}{proof.99}%
+\contentsline {definition}{{Definition}{5.0.{1}}{}}{89}{theorem.5.0.1}%
+\contentsline {definition}{{Definition}{5.0.{2}}{}}{89}{theorem.5.0.2}%
+\contentsline {proposition}{{Proposition}{5.0.{3}}{}}{89}{theorem.5.0.3}%
+\contentsline {proof}{{Proof}{100}{}}{89}{proof.100}%
+\contentsline {definition}{{Definition}{5.0.{4}}{}}{89}{theorem.5.0.4}%
+\contentsline {definition}{{Definition}{5.0.{5}}{Absolutely Continuous Function}}{89}{theorem.5.0.5}%
+\contentsline {remark}{{Remark}{5.0.{6}}{}}{90}{theorem.5.0.6}%
+\contentsline {example}{{Example}{5.0.{7}}{}}{90}{theorem.5.0.7}%
+\contentsline {proposition}{{Proposition}{5.0.{8}}{}}{91}{theorem.5.0.8}%
+\contentsline {proof}{{Proof}{101}{}}{91}{proof.101}%
+\contentsline {definition}{{Definition}{5.0.{9}}{Graph of an Operator}}{91}{theorem.5.0.9}%
+\contentsline {proposition}{{Proposition}{5.0.{10}}{}}{91}{theorem.5.0.10}%
+\contentsline {proof}{{Proof}{102}{}}{91}{proof.102}%
+\contentsline {corollary}{{Corollary}{5.0.{11}}{}}{92}{theorem.5.0.11}%
+\contentsline {proposition}{{Proposition}{5.0.{12}}{}}{92}{theorem.5.0.12}%
+\contentsline {proof}{{Proof}{103}{}}{92}{proof.103}%
+\contentsline {definition}{{Definition}{5.0.{13}}{Resolvent Set}}{93}{theorem.5.0.13}%
+\contentsline {definition}{{Definition}{5.0.{14}}{Spectrum}}{93}{theorem.5.0.14}%
+\contentsline {proposition}{{Proposition}{5.0.{15}}{}}{93}{theorem.5.0.15}%
+\contentsline {proof}{{Proof}{104}{}}{93}{proof.104}%
+\contentsline {proposition}{{Proposition}{5.0.{16}}{}}{93}{theorem.5.0.16}%
+\contentsline {proof}{{Proof}{105}{}}{93}{proof.105}%
+\contentsline {example}{{Example}{5.0.{17}}{}}{93}{theorem.5.0.17}%
+\contentsline {example}{{Example}{5.0.{18}}{}}{94}{theorem.5.0.18}%
+\contentsline {proposition}{{Proposition}{5.0.{19}}{}}{94}{theorem.5.0.19}%
+\contentsline {proof}{{Proof}{106}{}}{94}{proof.106}%
+\contentsline {proposition}{{Proposition}{5.0.{20}}{}}{94}{theorem.5.0.20}%
+\contentsline {proof}{{Proof}{107}{}}{94}{proof.107}%
+\contentsline {definition}{{Definition}{5.0.{21}}{}}{95}{theorem.5.0.21}%
+\contentsline {proposition}{{Proposition}{5.0.{22}}{}}{95}{theorem.5.0.22}%
+\contentsline {definition}{{Definition}{5.0.{23}}{}}{95}{theorem.5.0.23}%
+\contentsline {proposition}{{Proposition}{5.0.{24}}{}}{95}{theorem.5.0.24}%
+\contentsline {proof}{{Proof}{108}{}}{96}{proof.108}%
+\contentsline {theorem}{{Theorem}{5.0.{25}}{The Spectral Theorem}}{96}{theorem.5.0.25}%
+\contentsline {proof}{{Proof}{109}{}}{96}{proof.109}%
+\contentsline {proof}{{Proof}{110}{\ref {proposition:unbounded_spectral_properties}}}{97}{proof.110}%
+\contentsline {proposition}{{Proposition}{5.0.{26}}{}}{99}{theorem.5.0.26}%
+\contentsline {proof}{{Proof}{111}{}}{99}{proof.111}%
+\contentsline {proposition}{{Proposition}{5.0.{27}}{}}{100}{theorem.5.0.27}%
+\contentsline {proof}{{Proof}{112}{}}{100}{proof.112}%
+\contentsline {remark}{{Remark}{5.0.{28}}{}}{101}{theorem.5.0.28}%
+\contentsline {theorem}{{Theorem}{5.0.{29}}{}}{101}{theorem.5.0.29}%
+\contentsline {remark}{{Remark}{5.0.{30}}{}}{101}{theorem.5.0.30}%
+\contentsline {proof}{{Proof}{113}{}}{101}{proof.113}%
+\contentsline {fact}{{Fact}{5.0.{31}}{}}{102}{theorem.5.0.31}%
+\contentsline {example}{{Example}{5.0.{32}}{}}{102}{theorem.5.0.32}%
+\contentsline {example}{{Example}{5.0.{33}}{}}{103}{theorem.5.0.33}%
+\contentsline {example}{{Example}{5.0.{34}}{}}{103}{theorem.5.0.34}%
+\contentsline {proposition}{{Proposition}{5.0.{35}}{}}{103}{theorem.5.0.35}%
+\contentsline {proof}{{Proof}{114}{}}{103}{proof.114}%
+\contentsline {example}{{Example}{5.0.{36}}{}}{103}{theorem.5.0.36}%
+\contentsline {theorem}{{Theorem}{5.0.{37}}{Friedrich's Extension Theorem}}{103}{theorem.5.0.37}%
+\contentsline {remark}{{Remark}{5.0.{38}}{}}{103}{theorem.5.0.38}%
+\contentsline {proof}{{Proof}{115}{Sketch}}{103}{proof.115}%

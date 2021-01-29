@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  8 JAN 2021 22:25
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  30 JAN 2021 00:21
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -1038,34 +1038,34 @@ line 1175.
 (./functional_analysis.aux)
 \openout1 = functional_analysis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 24
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 26
 .
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 \AtBeginShipoutBox=\box81
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1079,9 +1079,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count373
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (./functional_analysis.out) (./functional_analysis.out)
 \@outlinefile=\write4
 
@@ -1109,17 +1109,17 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 5.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 29.
 
 
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/jknappen/ursfs.fd
@@ -1138,11 +1138,11 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [4]
 Chapter 1.
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on in
-put line 33.
+put line 35.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input 
-line 46.
+line 48.
 
-Overfull \hbox (2.49951pt too wide) in paragraph at lines 50--51
+Overfull \hbox (2.49951pt too wide) in paragraph at lines 52--53
 []\TU/lmr/m/n/10 A normed space $[]$ is a \TU/lmr/m/it/10 Ba-nach space
  []
 
@@ -1150,26 +1150,26 @@ Overfull \hbox (2.49951pt too wide) in paragraph at lines 50--51
 
 ]
 Package hyperref Info: bookmark level for unknown example defaults to 0 on input
- line 73.
+ line 75.
 
-Overfull \hbox (66.17001pt too wide) in paragraph at lines 108--110
+Overfull \hbox (66.17001pt too wide) in paragraph at lines 110--112
 []
  []
 
 
-Overfull \hbox (7.19785pt too wide) in paragraph at lines 117--118
+Overfull \hbox (7.19785pt too wide) in paragraph at lines 119--120
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 Y$ \TU/lmr/m/n/10 be a normed space.
  []
 
 [6]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input
- line 145.
+ line 147.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on inp
-ut line 151.
+ut line 153.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input l
-ine 163.
+ine 165.
 
-Overfull \hbox (6.59134pt too wide) detected at line 172
+Overfull \hbox (6.59134pt too wide) detected at line 174
 [][] \OT1/cmr/m/n/10 = [][] [][] []  d\OML/cmm/m/it/10  \OT1/cmr/m/n/10 = [][]
  [] [][] []  d\OML/cmm/m/it/10  [] [] [][] [][] []  \OT1/cmr/m/n/10 d\OML/cmm/
 m/it/10  \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 S[]
@@ -1183,11 +1183,11 @@ Missing character: There is no ק (U+05E7) in font [lmroman10-bold]:+tlig;!
 Missing character: There is no ג (U+05D2) in font [lmroman10-bold]:+tlig;!
 ]
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inpu
-t line 197.
+t line 199.
 Package hyperref Info: bookmark level for unknown fact defaults to 0 on input li
-ne 215.
+ne 217.
 Package hyperref Info: bookmark level for unknown notation defaults to 0 on inpu
-t line 225.
+t line 227.
  [8] [9] [10] [11] [12]
 Underfull \vbox (badness 2158) has occurred while \output is active []
 
@@ -1195,73 +1195,73 @@ Underfull \vbox (badness 2158) has occurred while \output is active []
 [14]
 Chapter 2.
 
-Overfull \hbox (8.1265pt too wide) in paragraph at lines 464--465
+Overfull \hbox (8.1265pt too wide) in paragraph at lines 466--467
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 2 [][]$\TU/lmr/m/n/10
  . A func-tion $\OML/cmm/m/it/10 p [] [] X \OMS/cmsy/m/n/10 !
  []
 
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input l
-ine 475.
+ine 477.
 [15
 
 ] [16] [17]
-Overfull \hbox (16.43663pt too wide) in paragraph at lines 640--641
+Overfull \hbox (16.43663pt too wide) in paragraph at lines 642--643
 []\TU/lmr/m/n/10 A \TU/lmr/m/it/10 Ba-nach limit \TU/lmr/m/n/10 is a lin-ear fun
 c-tional $\OML/cmm/m/it/10 f [] [] `[] \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (45.7261pt too wide) detected at line 652
+Overfull \hbox (45.7261pt too wide) detected at line 654
 []
  []
 
 [18] [19]
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on i
-nput line 724.
+nput line 726.
  [20] [21]
-Overfull \hbox (2.4339pt too wide) in paragraph at lines 816--820
+Overfull \hbox (2.4339pt too wide) in paragraph at lines 818--822
 \TU/lmr/m/n/10 This is sup-ported in $[]$. We can then ex-tend $\OML/cmm/m/it/1
 0 v$ \TU/lmr/m/n/10 to $\OMS/cmsy/m/n/10 C []$\TU/lmr/m/n/10 . By Weirstrass
 ’
  []
 
 
-Overfull \hbox (20.20364pt too wide) in paragraph at lines 816--820
+Overfull \hbox (20.20364pt too wide) in paragraph at lines 818--822
 \TU/lmr/m/n/10 ap-prox-i-ma-tion there are trigono-met-ric poly-no-mi-als $[][]
 $ such that $\OML/cmm/m/it/10 p[] []
  []
 
 [22] [23]
-Overfull \hbox (16.0408pt too wide) detected at line 913
+Overfull \hbox (16.0408pt too wide) detected at line 915
 [] [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 f [] \OMS/cmsy/m/n/10  \OML/cmm/m/
 it/10 f [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f [] \OMS/cmsy/m/n/10 ^^@ \OML/cm
 m/m/it/10 f [] []
  []
 
 [24] [25]
-Overfull \hbox (50.01497pt too wide) detected at line 1015
+Overfull \hbox (50.01497pt too wide) detected at line 1017
 [] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10  [] []  [] [] \OT1/cmr/m/n/10 = \OML
 /cmm/m/it/10 n[]
  []
 
 [26] [27] [28]
-Overfull \hbox (12.67294pt too wide) in paragraph at lines 1136--1137
+Overfull \hbox (12.67294pt too wide) in paragraph at lines 1138--1139
 []\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/it/10 be Ba-nach spaces
  []
 
 [29] [30]
-Overfull \hbox (21.32007pt too wide) in paragraph at lines 1233--1234
+Overfull \hbox (21.32007pt too wide) in paragraph at lines 1235--1236
 []\TU/lmr/m/n/10 Write 
  []
 
 [31] [32]
-Overfull \hbox (1.85548pt too wide) in paragraph at lines 1358--1359
+Overfull \hbox (1.85548pt too wide) in paragraph at lines 1360--1361
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 P [] [] X \OMS/cmsy/m/n/10 ! \OML/cmm/m/
 it/10 X$ \TU/lmr/m/n/10 be a pro-
  []
 
 [33] [34]
-Overfull \hbox (47.43835pt too wide) detected at line 1443
+Overfull \hbox (47.43835pt too wide) detected at line 1445
 [] \OT1/cmr/m/n/10 = []  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 x \OMS/cmsy/m/
 n/10 ^^@ \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 E \OT1/cmr/m/n/
 10 = [] \OML/cmm/m/it/10 T  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 T [] \OT1/c
@@ -1271,18 +1271,18 @@ L/cmm/m/it/10 Ty  \OMS/cmsy/m/n/10 ([])  \OML/cmm/m/it/10 S [] \OT1/cmr/m/n/10
  []
 
 [35] [36] [37]
-Overfull \hbox (8.39612pt too wide) in paragraph at lines 1603--1605
+Overfull \hbox (8.39612pt too wide) in paragraph at lines 1605--1607
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/n/10 be normed spaces.
  []
 
 
-Overfull \hbox (2.83018pt too wide) in paragraph at lines 1617--1618
+Overfull \hbox (2.83018pt too wide) in paragraph at lines 1619--1620
 []\TU/lmr/m/it/10 If $\OML/cmm/m/it/10 X$ \TU/lmr/m/it/10 is a finite-dimensiona
 l normed space, any lin-ear $\OML/cmm/m/it/10 T [] [] X \OMS/cmsy/m/n/10 !
  []
 
 [38] [39] [40] [41]
-Overfull \hbox (4.74754pt too wide) in paragraph at lines 1760--1761
+Overfull \hbox (4.74754pt too wide) in paragraph at lines 1762--1763
 []\TU/lmr/m/it/10 There are $\OML/cmm/m/it/10 X; Y$ \TU/lmr/m/it/10 of di-men-si
 on $\OML/cmm/m/it/10 n$ \TU/lmr/m/it/10 such that $\OML/cmm/m/it/10 d[] [] \OMS
 /cmsy/m/n/10 
@@ -1293,19 +1293,19 @@ on $\OML/cmm/m/it/10 n$ \TU/lmr/m/it/10 such that $\OML/cmm/m/it/10 d[] [] \OMS
 ]
 Chapter 3.
 [45]
-Overfull \hbox (9.00955pt too wide) in paragraph at lines 1864--1866
+Overfull \hbox (9.00955pt too wide) in paragraph at lines 1866--1868
 \TU/lmr/m/n/10 We know $\OML/cmm/m/it/10 [] [] [] [] []$\TU/lmr/m/n/10 . Also,
  $[][] [][] [] \OT1/cmr/m/n/10 = [][] [] \OML/cmm/m/it/10 <
  []
 
 [46] [47]
-Overfull \hbox (2.45264pt too wide) in paragraph at lines 1983--1984
+Overfull \hbox (2.45264pt too wide) in paragraph at lines 1985--1986
 []\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 H$ \TU/lmr/m/it/10 be a Hilbert space an
 d let $[][]$
  []
 
 [48] [49] [50] [51]
-Overfull \hbox (167.38614pt too wide) detected at line 2166
+Overfull \hbox (167.38614pt too wide) detected at line 2168
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 U [] [
 ] d [] \OT1/cmr/m/n/10 = [] [] \OMS/cmsy/m/n/10  [] [] \OT1/cmr/m/n/10 + [] []
  \OMS/cmsy/m/n/10  [] [] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 < [] \OT1/cmr/m
@@ -1315,20 +1315,20 @@ Overfull \hbox (167.38614pt too wide) detected at line 2166
 [52]
 
 Package amsfonts Warning: Obsolete command \frak; \mathfrak should be used inste
-ad on input line 2203.
+ad on input line 2205.
 
-LaTeX Font Info:    Trying to load font information for U+euf on input line 2203
+LaTeX Font Info:    Trying to load font information for U+euf on input line 2205
 .
 (C:/Users/EladT/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 [53] [54]
-Overfull \hbox (21.00235pt too wide) in paragraph at lines 2286--2287
+Overfull \hbox (21.00235pt too wide) in paragraph at lines 2288--2289
 []\TU/lmr/m/n/10 A \TU/lmr/m/it/10 locally-convex space (LCS)
  []
 
 [55] [56] [57] [58] [59] [60]
-Overfull \hbox (13.02602pt too wide) in paragraph at lines 2544--2547
+Overfull \hbox (13.02602pt too wide) in paragraph at lines 2546--2549
 []\TU/lmr/m/n/10 We now show that in-deed $[] [] \OT1/cmr/m/n/10 = \U/msb/m/n/1
 0 T$\TU/lmr/m/n/10 . De-fine $\OML/cmm/m/it/10 I [][]\OT1/cmr/m/n/10 = []$\TU/l
 mr/m/n/10 .
@@ -1339,13 +1339,13 @@ mr/m/n/10 .
 ]
 Chapter 4.
 [63] [64] [65] [66]
-Overfull \hbox (33.78145pt too wide) detected at line 2742
+Overfull \hbox (33.78145pt too wide) detected at line 2744
 \OML/cmm/m/it/10 f [] \OT1/cmr/m/n/10 = [] [][] [] []  d\OML/cmm/m/it/10  [] [
 ] [][] f [] [] f [] []
  []
 
 [67]
-Overfull \hbox (93.38pt too wide) detected at line 2778
+Overfull \hbox (93.38pt too wide) detected at line 2780
 [] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10  []  [] \OT1/cmr/m/n/10 + [] \OMS/cm
 sy/m/n/10  \OML/cmm/m/it/10 L \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 " \OT1/cmr/m/
 n/10 + [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 L \OT1/cmr/m/n/10 + \OML/cmm/m/it
@@ -1354,44 +1354,44 @@ t/10 "[]
  []
 
 [68] [69] [70] [71] [72] [73] [74]
-Overfull \hbox (13.39961pt too wide) in paragraph at lines 3151--3152
+Overfull \hbox (13.39961pt too wide) in paragraph at lines 3153--3154
 []\TU/lmr/m/n/10 Let $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 W$ 
 \TU/lmr/m/n/10 be the Wiener al-ge-bra. Then $\OML/cmm/m/it/10  [] \OT1/cmr/m/
 n/10 = []$\TU/lmr/m/n/10 .
  []
 
 [75]
-Overfull \hbox (101.03513pt too wide) detected at line 3186
+Overfull \hbox (101.03513pt too wide) detected at line 3188
 [] \OT1/cmr/m/n/10 ^^@ = [] = [] = [] = []
  []
 
 
-Overfull \hbox (7.21309pt too wide) in paragraph at lines 3191--3192
+Overfull \hbox (7.21309pt too wide) in paragraph at lines 3193--3194
 []\TU/lmr/m/n/10 If $[] \OT1/cmr/m/n/10 ^^@ = []$\TU/lmr/m/n/10 , $\OML/cmm/m/i
 t/10 A$ \TU/lmr/m/n/10 is called
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3194.
+(hyperref)                removing `math shift' on input line 3196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 3194.
+(hyperref)                removing `superscript' on input line 3196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3194.
+(hyperref)                removing `math shift' on input line 3196.
 
 [76]
-Overfull \hbox (2.35832pt too wide) in paragraph at lines 3267--3270
+Overfull \hbox (2.35832pt too wide) in paragraph at lines 3269--3272
 []\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 A$ \TU/lmr/m/it/10 be a com-mu-ta-tive 
 $\OMS/cmsy/m/n/10 $\TU/lmr/m/it/10 -algebra and as-sume that $\OML/cmm/m/it/10
   [] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (2.24959pt too wide) in paragraph at lines 3267--3270
+Overfull \hbox (2.24959pt too wide) in paragraph at lines 3269--3272
 \U/msb/m/n/10 R$ \TU/lmr/m/it/10 for ev-ery $\OML/cmm/m/it/10 x \OMS/cmsy/m/n/1
 0 2 \OML/cmm/m/it/10 A$ \TU/lmr/m/it/10 which is self-adjoint. Then $\OT1/cmr/m
 /n/10 ^^@ [] [] \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! C []$ \TU/lmr/m/it/10 is 
@@ -1399,12 +1399,12 @@ a $\OMS/cmsy/m/n/10 $\TU/lmr/m/it/10 -homomorphism
  []
 
 [77] [78]
-Overfull \hbox (13.9502pt too wide) in paragraph at lines 3342--3346
+Overfull \hbox (13.9502pt too wide) in paragraph at lines 3344--3348
 []\TU/lmr/m/it/10 As-sume
  []
 
 
-Overfull \hbox (7.20647pt too wide) in paragraph at lines 3350--3351
+Overfull \hbox (7.20647pt too wide) in paragraph at lines 3352--3353
 []$\OML/cmm/m/it/10 Tx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 T [] \OT1/cmr/m/n/10 
 = [][] \OML/cmm/m/it/10 TE[]x \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 []E[]x$ 
 \TU/lmr/m/it/10 so $\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 
@@ -1412,90 +1412,118 @@ Overfull \hbox (7.20647pt too wide) in paragraph at lines 3350--3351
  []
 
 [79]
-Overfull \hbox (33.02475pt too wide) in paragraph at lines 3409--3411
+Overfull \hbox (33.02475pt too wide) in paragraph at lines 3411--3413
 []\TU/lmr/m/n/10 We claim that $\OML/cmm/m/it/10  []$ \TU/lmr/m/n/10 is home-o-
 mor-phic to $\OML/cmm/m/it/10  []$\TU/lmr/m/n/10 . Con-sider $\OT1/cmr/m/n/10 
 ^^@ [] = [] [] [] \OML/cmm/m/it/10  [] \OMS/cmsy/m/n/10 !
  []
 
 [80]
-Overfull \hbox (15.16417pt too wide) in paragraph at lines 3418--3419
+Overfull \hbox (15.16417pt too wide) in paragraph at lines 3420--3421
 []\TU/lmr/m/it/10 For ev-ery $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 C []$
  []
 
 [81] [82] [83]
-Overfull \hbox (0.4301pt too wide) in paragraph at lines 3577--3578
+Overfull \hbox (0.4301pt too wide) in paragraph at lines 3579--3580
 []\TU/lmr/m/n/10 The \TU/lmr/m/it/10 spec-
  []
 
 [84] [85]
-Overfull \hbox (8.7632pt too wide) in paragraph at lines 3623--3626
+Overfull \hbox (8.7632pt too wide) in paragraph at lines 3625--3628
 []\TU/lmr/m/n/10 Pick $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 C []$ \TU/lmr/m/n/
 10 non-zero with $[] [] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 A$ \TU/lmr/m/n/10 (e
 .g. $\OML/cmm/m/it/10 f []$\TU/lmr/m/n/10 ).
  []
 
 [86]
-Overfull \hbox (15.08815pt too wide) in paragraph at lines 3669--3670
+Overfull \hbox (15.08815pt too wide) in paragraph at lines 3671--3672
 []$\OML/cmm/m/it/10 I \OT1/cmr/m/n/10 = [][] []  d\OML/cmm/m/it/10 E$ \TU/lmr/m
 /it/10 and $\OML/cmm/m/it/10 T \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10  []  \O
 T1/cmr/m/n/10 d\OML/cmm/m/it/10 E$\TU/lmr/m/it/10 . 
  []
 
 
-Overfull \hbox (45.11847pt too wide) in paragraph at lines 3681--3682
+Overfull \hbox (45.11847pt too wide) in paragraph at lines 3683--3684
 []$[] \OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = 0$ \TU/lmr/m/n/10 so $[] \OML/cmm/
 m/it/10 [] [] \OT1/cmr/m/n/10 = 0$\TU/lmr/m/n/10 . But this equals to $[] \OML
 /cmm/m/it/10 E []$\TU/lmr/m/n/10 ,
  []
 
+[87] [88
+
+]
+Chapter 5.
+
+Overfull \hbox (10.79518pt too wide) in paragraph at lines 3729--3729
+[]\TU/lmr/m/n/10 A func-tion $\OML/cmm/m/it/10 f [] []  [] \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (10.41429pt too wide) in paragraph at lines 3734--3735
+[]\TU/lmr/m/n/10 If $\OML/cmm/m/it/10 f$ \TU/lmr/m/n/10 is ab-so-lutely con-tin-
+u-ous, it’s dif-fer-en-tiable almost-everywhere
+ []
+
+[89]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90]
+[91] [92] [93]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3961.
+
+[94] [95] [96] [97] [98]
+Overfull \hbox (100.2407pt too wide) detected at line 4140
+[]
+ []
+
+
+Overfull \hbox (105.70258pt too wide) detected at line 4146
+[]
+ []
+
+[99] [100]
+Overfull \hbox (13.13898pt too wide) in paragraph at lines 4222--4225
+[]\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 T$ \TU/lmr/m/it/10 be a sym-met-ric op-e
+r-a-tor. De-fine $\OML/cmm/m/it/10 n[] [][]\OT1/cmr/m/n/10 = [] []$
+ []
+
+[101] [102]
+Overfull \hbox (123.2878pt too wide) detected at line 4299
+\OML/cmm/m/it/10 C [] \OT1/cmr/m/n/10 = [] = [] = [] = [] [] []
+ []
+
+
+Overfull \hbox (2.89278pt too wide) in paragraph at lines 4311--4312
+[]\TU/lmr/m/it/10 As-sume $\OML/cmm/m/it/10 T$ \TU/lmr/m/it/10 is sym-met-
+ []
+
+[103]
 \tf@thm=\write6
 
 \openout6 = functional_analysis.thm
-[87]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3694.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3694.
+ [104]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4337.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4337.
  (./functional_analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3694.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3694.
-
-
-Package rerunfilecheck Warning: File `functional_analysis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `functional_analysis.out':
-(rerunfilecheck)             Before: 50713961141974504AC8D15D5687FA49;6931
-(rerunfilecheck)             After:  151AB9C6EA50A67BBC735B1912CD3FD6;7054.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3694.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4337.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4337.
+Package rerunfilecheck Info: File `functional_analysis.out' has not changed.
+(rerunfilecheck)             Checksum: C1D44FC39675DB089181E9336299E73F;7550.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4337.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28694 strings out of 481302
+ 28815 strings out of 481302
  100000,953878 words of node,token memory allocated
- 1918 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 346 attribute
-, 62 glue_spec, 346 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:844,3:219,4:64,5:621,6:65,7:2751,8:120,9:746,10:13,11:129
- 44210 multiletter control sequences out of 65536+200000
+ 2086 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 388 attribute
+, 62 glue_spec, 388 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:760,3:219,4:60,5:689,6:63,7:2751,8:120,9:746,10:13,11:127
+ 44225 multiletter control sequences out of 65536+200000
  102 fonts using 9299075 bytes
- 68i,20n,86p,944b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.7'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.6'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.5'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.4'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.3'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.3.1'
-
-warning  (pdf backend): unreferenced destination with name 'section.3.3'
+ 68i,20n,86p,944b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
 an10-bolditalic.otf><//?/c:/users/eladt/appdata/local/programs/miktex/fonts/open
 type/public/lm/lmroman7-regular.otf><//?/c:/users/eladt/appdata/local/programs/m
@@ -1511,32 +1539,34 @@ users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman17-reg
 ular.otf><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbsy10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cmextra/cmbsy7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EladT/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/EladT/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EladT/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Elad
-T/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Use
-rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pf
-b><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmex
-tra/cmmib7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr5.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EladT/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/EladT/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/EladT/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EladT/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Us
-ers/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lin
-e10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msam10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/symbols/msbm5.pfb><C:/Users/EladT/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/EladT/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on functional_analysis.pdf (87 pages, 791851 bytes).
+ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EladT/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EladT/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/EladT/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ela
+dT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Us
+ers/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mib10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cmextra/cmmib7.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EladT/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/EladT/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/EladT/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EladT/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/EladT/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users
+/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
+:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eu
+fm10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/latxfont/line10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/symbols/msam10.pfb><C:/Users/EladT/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EladT/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm5.pfb><C:/Users/EladT/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Use
+rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on functional_analysis.pdf (104 pages, 903679 bytes).
 
-PDF statistics: 1279 PDF objects out of 1440 (max. 8388607)
- 638 named destinations out of 1000 (max. 131072)
- 304 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1474 PDF objects out of 1728 (max. 8388607)
+ 744 named destinations out of 1000 (max. 131072)
+ 336 words of extra memory for PDF output out of 10000 (max. 100000000)
 

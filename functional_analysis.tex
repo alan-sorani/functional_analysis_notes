@@ -21,6 +21,8 @@
 
 \usepackage{hyperref}
 
+\newenvironment{rtheorem}{\medskip \begin{theorem} \color{red}}{\end{theorem} \medskip}
+
 \begin{document}
 
 \maketitle
@@ -3191,7 +3193,7 @@ is called the radical of $A$.
 If $\ker \Gamma = \set{0}$, $A$ is called seim-simple.
 \end{definition}
 
-\subsection{$\mbb{C}^*$ Algebras}
+\subsection{$\mrm{C}^*$ Algebras}
 
 We want to understand when $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric isomorphism.
 
@@ -3207,11 +3209,11 @@ Let $A$ be a Banach algebra. $A$ is called a $*$-algebra if there exists a map $
 \end{enumerate}
 \end{definition}
 
-\begin{definition}[$\mbb{C}^*$-Algebra]
-$A$ is called a $\mbb{C}^*$-algebra if it's a $*$-algebra such that $\norm{x^* x} = \norm{x}^2$.
+\begin{definition}[$\mrm{C}^*$-Algebra]
+$A$ is called a $\mrm{C}^*$-algebra if it's a $*$-algebra such that $\norm{x^* x} = \norm{x}^2$.
 \end{definition}
 
-We want to show that if $A$ is a commutative $\mbb{C}^*$-algebra then $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric $*$-isomorphism.
+We want to show that if $A$ is a commutative $\mrm{C}^*$-algebra then $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric $*$-isomorphism.
 
 \begin{remark}
 \begin{enumerate}
@@ -3221,19 +3223,19 @@ since
 \[\norm{x}^2 \leq \norm{x^* x} \leq \norm{x^*} \norm{x}\]
 implies $\norm{x} \leq \norm{x^*}$ and by applying the same for $x^*$ we get $\norm{x} = \norm{x^*}$.
 
-Then $\norm{x^* x} \leq \norm{x^*} \norm{x} = \norm{x}^2$ so the $\mbb{C}^*$ identity also follows. 
+Then $\norm{x^* x} \leq \norm{x^*} \norm{x} = \norm{x}^2$ so the $\mrm{C}^*$ identity also follows. 
 \end{enumerate}
 \end{remark}
 
 \begin{example}
-Let $A = \mcal{C}\prs{S}$. This is a $\mbb{C}^*$-algebra with $f^* = \bar{f}$. We have
+Let $A = \mcal{C}\prs{S}$. This is a $\mrm{C}^*$-algebra with $f^* = \bar{f}$. We have
 \begin{align*}
 \norm{f^* f} = \max \abs{\bar{f} \cdot f} = \max \abs{f}^2 = \prs{\max \abs{f}}^2 = \norm{f}^2 \text{.}
 \end{align*}
 \end{example}
 
 \begin{example}
-Let $A = W$ be the Wiener algebra with $f^* = \bar{f}$. This is a $*$-algebra but not a $\mbb{C}^*$-algebra. Take $f = e^{it} + 2^{it} - e^{3 it}$. Then $\bar{f} f = 3 - e^{2 it} - e^{-2 it}$. So $\norm{f} = 3$ and $\norm{\bar{f} f} = 5$ so $\norm{\bar{f} f} < \norm{f}^2$.
+Let $A = W$ be the Wiener algebra with $f^* = \bar{f}$. This is a $*$-algebra but not a $\mrm{C}^*$-algebra. Take $f = e^{it} + 2^{it} - e^{3 it}$. Then $\bar{f} f = 3 - e^{2 it} - e^{-2 it}$. So $\norm{f} = 3$ and $\norm{\bar{f} f} = 5$ so $\norm{\bar{f} f} < \norm{f}^2$.
 \end{example}
 
 \begin{example}[Important Example]
@@ -3244,7 +3246,7 @@ so
 so $\norm{T} \leq \sqrt{\norm{T^* T}}$
 so
 $\norm{T}^2 \leq \norm{T^* T}$.
-By the above remark it follows that $A$ is a $\mbb{C}^*$-algebra.
+By the above remark it follows that $A$ is a $\mrm{C}^*$-algebra.
 \end{example}
 
 \begin{proposition}
@@ -3294,7 +3296,7 @@ By Stone-Weierstrass, it follows that $\bar{B} = \mcal{C}\prs{\chi}$.
 \end{proof}
 
 \begin{theorem}[Gelfand-Naimark]
-If $A$ is a commutative $\mbb{C}^*$-algebra then $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric $*$-isomorphism.
+If $A$ is a commutative $\mrm{C}^*$-algebra then $\Gamma \colon A \to \mcal{C}\prs{\chi}$ is an isometric $*$-isomorphism.
 \end{theorem}
 
 \begin{proof}
@@ -3372,16 +3374,16 @@ We say that $T = \int_0^1 \lambda \diff E$. Here $\diff E$ is not a measure in t
 \end{example}
 
 \begin{theorem}
-If $A \subseteq B$ are $\mbb{C}^*$-algebras and $a \in A$, then $\sigma_A\prs{a} = \sigma_B\prs{a}$.
+If $A \subseteq B$ are $\mrm{C}^*$-algebras and $a \in A$, then $\sigma_A\prs{a} = \sigma_B\prs{a}$.
 \end{theorem}
 
 \begin{proposition}
-If $A$ is a $\mbb{C}^*$ algebra and $a \in A$ is invertible, then $a^{-1} \in \mbb{C}^*\prs{a}$ where $\mbb{C}^*\prs{a}$ is the smallest $\mbb{C}^*$ algebra containing $a$, namely
-\[\mbb{C}^*\prs{a} = \overline{\set{p\prs{a, a^*}}}{p \in \mbb{C}\brs{x,y}} \text{.}\]
+If $A$ is a $\mrm{C}^*$ algebra and $a \in A$ is invertible, then $a^{-1} \in \mrm{C}^*\prs{a}$ where $\mrm{C}^*\prs{a}$ is the smallest $\mrm{C}^*$ algebra containing $a$, namely
+\[\mrm{C}^*\prs{a} = \overline{\set{p\prs{a, a^*}}}{p \in \mbb{C}\brs{x,y}} \text{.}\]
 \end{proposition}
 
 \begin{proof}
-Assume first that $a = a^*$ and consider \[B = \mbb{C}^*\prs{a, a^{-1}} \ceq \overline{\set{p\prs{a,a^{-1}}}{p \in \mbb{C}\brs{x,y}}} \text{.}\]
+Assume first that $a = a^*$ and consider \[B = \mrm{C}^*\prs{a, a^{-1}} \ceq \overline{\set{p\prs{a,a^{-1}}}{p \in \mbb{C}\brs{x,y}}} \text{.}\]
 $B$ is commutative, so $\Gamma \colon B \to \mcal{C}\prs{\chi\prs{B}}$ is an isometric $*$-isomorphism. Let $K = \sigma_B\prs{a}$. $K \subseteq \mbb{R}$ since $a = a^*$ and $0 \notin K$ sinice $a^{-1} \in B$. Hence $h\prs{\lambda} = \frac{1}{\lambda}$ is continuous on $K$.
 Choose $\prs{p_n}_{n \in \mbb{N}}$ polynomials such that $p_n \xrightarrow{n\to\infty} h$ uniformly on $K$. Then
 \begin{align*}
@@ -3393,23 +3395,23 @@ Choose $\prs{p_n}_{n \in \mbb{N}}$ polynomials such that $p_n \xrightarrow{n\to\
 \\&\xrightarrow{n\to\infty} 0
 \text{.}
 \end{align*}
-So $p_n\prs{a} \to a^{-1}$ so $a^{-1} \in \mbb{C}^*\prs{a}$.
+So $p_n\prs{a} \to a^{-1}$ so $a^{-1} \in \mrm{C}^*\prs{a}$.
 
-In the general case, write $a^{-1} = \prs{a^* a}^{-1} a^*$. $a^* a$ is self-adjoint so $\prs{a^* a}^{-1} \in \mbb{C}^*\prs{a^* a} \subseteq \mbb{C}^*\prs{a}$ and $a^* \in \mbb{C}^*\prs{a}$, so we are done.
+In the general case, write $a^{-1} = \prs{a^* a}^{-1} a^*$. $a^* a$ is self-adjoint so $\prs{a^* a}^{-1} \in \mrm{C}^*\prs{a^* a} \subseteq \mrm{C}^*\prs{a}$ and $a^* \in \mrm{C}^*\prs{a}$, so we are done.
 \end{proof}
 
 \begin{theorem}[The Spectral Theorem, Form \#1]
-Let $A$ be a $\mbb{C}^*$ algebra and let $a \in A$ be normal. There's a unique isometric $*$-isomorphism $\rho \colon \mcal{C}\prs{\sigma\prs{a}} \to \mbb{C}^*\prs{a}$ such that $h\prs{\lambda} = \lambda$ implies $\rho\prs{h} = a$. Here $\rho\prs{f}$ is denoted $f\prs{a}$.
+Let $A$ be a $\mrm{C}^*$ algebra and let $a \in A$ be normal. There's a unique isometric $*$-isomorphism $\rho \colon \mcal{C}\prs{\sigma\prs{a}} \to \mrm{C}^*\prs{a}$ such that $h\prs{\lambda} = \lambda$ implies $\rho\prs{h} = a$. Here $\rho\prs{f}$ is denoted $f\prs{a}$.
 \end{theorem}
 
 \begin{proof}
-$\mbb{C}^*\prs{a}$ is a commutative $\mbb{C}^*$-algebra (since $a$ is normal).
-So $\Gamma \colon \mbb{C}^*\prs{a} \to \mcal{C}\prs{\chi\prs{\mbb{C}^*\prs{a}}}$ is an isometric $*$-isomorphism.
+$\mrm{C}^*\prs{a}$ is a commutative $\mrm{C}^*$-algebra (since $a$ is normal).
+So $\Gamma \colon \mrm{C}^*\prs{a} \to \mcal{C}\prs{\chi\prs{\mrm{C}^*\prs{a}}}$ is an isometric $*$-isomorphism.
 
-We claim that $\chi\prs{\mbb{C}^*\prs{a}}$ is homeomorphic to $\sigma\prs{a}$. Consider $\Gamma\prs{a} = \hat{a} \colon \chi\prs{\mbb{C}^*\prs{a}} \to \mbb{C}$. We know that $\hat{a}$ is continuous and we know that $\im \hat{a} = \sigma\prs{a}$. WE claim also that $\hat{a}$ is injective. If $\hat{a} \prs{\phi} = \hat{a} \prs{\psi}$ it holds that $\phi\prs{a} = \psi\prs{a}$ so $\phi\prs{a^*} = \overline{\phi\prs{a}} = \overline{\psi\prs{a}} = \psi\prs{a^*}$, so $\phi\prs{p\prs{a a^*}} = \psi\prs{p\prs{a a^*}}$ for every polynomial $p \in \mbb{C}\brs{x}$. So $\phi\prs{x} = \phi\prs{x}$ for all $x \in \mbb{C}^*\prs{a}$ by continuity of $\phi,\psi$.
-Hence $\hat{a}$ is continuous and bijective. Since $\chi\prs{\mbb{C}^*\prs{A}}$ is compact and $\sigma\prs{a}$ is Hausdorff it follows that $\hat{a}$ is a homeomorphism.
+We claim that $\chi\prs{\mrm{C}^*\prs{a}}$ is homeomorphic to $\sigma\prs{a}$. Consider $\Gamma\prs{a} = \hat{a} \colon \chi\prs{\mrm{C}^*\prs{a}} \to \mbb{C}$. We know that $\hat{a}$ is continuous and we know that $\im \hat{a} = \sigma\prs{a}$. WE claim also that $\hat{a}$ is injective. If $\hat{a} \prs{\phi} = \hat{a} \prs{\psi}$ it holds that $\phi\prs{a} = \psi\prs{a}$ so $\phi\prs{a^*} = \overline{\phi\prs{a}} = \overline{\psi\prs{a}} = \psi\prs{a^*}$, so $\phi\prs{p\prs{a a^*}} = \psi\prs{p\prs{a a^*}}$ for every polynomial $p \in \mbb{C}\brs{x}$. So $\phi\prs{x} = \phi\prs{x}$ for all $x \in \mrm{C}^*\prs{a}$ by continuity of $\phi,\psi$.
+Hence $\hat{a}$ is continuous and bijective. Since $\chi\prs{\mrm{C}^*\prs{A}}$ is compact and $\sigma\prs{a}$ is Hausdorff it follows that $\hat{a}$ is a homeomorphism.
 
-For every $f \in \mcal{C}\prs{\sigma\prs{a}}$ define $\rho\prs{f} = \Gamma^{-1}\prs{f \circ \hat{a}} \in \mbb{C}^*\prs{a}$ which is obviously an isometric $*$-isometric.
+For every $f \in \mcal{C}\prs{\sigma\prs{a}}$ define $\rho\prs{f} = \Gamma^{-1}\prs{f \circ \hat{a}} \in \mrm{C}^*\prs{a}$ which is obviously an isometric $*$-isometric.
 Not that \[\rho\prs{h} = \Gamma^{-1}\prs{h \circ \hat{a}} = \Gamma^{-1}\prs{\hat{a}} = a\text{.}\]
 If $\rho_1, \rho_2$ are two such maps, $\rho_1\prs{\lambda} = \rho_2\prs{\lambda}$ so $\rho_1\prs{\bar{\lambda}} = \rho_2\prs{\bar{\lambda}}$ so $\rho_1\prs{p\prs{\lambda, \bar{\lambda}}} = \rho_2\prs{p\prs{\lambda, \bar{\lambda}}}$ for every polynomial $p \in \mbb{C}\brs{x,y}$, so by continuity $\rho_1\prs{f} = \rho_2\prs{f}$ for all $f \in \mcal{C}\prs{\sigma\prs{a}}$.
 \end{proof}
@@ -3690,5 +3692,645 @@ But, since $\bigcup_{n \in \mbb{N}_+} = \sigma\prs{T} \setminus \set{\lambda_0}$
 so $x \in \im E \prs{\set{\lambda_0}}$.
 \end{proof}
 
+%LECTURE 12
+
+\chapter{Unbounded Operators}
+
+\begin{definition}
+An operator on a Hilbert space $H$ over $\mbb{C}$ is a subspace $D\prs{T} \subseteq H$ and a linear map $T \colon D\prs{T} \to H$, not necessarily bounded.
+We assume that $\overline{D\prs{T}} = H$.
+\end{definition}
+
+\begin{definition}
+For an operator $T$ on $H$ define \[D\prs{T^*} \ceq \set{y \in H}{\psi_y\prs{x} = \trs{Tx, y} \text{ is bounded}} \text{.}\]
+\end{definition}
+
+\begin{proposition}
+There exists a unique operator $T^*$ on $D\prs{T^*}$ such that $\trs{Tx,y} = \trs{x, T^* y}$ for all $x \in D\prs{T}$ and $y \in D\prs{T^*}$.
+\end{proposition}
+
+\begin{proof}
+For every $y \in D\prs{T^*}$, the functional $\psi_y \colon D\prs{T} \to H$ is bounded so it can be uniquely extended to $H$. By Riesz there's $y^* \ceq T^* y$ such that $\psi_y\prs{x} = \trs{Tx,y} = \trs{x,T^* y}$.
+
+Note that if
+\[\forall x \in D\prs{T} \colon \trs{x, y_2} = \trs{Tx, y} = \trs{x,y_1}\]
+then $y_1 - y_2 = 0$ on $D\prs{T}$ so $y_1 = y_2$.
+\end{proof}
+
+\begin{definition}
+\begin{enumerate}
+\item $T \subseteq S$ if $D\prs{T} \subseteq D\prs{S}$ and $\rest{S}{D\prs{T}} = T$.
+\item $T$ is called symmetric if $T \subseteq T^*$, in which case for all $x,y \in D\prs{T}$ it holds that $\trs{Tx, y} = \trs{x, Ty}$.
+\item $T$ is called self-adjoint if $T = T^*$, then in particular $D\prs{T} = D\prs{T^*}$.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Absolutely Continuous Function]
+A function $f \colon \brs{a,b} \to \mbb{C}$ is called absolutely continuous if \[f\prs{x} = f\prs{a} + \int_0^x g\prs{t} \diff t\]
+for some $g \in L^1\prs{\brs{a,b}}$.
+\end{definition}
+
+\begin{remark}
+If $f$ is absolutely continuous, it's differentiable almost-everywhere and $f' = g$.
+\end{remark}
+
+\begin{example}\label{example:unbounded_main_example}
+Define $T_1, T_2, T_3$ on $L^2\prs{\brs{0,1}}$ by $T_j f = i f'$ with the domains
+\begin{align*}
+D\prs{T_1} &= \set{f \in L^2}{\text{$f$ is absolutely continuous and $f' \in L^2$}} \\
+D\prs{T_2} &= \set{f \in L^2}{f\prs{0} = f\prs{1}} \cap D\prs{T_1} \\
+D\prs{T_3} &= \set{f \in L^2}{f\prs{0} = f\prs{1} = 0} \cap D\prs{T_1} \text{.}
+\end{align*}
+Clearly $T_3 \subseteq T_2 \subseteq T_1$.
+Note that $\overline{D\prs{T_3}} = L^2\prs{\brs{0,1}}$.
+
+We claim $T_1^* = T_3, T_2^* = T_2, T_3^* = T_1$. This implies in particular $T_2$ is self-adjoint, $T_3$ is symmetric and $T_1$ is neither.
+So, these properties are very sensitive to a change of domain.
+
+Note that for every $f,g \in D\prs{T_j}$ we have
+\begin{align*}
+\trs{T_j f,g} &= \trs{if', g}
+\\&= \int_0^1 if' \bar{g}
+\\&= \left. if\bar{g}' \right|_{0}^{1} - i\int_0^1 f \bar{g}'
+\\&= \left. if\bar{g} \right|_0^1 + \int_0^1 f\overline{\prs{ig}'}
+\\&= \left. if\bar{g} \right|_0^1 + \trs{f, T_\ell g}
+\end{align*}
+for all $\ell \in \set{1,2,3}$.
+In particular, we see $T_1^* \supseteq T_3$, $T_2^* \supseteq T_2$ and $T_3^* \supseteq T_1$.
+
+We check that $T_2^* = T_2$. We claim that $\im T_2 = \spn\set{1}^\perp$. Indeed,
+\begin{align*}
+\trs{T_2 f, 1} = \int_0^1 if' \cdot 1 = i\prs{f\prs{1} - f\prs{0}} = 0
+\end{align*}
+and if $\trs{g,1} = 0$ then $\int_0^1 g = 0$ so \[g = T_2\prs{-i \int_0^x g\prs{t} \diff t} \in \im\prs{T_2}\text{.}\]
+Now, fix $g \in \prs{T_2^*}$. Write $h = T_2^* g$ and $H \int_0^x h\prs{t} \diff t$. We know that for all $f \in D\prs{T_2}$ we have
+\begin{align*}
+\trs{T_2 f, g} &= \trs{f, T_2^* g}
+\\&= \trs{f,h}
+\\&= \int_0^1 f \bar{h}
+\\&= \int_0^1 f \bar{H}'
+\\&= \left. f \bar{H} \right|_0^1 - \int_0^1 f' \bar{H}
+\\&= f\prs{1} \bar{H}\prs{1} - \int_0^1 f' \bar{H} \text{.}
+\end{align*}
+Taking $f = 1$ we get $0 = \bar{H}\prs{1} - 0 = \bar{H}\prs{1}$ so $H\prs{1} = 0$, so
+\[\trs{if', g} = -\trs{f', {H}} \text{.}\]
+This implies $\trs{f', H-ig} = 0$ which implies $H - ig \perp \im T_2$. By the above claim this means $H - ig$ is a constant $c$. Then $g = i \prs{c - H}$. Hence $g$ is absolutely-continuous (because $H$ is), $g' = -ih \in L^2$ and $g\prs{0} = g\prs{1} = ic$, so $g \in D\prs{T_2}$. Hence $T_2^* = T_2$.
+\end{example}
+
+\begin{proposition}
+For every $T$ it holds that $\prs{\im T}^\perp = \ker T^*$.
+\end{proposition}
+
+\begin{proof}
+Let $z \in \prs{\im T}^\perp$. Then $\trs{Tx, z} = 0$ for every $x \in D\prs{T}$ where $\trs{Tx, z}$ is continuous in $x$. Then $z \in D\prs{T^*}$ and $0 = \trs{Tx, z} = \trs{x, T^* z}$ so $T^* z \perp D\prs{T}$ so $z \in \ker\prs{T^*}$.
+
+The other inclusion is the same argument in reverse.
+\end{proof}
+
+\begin{definition}[Graph of an Operator]
+Let $T$ be an operator. We define
+\[\Gamma\prs{T} = \set{\prs{x, Tx}}{x \in D\prs{T}} \subseteq H \oplus H \text{.}\]
+$T$ is closed if $\Gamma\prs{T}$ is closed.
+\end{definition}
+
+\begin{proposition}
+Define $V \colon H \oplus H \to H \oplus H$ by $V\prs{x,y} = \prs{-y,x}$. Then
+\begin{enumerate}
+\item $V$ is a unitary map.
+\item $\Gamma\prs{T^*} = \prs{V\Gamma\prs{T}}^\perp$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item We have
+\begin{align*}
+\trs{V\prs{x_1, y_1}, V\prs{x_2, y_2}} &= \trs{\prs{-y_1, x_1}, \prs{-y_2, x_2}}
+\\&= \trs{y_1, y_2} + \trs{x_1, x_2}
+\\&= \trs{\prs{x_1, y_1}, \prs{x_2, y_2}} \text{.}
+\end{align*}
+\item Fix $\prs{x, Tx} \in \Gamma\prs{T}$ and $\prs{y, T^* y} \in \Gamma\prs{T^*}$.
+We have
+\begin{align*}
+\trs{\prs{y, T^* y}, V\prs{x, Tx}} &= \trs{\prs{y, T^* y}, \prs{-Tx, x}}
+\\&= -\trs{y, Tx} + \trs{T^* y, x}
+\\&= -overline{\trs{Tx, y} + \trs{x, T^* y}}
+\\&= 0 \text{.}
+\end{align*}
+Hence $\Gamma\prs{T^*} \subseteq V\prs{\Gamma\prs{T}}^\perp$.
+
+Fix $\prs{a,b} \in V\prs{\Gamma\prs{T}}^\perp$. For every $x \in D\prs{T}$ we have
+\begin{align*}
+0 &= \trs{\prs{a,b}, V\prs{x, Tx}}
+\\&= \trs{\prs{a,b} \prs{-Tx, x}}
+\\&= - \trs{a, Tx} + \trs{b,x}
+\end{align*}
+so $\trs{Tx, a} = \trs{x,b}$, where the latter is continuous in $x$. Hence $a \in D\prs{T^*}$, and
+\[\trs{x, T^* a} = \trs{Tx, a} = \trs{x,b}\]
+so $b- T^* a \perp D\prs{T}$, so $b = T^* a$. Hence $\prs{a,b} = \prs{a,T^* a} \in \Gamma\prs{T^*}$.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}
+$T^*$ is always closed. In particular, if $T$ is self-adjoint, $T$ is closed.
+\end{corollary}
+
+\begin{proposition}
+If $T$ is closed, $\overline{D\prs{T^*}} = H$ and $T^{**} = T$.
+\end{proposition}
+
+\begin{proof}
+We need to prove the first part in order for $T^{**}$ to be defined.
+Let $z \perp D\prs{T^*}$. Then $\prs{z, 0} \perp \Gamma\prs{T^*}$ since $\trs{\prs{z,0}, \prs{y, T^*, y}} = \trs{z,y}$. So \[\prs{z,0} \in \Gamma\prs{T^*}^\perp = V\prs{\Gamma\prs{T}}^{\perp \perp} = \overline{V\prs{\Gamma\prs{T}}} = V\prs{\Gamma\prs{T}}\]
+where the last equality is true since $T$ is closed and $V$ is an isometry.
+Hence $\prs{z,0} = V\prs{x, Tx} = \prs{-Tx, x}$ for some $x$ and by comparison $x = 0$ so $z = 0$. Hence $\overline{D\prs{T^*}} = H$.
+
+Now,
+\begin{align*}
+\Gamma\prs{T^{**}} &= \prs{V\prs{\Gamma\prs{T^*}}}^\perp \\&= V\prs{V\prs{\Gamma\prs{T}}^\perp}^\perp \\&= V^2\prs{\Gamma\prs{T}}^{\perp \perp} \\&= \prs{-\Gamma\prs{T}}^{\perp \perp} \\&= \Gamma\prs{T}^{\perp \perp} \\&= \Gamma\prs{T} \text{.}
+\end{align*}
+Hence $T^{**} = T$.
+\end{proof}
+
+\begin{definition}[Resolvent Set]
+Say $\lambda$ is in the resolvent set of $T$ if $T - \lambda I \colon D\prs{T} \to H$ has a bounded inverse.
+
+Denote the resolvent set of $T$ by $\rho\prs{T}$.
+\end{definition}
+
+\begin{definition}[Spectrum]
+Let $\sigma\prs{T} \ceq \mbb{C} \setminus \rho\prs{T}$ be the spectrum of $T$.
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item If $T$ is closed, $\sigma\prs{T} = \sigma_p\prs{T} \cup \sigma_c\prs{T} \cup \sigma_r\prs{T}$.
+\item If $T$ isn't closed, $\sigma\prs{T} = \mbb{C}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item%1
+We should prove that if $T - \lambda I \colon D\prs{T} \to \mbb{H}$ is a bijection then $\prs{T-\lambda I}^{-1}$ is bounded. But,
+\begin{align*}
+\Gamma\prs{\prs{T-\lambda I}^{-1}} &= \set{\prs{y, \prs{T- \lambda I}^{-1} y}}{y \in \mbb{H}}
+\\&= \set{\prs{\prs{T-\lambda I}x, x}}{x \in D\prs{T}}
+\end{align*}
+where the latter is closed since $T - \lambda I$ is. Hence $\prs{T-lambda I}^{-1}$ is closed by the closed graph theorem.
+\item%2
+If $\lambda \notin \sigma\prs{T}$, $\prs{T-\lambda I}$ has a bounded inverse. Then $\prs{T - \lambda I}^{-1}$ is closed. Hence ${T- \lambda I}$ is also closed.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}
+$\sigma\prs{T}$ is closed.
+\end{proposition}
+
+\begin{proof}
+We saw that if $A$ has a bounded inverse and $\norm{B - A} < \frac{1}{\norm{A^{-1}}}$ then $B$ has a bounded inverse. Take $A = T - \lambda I$ and $B = T - \lambda I - \eps I$. Then repeat the same proof as for bounded operators.
+\end{proof}
+
+\begin{example}
+Let $T = T_2$ on $L^2\prs{\brs{0,1}}$ as in example \ref{example:unbounded_main_example}. Then $T$ is self-adjoint, and we compute $\sigma\prs{T}$.
+Assume $T\prs{f} = \lambda f$. Then $i f' - \lambda f = 0$ so $f\prs{t} = c e^{-i \lambda t}$. We want $f \in D\prs{T}$ so we need $c = f\prs{0} = f\prs{1} = c e^{-\lambda}$. If $f \neq 0$ we have $c \neq 0$ so $e^{-i\lambda} = 1$ so $\lambda \in 2 \pi \mbb{Z}$.
+Hence $\sigma_p\prs{T} = 2 \pi \mbb{Z}$.
+
+To check if $\lambda \in \sigma_c\prs{T} \cup \sigma_r\prs{T}$ we need to solve
+\[i f' - \lambda f = \prs{T- \lambda f} = g \in L^2\prs{\brs{0,1}}\]
+for $f$.
+This is a first-order linear ODE with solution
+\[f\prs{t} = C e^{-i\lambda t} - ie^{-i\lambda t} \int_0^t e^{i \lambda s} g\prs{s} \diff s \text{.}\]
+We require $f\prs{0} = f\prs{1}$. If $e^{-\lambda} \neq 1$ we can choose $c$ to have $f\prs{0} = f\prs{1}$.
+Hence $\sigma\prs{T} = \sigma_p\prs{T} = 2 \pi \mbb{Z}$.
+
+Note that here $\sigma\prs{\mbb{Z}}$ is unbounded.
+\end{example}
+
+\begin{example}
+Let $T = T_3$ from example \ref{example:unbounded_main_example}. Then $T$ is symmetric and $T = T_1^*$ so $T$ is closed.
+
+Note that $\sigma_p\prs{T^*} = \mbb{C}$ (since $D\prs{T^*} = \set{f \in L^2\brs{0,1}}{f' \in L^2}$ and we can always take $f\prs{t} = e^{-i\lambda t} \in D\prs{T^*}$ eigenfunction with eigenvalue $\lambda$).
+
+For $T$ we have
+\[\im\prs{T - \lambda I}^\perp = \ker\prs{T - \lambda I}^\perp = \ker\prs{T^* - \bar{\lambda} I} \neq \set{0}\]
+so $\overline{\im\prs{T - \lambda I}} \neq H$, so $\sigma\prs{T} = \sigma_r\prs{T} = \mbb{C}$.
+
+This is terrible and is an example for why we later treat only self-adjoint operators.
+\end{example}
+
+\begin{proposition}
+Let $T$ be symmetric. Fix $\lambda = \alpha + i \beta \in \mbb{C}$.
+\begin{enumerate}
+\item $\norm{\prs{T - \lambda I}x}^2 = \norm{\prs{T - \alpha I}x}^2 + \abs{\beta}^2 \norm{x}^2$.
+\item If $\beta \neq 0$, $T - \lambda I$ is injective.
+\item If $\beta \neq 0$ and $T$ is closed, $\im\prs{T - \lambda I}$ is closed.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item By replacing $T$ with $T - \alpha I$ we may assume $\alpha = 0$. We have
+\begin{align*}
+\norm{\prs{T - \lambda I} x}^2 &= \norm{Tx - i \beta x}^2
+\\&= \norm{Tx}^2 -2\Re\trs{Tx, i\beta x} + \norm{i\beta x}^2 \text{.}
+\end{align*}
+Note that $\trs{Tx, x} = \trs{x, Tx} = \overline{\trs{Tx, x}}$ so $\trs{Tx, x} \in \mbb{R}$. So
+\begin{align*}
+\norm{\prs{T -\lambda I}x}^2 = \norm{Tx}^2 - 2\Re\prs{i\beta \trs{Tx, x}} + \abs{\beta}^2 \norm{x}^2 \text{.}
+\end{align*}
+\item We have $\norm{\prs{T- \lambda I}x} \geq \abs{\beta} \norm{x}$. So if $\prs{T - \lambda I}x = 0$ we get $x=0$.
+\item Assume $\prs{y_n}_{n \in \mbb{N}}$ and $y_n \xrightarrow{n\to\infty} y$. We can write $y_n = \prs{T - \lambda I}x_n$ for some sequence $\prs{x_n}_{n \in \mbb{N}}$. But $\norm{x_n - x_m} \leq \frac{1}{\abs{\beta}} \norm{y_n - y_m} \xrightarrow{n,m\to\infty}$ so $\prs{x_n}_{n \in \mbb{N}}$ is Cauchy and hence convergent to some $x$. Since $\prs{T - \lambda I}x_n = y_n \xrightarrow{n\to\infty} y$ and since $T - \lambda I$ is closed, we get $y = \prs{T - \lambda I} x$.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}
+If $T$ is self-adjoint, $\sigma\prs{T} \subseteq \mbb{R}$ and $\sigma_r\prs{T} = \ns$.
+\end{proposition}
+
+\begin{proof}
+Fix $\lambda \notin \mbb{C} \setminus \mbb{R}$. Then
+\begin{align*}
+\im\prs{T - \lambda I}^\perp &= \ker\prs{T -\lambda I}^* \\&= \ker\prs{T - \bar{\lambda} I} \\&= \set{0}
+\end{align*}
+where the last equality is $\bar{\lambda} \notin \sigma_p\prs{T}$.
+Hence \[\im\prs{T - \lambda I} = \overline{\im\prs{T - \lambda I}} = \set{0}^\perp = H\] so $\lambda \in \rho\prs{T}$.
+Also, if $\lambda \in \mbb{R}$ we get \[\im\prs{T -\lambda I}^\perp = \ker\prs{T- \lambda I}\text{.}\] If $\lambda \in \sigma_r\prs{T}$ we get the the left-hand side is nontrivial but the right-hand side is, a contradiction.
+\end{proof}
+
+\subsection{The Spectral Tneorem}
+
+We want to write $T = \int_{\sigma\prs{T}} \lambda \diff E$ for some resolution $E$. We cannot prove this because we don't yet know what this means. Since $\sigma\prs{T}$ isn't bounded, $\lambda$ isn't bounded on it. But, we haven't treated integration of unbounded functions.
+
+\begin{definition}
+Let $S$ be a normal bounded operator on $H$ with spectral resolution $E$. Fix $f \colon \sigma\prs{S} \to \mbb{C}$ measurable. Take
+\[A_n \ceq \set{\lambda \in \sigma\prs{S}}{\abs{f\prs{\lambda}} < n}\]
+and define
+\[\prs{\int_{\sigma\prs{T}}f\diff E} x = f\prs{S}x \ceq \lim_{n \to \infty} \brs{\prs{f \chi_{A_n}}\prs{S} x}\]
+for all $x \in H$ such that the limit exists.
+\end{definition}
+
+\begin{proposition}\label{proposition:unbounded_spectral_properties}
+For $T = f\prs{S}$ we have the following:
+
+\begin{enumerate}
+\item $D\prs{T} = \set{x \in H}{\int \abs{f}^2 \diff m_{x,x} < \infty}$ where $m_{x,x}\prs{A} = \trs{E\prs{A}x,x}$.
+\item $\overline{D\prs{T}} = H$.
+\item $T^* = \int \bar{f} \diff E = \bar{f}\prs{S}$.
+\item $f\prs{S} g\prs{S} = \prs{fg}\prs{S}$. In fact, $D\prs{f\prs{S} g\prs{S}} = D\prs{\prs{fg}\prs{S}} \cap D\prs{g\prs{S}}$.
+\item If $f$ is real, $T$ is self-adjoint.
+\end{enumerate}
+\end{proposition}
+
+We prove the proposition later and go back to the main theorem. The idea for the proof is as follows.
+A self-adjoint operator has a spectrum which is unbounded in $\mbb{R}$. We apply to this a function $f\prs{\lambda} = \frac{\lambda - i}{\lambda + i}$ which maps $\mbb{R}$ to $S^1$. The operator $T$ is sent to $f\prs{T}$ which is unitary and for which we know the spectral theorem. We then apply the inverse map $g\prs{\lambda} = i \frac{1+\lambda}{1-\lambda}$ and get a spectral resolution for $T$.
+
+\begin{definition}
+Let $T$ be self-adjoint and define
+\begin{align*}
+U \colon H &\to H
+\end{align*}
+by $\prs{T - iI}\prs{T + iI}^{-1}$ which we call \emph{the Cayley transform of $T$.}
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item $U$ is well-defined and unitary (and in particular bounded).
+\item $I-U$ is 1 to 1, $\im\prs{I -U}=D\prs{T}$ and we have $T = i\prs{I+U}\prs{I-U}^{-1}$.
+\item $\lambda \in \sigma\prs{T}$ if and only if $f\prs{\lambda} = \frac{\lambda - i}{\lambda + i} \in \sigma\prs{U}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item $\sigma\prs{T} \subseteq \mbb{R}$ so $T \pm iI \colon D\prs{T} \to H$ are bijective, hence $U$ is well-defined. We also proved $\norm{\prs{T+iI}x} = \norm{Tx}^2 + \norm{x}^2$. Fix $x \in H$ and write $y = \prs{T + iI}^{-1} x$. We have
+\begin{align*}
+\norm{x}^2 &= \norm{\prs{T +i I}y}^2 = \norm{Ty}^2 + \norm{y}^2 \\
+\norm{Ux}^2 &= \norm{\prs{T - iI}y}^2 = \norm{Ty}^2 + \norm{y}^2
+\end{align*}
+so $\norm{x} = \norm{Ux}$. Since $U$ is a bijection, this implies it's unitary.
+\item Fix $x \in H$ and write $y = \prs{T + iI}^{-1} x$. Then $x =\prs{T + iI} y$ and $Ux = \prs{T - iI}y$. Add and subtract these equations to get $\prs{I+U}\prs{x} = 2Ty$ and $\prs{I-U}x = 2iy$.
+So
+\begin{enumerate}
+\item $\prs{I-U} x = 0$ implies $2iy = 0$ so $y = 0$ so $x = 0$.
+\item $\im\prs{I-U} = \set{\prs{I-U}x}{x \in H} = \set{2iy}{y \in D\prs{T}} = D\prs{T}$.
+\end{enumerate}
+Finally,
+\[i\prs{I+U}\prs{I-U}^{-1}y = i\prs{I+U}\prs{\frac{x}{2i}} = \frac{1}{2} \prs{I+U}\prs{x} = Ty \text{.}\]
+\item We have
+\begin{align*}
+T-\lambda I &= i\prs{I+U}\prs{I-U}^{-1} - \lambda I
+\\&= i\prs{\prs{I+U} + i \lambda \prs{I -U}}\prs{I-U}^{-1}
+\\&= \prs{\prs{i - \lambda}I + \prs{i \lambda} U} \prs{I-U}^{-1}
+\\&= \prs{i+\lambda}\prs{U - \frac{\lambda - i}{\lambda +i} I}\prs{I-U}^{-1} \text{.}
+\end{align*}
+We know $\prs{I-U}^{-1}$ is bijective, so $T - \lambda I$ is bijective iff $U - f\prs{\lambda}I$ is bijective, hence the result.
+\end{enumerate}
+\end{proof}
+
+\begin{theorem}[The Spectral Theorem]
+Let $T$ be self-adjoint. There's a resolution of the identity $E$ on $\sigma\prs{T} \subseteq \mbb{R}$ such that $T = \int_{\sigma\prs{T}} \lambda \diff E$.
+\end{theorem}
+
+\begin{proof}
+Let $U$ be the Cayley transform of $T$ and let
+\begin{align*}
+\tilde{E} \colon \mrm{Borel}\prs{\sigma\prs{U}} \to \mcal{L}\prs{H}
+\end{align*}
+be the spectral resolution of $U$.
+We have $\tilde{E}\prs{\set{1}} = 0$ since $1 \notin \sigma_p\prs{U}$ (so that $U-I$ is injective).
+Take $X = S^1 \setminus \set{1}$, we can think of $\tilde{E}$ as a resolution on $X$.
+
+Define $g\prs{U} \ceq S = \int_X g \diff \tilde{E}$ where $g\prs{\lambda} = i \frac{1 + \lambda}{1-\lambda}$. We claim $S = T$.
+We have
+$g\prs{\lambda}\prs{1-\lambda} = i\prs{1+\lambda}$. Applying this to $U$ we get
+\[i\prs{I+U} = \prs{g \cdot \prs{1-\lambda}}\prs{U} \supseteq g\prs{U} \prs{1-\lambda}\prs{U} = S \prs{I-U}\text{.}\]
+This is in fact an equality because \[D\prs{g\prs{U} \prs{1-\lambda}\prs{U}} = D\prs{\prs{g \cdot \prs{1-\lambda}}\prs{U}} \cap \subseteq{=H}{D\prs{I-U}}\text{.}\]
+So
+$i\prs{I+U} = S\prs{I-U}$
+so for every $x \in D\prs{T}$ we get
+\[Sx = i\prs{I+U}\prs{I-U}x = Tx \text{.}\]
+Hence $S \supseteq T$.
+But then $S = S^* \subseteq T^* = T$ (where $S = S^*$ since $g$ is real on $S^1$), so $S = T$.
+
+We therefore have
+\[T = \int_{\sigma\prs{S}} g\prs{\lambda} \diff \tilde{E} \text{.}\]
+We define
+\begin{align*}
+E \colon \mrm{Borel}\prs{\sigma\prs{T}} &\to \mcal{L} \\
+A &\mapsto \tilde{E}\prs{g^{-1}\prs{A}} \text{.}
+\end{align*}
+This is the pushforward measure of $E$ by $g$ and one gets the appropriate change of variables
+\[T = \int_{\sigma\prs{S}} g\diff \tilde{E} = \int_{\sigma\prs{T}} \lambda \diff E \text{.}\]
+\end{proof}
+
+%LECTURE 13 (last one)
+
+\begin{proof}[\ref{proposition:unbounded_spectral_properties}]
+\begin{enumerate}
+\item%1
+For $B \in \Sigma$ measurable write $T_B = \int f \cdot \chi_B \diff E$. We claim
+\[\norm{T_B x}^2 = \int_B \abs{f}^2 \diff m_{x,x} \text{.}\]
+Indeed,
+\begin{align*}
+\norm{T_B x}^2 &= \trs{T_Bx, T_Bx}
+\\&= \trs{T_B^* T_B x, x}
+\\&= \trs{\prs{\int \overline{f \chi_B} \cdot f \chi_B \diff E} x, x}
+\\&= \trs{\prs{\int_B\abs{f}^2 \diff E}x,x}
+\\&= \int_B \abs{f}^2 \diff m_{x,x} \text{.}
+\end{align*}
+So, if $x \in D\prs{T}$ we have
+\begin{align*}
+\int_\Omega \abs{f}^2 &= \lim_{n\to\infty} \int_{A_n} \abs{f}^2 \diff m_{x,x}
+\\&= \lim_{n\to\infty} \norm{T_{A_n} x}^2
+\\&= \norm{Tx}^2
+\\&< \infty \text{.}
+\end{align*}
+
+Conversely, if $\int \abs{f}^2 \diff \mu_{x,x} < \infty$ then for $n>m$ we have
+\begin{align*}
+\norm{T_{A_n} - T_{A_m x}}^2 &= \norm{T_{A_n \setminus A_m} x}^2
+\\&= \int_{A_n \setminus A_m} \abs{f}^2 \diff m_{x,x}
+\\&\xrightarrow{n,m \to \infty} 0 \text{.}
+\end{align*}
+Hence $\prs{T_{A_n}}_{n \in \mbb{N}}$ is Cauchy, so it converges.
+\item%2
+We claim something even stronger, that $\im E\prs{A_k} \subseteq D\prs{T}$. This is enough since for every $x \in D\prs{T}$ we have
+\[x = E\prs{\Omega}x = \lim_{k\to\infty} E\prs{A_k} x \text{.}\]
+Indeed, if $x \in \im E\prs{A_k}$ we have
+\begin{align*}
+m_{x,y}\prs{B} &= \trs{E\prs{B} x, y}
+\\&= \trs{E\prs{B} E\prs{A_k} x, y}
+\\&= \trs{E\prs{B \cap A_k} x, y}
+\\&= m_{x,y}\prs{B \cap A_k}
+\end{align*}
+and then for $n>k$ we have
+\[\trs{T_{A_n}x, y} = \int_{A_n} f \diff m_{x,y} = \int_{A_k} f\diff m_{x,y} = \trs{T_{A_k} x, y}\]
+which implies $T_{A_n}x = T_{A_k}x$, so the limit exists.
+\item%3
+Fix $y \in D\prs{T^*}$. For every $x \in H$ we want to understand $T^* y$. It's easier to study it's projections, which we study via the inner product. We have
+\begin{align*}
+\trs{x, E\prs{A_n} T^* y} &= \trs{T E\prs{A_n}x, y}
+\\&= \trs{T_{A_n} E\prs{A_n}x,y}
+\\&= \trs{\prs{\int f \chi_{A_n} \diff E}\prs{\int \chi_{A_n} \diff E}x,y}
+\\&= \trs{T_{A_n} x, y}
+\\&= \trs{x, T_{A_n}^*y}
+\end{align*}
+for all $x \in H$. Hence $E\prs{A_n}T^*y = \prs{T_{A_n}}^*y$.
+Taking $n \to \infty$ we get
+\begin{align*}
+T^* y &= \lim_{n\to\infty} \prs{T_{A_n}}^* y \\&= \lim_{n\to\infty} \prs{\int \bar{f} \chi_{A_n} \diff E} y \\&= \prs{\int \bar{f} \diff E} y \text{.}
+\end{align*}
+\item%4
+\emph{(Sketch):} Write $S \ceq \int g \diff E$ and $T \ceq \int f \diff E$. Then
+\begin{align*}
+D\prs{\mrm{LHS}} &= \set{x \in H}{x \in D\prs{S}, Sx \in D\prs{T}}
+\\&= D\prs{S} \cap \set{x \in H}{\int \abs{f}^2 \diff m_{Sx, Sx} < \infty}
+\end{align*}
+and when $g$ is bounded we saw that $\diff m_{Sx, x} = g \diff m_{x,x}$ and that $m_{x,y} = \overline{m_{y,x}}$.
+Hence $\diff m_{x,Sx} = \bar{g} \diff m_{x, x}$, so $\diff m_{Sx, Sx} = \bar{g}^2 \diff m_{x,x}$.
+Hence \[D\prs{\mrm{LHS}} = D\prs{S} \cap \set{x}{\int \abs{f}^2 \abs{g}^2 \diff m_{x,x} < \infty} = D\prs{S} \cap D\prs{\mrm{RHS}}\].
+For unbounded $g$ one checks the same via approximation by bounded functions.
+
+Now let \[A_n = \set{x}{\abs{f}\prs{x} < n}, B_n = \set{x}{\abs{g}\prs{x} < n}, C_n = \set{x}{\abs{fg}\prs{x} < n} \text{.}\]
+Then
+\begin{align*}
+\prs{\int f \diff E \cdot \int g \diff E}x &= \lim_{n \to \infty} \lim_{m\to\infty} \prs{\int_{A_n} f \diff E \cdot \int_{B_m} g \diff E} x &= \lim_{n\to\infty} \lim_{m\to\infty} \prs{\int_{A_n \cap B_m} fg \diff E} x, \\
+\prs{\int fg \diff E}x &= \lim_{n\to\infty} \prs{\int_{C_n} fg \diff E}x \text{.}
+\end{align*}
+We now have
+\begin{align*}
+\norm{\prs{\int f \diff E \cdot \int g \diff E} x - \prs{\int fg \diff E}x}^2 &= \lim_{n\to\infty} \lim_{m\to\infty} \norm{\prs{\int_{A_n \cap B_m} fg \diff E - \int_{C_n} fg \diff E}x}^2
+\\&=
+\lim_{n\to\infty} \lim_{m\to\infty} \int_{C_n \Delta \prs{A_n \cap B_m}} \abs{fg}^2 \diff m_{x,x} &= 0
+\end{align*}
+where the last equation is by dominant-convergence.
+\end{enumerate}
+\end{proof}
+
+\subsection{Self-Adjoint Extensions}
+
+We have a spectral theorem for self-adjoint operators, but it's generally difficult to construct self-adjoint operators or find out if an operator is self-adjoint. We therefore want a way to extend symmetric operators to self-adjoint ones.
+
+\begin{proposition}
+Let $T$ be a symmetric such that $\pm i \notin \sigma\prs{T}$. Then $T$ is self-adjoint.
+\end{proposition}
+
+\begin{proof}
+We first show that
+\begin{align*}
+\prs{\prs{T - iI}^{-1}}^* &= \prs{T + iI}^{-1} \text{.}
+\end{align*}
+Fix $v,w \in H$ and write $x = \prs{T - iI}^{-1} v$ and $y = \prs{T + iI}^{-1} w$. Then
+\begin{align*}
+\trs{\prs{T-iI}^{-1} v, w} &= \trs{x, \prs{T+iI}y}
+\\&= \trs{x, T y} - i\trs{x,y}
+\\&= \trs{Tx,y} - y\trs{x,y}
+\\&= \trs{\prs{T - iI}x, y}
+\\&= \trs{v, \prs{T+iI}^{-1}w} \text{.}
+\end{align*} 
+
+Now, fix $y \in D\prs{T^*}$ and $z = T^* y$. For every $x \in D\prs{T}$ we have
+\begin{align*}
+\trs{\prs{T - iI}x, y} &= \trs{Tx, y} - i\trs{x,y}
+\\&= \trs{x,z} - i\trs{x,y}
+\\&= \trs{x, z+iy}
+\\&= \trs{\prs{T - iI}^{-1} \prs{T - iI}x, z+iy}
+\\&= \trs{\prs{T - iI}x, \prs{T + iI}^{-1}\prs{z+iy}} \text{.}
+\end{align*}
+Since $T - iI$ is a bijection, $\prs{T - iI}D\prs{T} = H$ so the above implies $y = \prs{Y + iI}^{-1}\prs{z + iy} \in D\prs{T}$.
+Hence $T = T^*$.
+\end{proof}
+
+\begin{proposition}
+Let $T$ be a symmetric operator on $H$.
+\begin{enumerate}
+\item There exists a closed symmetric operator $\bar{T} \supseteq T$ such that $\Gamma\prs{\bar{T}} = \overline{\Gamma\prs{T}}$. We call $\bar{T}$ \emph{the closure of $T$}.
+\item For every $\lambda \in \mbb{C} \setminus \mbb{R}$, $\im\prs{\bar{T} - \lambda I} = \overline{\im\prs{T - \lambda I}}$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item We should show that $\overline{\Gamma\prs{T}}$ is a graph. Fix $\prs{x,a}, \prs{x,b} \in \overline{\Gamma\prs{T}}$, we should show that $a=b$.
+Fix two sequences $\prs{x_n}_{n \in \mbb{N}}, \prs{x_n'}_{n \in \mbb{N}} \subseteq D\prs{T}$ such that $\prs{x_n, T x_n} \to \prs{x,a}$ and $\prs{x_n', T x_n'} \to \prs{x,b}$.
+For $y \in D\prs{T}$ we have
+\begin{align*}
+\trs{T\prs{x_n - x_n'}, y} &= \trs{x_n - x_n', Ty} \text{.}
+\end{align*}
+Taking $n \to \infty$ we get
+\[a-b = \trs{x-x, Ty} = 0 \text{.}\]
+Hence $a-b \perp y$ for all $y \in D\prs{T}$ so $a-b = 0$, so $a=b$.
+
+Hence $\bar{T}$ is well-defined. We show symmetry, as linearity is easier.
+Fix $x,y \in D\prs{\bar{T}}$. Choose $\prs{x_n}_{n \in \mbb{N}}, \prs{y_n}_{n \in \mbb{N}} \subseteq D\prs{T}$ such that $\prs{x_n, T x_n} \to \prs{x, \bar{T} x}$ and $\prs{b_n, T y_n} \to \prs{y, \bar{T} y}$. Then
+\[\trs{T x_n, y_n} = \trs{x_n, T y_n} \text{.}\]
+Taking $n \to \infty$ we get $\trs{\bar{T}x, y} = \trs{x, \bar{T}y}$, as required.
+
+\item
+Fix $y \in \im\prs{\bar{T} - \lambda I}$ and write $y = \bar{T} x - \lambda x$. Choose $\prs{x_n}_{n \in \mbb{N}} \subseteq D\prs{T}$ such that $\prs{x_n, T x_n} \to \prs{x, \bar{T} x}$. Then $T x_n - \lambda x_n \to y \in \overline{\im\prs{T - \lambda I}}$.
+
+For the other inclusion, we saw $\im\prs{\bar{T} - \lambda I}$ is closed. Then $\im\prs{\bar{T} - \lambda I} \supseteq \overline{\im\prs{T - \lambda I}}$.
+\end{enumerate}
+\end{proof}
+
+\begin{remark}
+There are non-closable (non-symmetric) operators.
+\end{remark}
+
+\begin{theorem}
+Let $T$ be a symmetric operator.
+Define $n_+ \ceq \codim \overline{\im\prs{T - iI}}$ and $n_- = \codim \overline{\im\prs{T + iI}}$.
+Then $T$ has a self-adjoint extension if and only if $n_+ = n_-$.
+\end{theorem}
+
+
+\begin{remark}
+\begin{enumerate}
+\item $\codim\prs{\overline{\im\prs{T - \lambda I}}}$ is constant on the upper/lower half-planes. So, it doesn't matter what two numbers we take in the upper/lower half-planes.
+\item We can have $n_+, n_-$ infinite, so we treat $n_+, n_-$ as cardinal dimensions.
+\end{enumerate}
+\end{remark}
+
+\begin{proof}
+Assume $n_+ = n_-$. Without loss of generality assume $T$ is closed. Define $H_1 = \im\prs{T+iI}$ and $H_2 = \im\prs{T-iI}$, which are both closed subspaces of $H$.
+We define $U \colon H_1 \to H_2$ by $U = \prs{T - iI}\prs{T+iI}^{-1}$, which we call the Cayley transform of $T$ as before. This is a norm-preserving bijection. Note $H_1^\perp \cong \quot{H}{H_1} \cong \quot{H}{H_2} \cong H_2^\perp$ since Hilbert spaces of the same dimension are unique up to an isometric isomorphism.
+Hence there's an isometric isomorphism $\tilde{U} \colon H_1^\perp \to H_2^\perp$. Define $V \colon H \to H$ by $V\prs{x+y} \ceq Ux + \tilde{U}\prs{y}$ where $x \in H_1$ and $y \in H_1^\perp$, which is a bijection since $U, \tilde{U}$ are, and is an isometry since \[\norm{V\prs{x+y}}^2 = \norm{Ux}^2 + \norm{\tilde{U}y}^2 = \norm{x}^2 + \norm{y}^2 = \norm{x+y}^2\] for all $x,y \in H$.
+Hence $V$ is unitary.
+
+Define $S = i\prs{I+V}\prs{I-V}^{-1}$ which we show is a self-adjoint extension of $T$.
+Note that \[\ker\prs{I-V} = \ker\prs{VV^* - V} = \ker\prs{V\prs{V^* - I}} = \ker\prs{V^* - I}\] where the last equality is since $V$ is injective. Then \[\ker\prs{I-V} = \ker\prs{V-I}^* = \im\prs{V-I}^\perp \subseteq \im\prs{U-I}^\perp = D\prs{T}^\perp = \set{0}\]
+so $I-V$ is injective and $S$ is well-defined.
+
+We first show $S$ is symmetric.
+\begin{align*}
+\trs{Sx, y} &= i\trs{\prs{I+V}\prs{I-V}^{-1} x, y}
+\\&= i\trs{x, \prs{\prs{I-V}^{-1}}^*\prs{I+V}^*y}
+\\&= i\trs{x, \prs{I-V^{-1}}^{-1}\prs{I+V^{-1}}y}
+\\&= i\trs{x, \prs{I-V^{-1}}^{-1}V^{-1}V\prs{I+V^{-1}}y}
+\\&= i\trs{x, \prs{V-I}^{-1}\prs{V+I}y}
+\\&= \trs{x, i\prs{I+V}\prs{I-V}y}
+\\&= \trs{x, Sy} \text{.}
+\end{align*}
+
+We now want to show $S$ is self-adjoint. We proved that $\sigma\prs{S} = g\prs{\sigma\prs{V}}$ where $g\prs{\lambda} = i\frac{1+\lambda}{1-\lambda}$. Since $V$ is unitary, $\sigma\prs{V} \subseteq S^1$ so $\sigma\prs{S} \subseteq g\prs{S^1} = \mbb{R}$. Hence $S$ is self-adjoint.
+
+For the other direction, assume $S$ is self-adjoint and $S \supseteq T$. Let $V$ be the Cayley transform of $S$. We know $V\prs{H_1} = H_2$ so $V\prs{H_1^\perp} = H_2^\perp$, so $\dim H_1^* = \dim H_2^\perp$.
+\end{proof}
+
+\begin{fact}
+Consider $H = L^2\prs{I}$ for $I \subseteq \mbb{R}$ an interval. Let $g \colon I \to \mbb{C}$ be continuous, and consider \[E = \set{f \in H}{f \text{ is compactly-supported and } \int_I f \bar{g} = 0} \text{.}\]
+If $g \in H$ then $\bar{E} = \spn\set{g}^\perp$, and if $g \notin H$ then $\bar{E} = H$.
+\end{fact}
+
+\begin{example}
+Let $H = L^2\prs{\mbb{R}}$ and let $Tf = if'$ on
+\[D\prs{T} = \set{f \in H}{\text{$f$ is smooth and compact-supported}} \text{.}\]
+We know $T$ is symmetric (by integration by parts).
+
+We compute $\overline{\im\prs{T-iI}}$. Given some $g \in H$, the solution to $if' - if = g$ is \[f\prs{t} = Ce^t -ie^t \int_{-\infty}^t e^{-s} g\prs{s} \diff s \text{.}\]
+For $f$ to be in $D\prs{T}$ we need $g$ to be compactly-supported and smooth, and we need $C = 0$ and that $\int_{-\infty}^{\infty} e^{-s} g\prs{s} \diff s = 0$.
+Since $e^{-s} \notin L^2\prs{\mbb{R}}$ and by the fact, $\overline{\im\prs{T-iI}} = H$, so $n_+ = 0$.
+
+Similarly, if we solve $if' + if = g$ we get $f\prs{t} = Ce^{-t} - ie^{-t}\int_{-\infty}^t e^s g\prs{s} \diff s$ and $e^s \notin L^2\prs{\mbb{R}}$ so $\overline{\im\prs{T + iH}} = H$ in the same when. Then $n_- = 0$.
+
+Then $\bar{T}$ is self-adjoint (in which case we call $T$ essentially self-adjoint).
+\end{example}
+
+\begin{example}
+Let $H = L^2\prs{\prs{0,\infty}}$ and $Tf = if'$ with
+\[D\prs{T} = \set{f \in H}{\text{$f$ is smooth and supported on $\brs{a,b} \subseteq \prs{0,\infty}$}} \text{.}\]
+In contrast with the above example, here $e^{-s} \in L^2\prs{0,\infty}$ so $\overline{\im\prs{T - iI}} = \spn\set{e^{-s}}^\perp$ so $n_+ = 1$. But, $e^{s} \notin L^2\prs{0,\infty}$ so $\overline{\im\prs{T + iI}} = H$, so $n_- = 0$, so there's no self-adjoint extension to $T$.
+\end{example}
+
+\begin{example}
+Let $H = L^2\prs{0,1}$ and $Tf = if'$ with
+\[D\prs{T} = \set{f \in H}{\text{$f$ is supported in $\brs{a,b} \subseteq \prs{0,1}$}} \text{.}\]
+We have $e^s, e^{-s} \in L^2\prs{0,1}$ so $n_+ = n_- = 1$. So $\bar{T}$ is not self-adjoint, but there is a self-adjoint extension.
+\end{example}
+
+\begin{proposition}
+Let $H = L^2\prs{\Omega}$ and assume $T$ is symmetric and $T \bar{f} = \overline{Tf}$ (with $\bar{f}$ the complex conjugate of $f$, and so that $f \in D\prs{T} \iff \bar{f} \in D\prs{T}$. Then $T$ has a self-adjoint extension.
+\end{proposition}
+
+\begin{proof}
+Consider $C \colon H \to H$ by $Cf = \bar{f}$ which is a skew-linear bijective isometry mapping subspaces to subspaces.
+We have
+\[C\prs{\im\prs{T - iI}} = \set{\overline{Tf - if}}{f \in D\prs{T}} = \set{T \bar{f} + i\bar{f}}{f \in D\prs{T}} = \set{Tf + if}{f \in D\prs{T}} = \im\prs{T + iI} \text{.}\]
+This implies
+$C\prs{\overline{\im\prs{T - iI}}} = \overline{\im\prs{T+iI}}$, so $n_+ = n_-$.
+\end{proof}
+
+\begin{example}
+Let $H = L^2\prs{0,\infty}$ and $Tf = -f''$ which is symmetric, with domain
+\[D\prs{T} = \set{f \in H}{\text{$f$ is smooth and compactly supported on $\prs{0,\infty}$}} \text{.}\]
+(This is the square of a previous example). Then $T$ has a self-adjoint extension.
+\end{example}
+
+\begin{theorem}[Friedrich's Extension Theorem]
+Assume $T$ is symmetric and $\trs{Tx, x} \geq C\norm{x}^2$ for some $c \in \mbb{R}$ and all $x \in H$. Then $T$ has a self-adjoint extension.
+\end{theorem}
+
+\begin{remark}
+This is a useful theorem e.g. in the theory of elliptic PDE's.
+\end{remark}
+
+\begin{proof}[Sketch]
+Without loss of generality assume $c = 1$. Define on $D\prs{T}$ the product $\trs{x,y}_T = \trs{Tx, y} = \trs{x, Ty}$ which is an inner product with $\norm{x}_T \geq \norm{x}$. $\prs{D\prs{T}, \norm{\cdot}_T}$ is not complete. Find $D\prs{T} \subseteq H_T \subseteq H$ which is the completion of $\prs{D\prs{T}, \norm{\cdot}_T}$.
+Note that $\trs{\cdot,\cdot}_T$ is defined on $H_T$ even though $T$ isn't.
+
+Fix $y \in H$ and consider $\psi_y\prs{z} = \trs{z,y}$ which is a continuous linear functional on $H$ in the usual norm. If $z \in H_T$ we have
+\begin{align*}
+\abs{\psi_y\prs{z}} = \abs{\trs{z,y}} \leq \norm{z}\norm{y} \leq \norm{z}_T \norm{y} \text{,}
+\end{align*}
+so $\psi_y \in H_T^*$. There exists $x \ceq x\prs{y} \in H_T$ such that
+\[\psi_y\prs{z} = \trs{z,y} = \trs{z,x}_T \text{.}\]
+The map $y \mapsto y\prs{x}$ is well-defined and injective. Define
+\[D\prs{S} \ceq \set{x\prs{y}}{y \in H}, \quad S\prs{x\prs{y}} = y \text{.}\]
+If $x \in D\prs{T}$ we have
+\[\trs{z, Sx} = \trs{z,x}_T = \trs{z,Tx}\]
+so $Tx = Sx$.
+$S$ is symmetric since $\trs{\cdot,\cdot}_T$ is symmetric. Then $0 \notin \sigma\prs{S}$ so $S$ is self-adjoint (if it isn't there's a point in the spectrum in the upper/lower half-plane, then all the half plane is in the spectrum, but since the spectrum is closed we have $\sigma\prs{S} \subseteq \mbb{R}$).
+\end{proof}
 
 \end{document}
