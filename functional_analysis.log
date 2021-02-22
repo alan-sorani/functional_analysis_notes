@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  30 JAN 2021 00:21
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.7) (format=lualatex 2020.9.3)  22 FEB 2021 20:57
  restricted system commands enabled.
 **functional_analysis.tex
 (./functional_analysis.tex
@@ -1504,24 +1504,24 @@ Overfull \hbox (2.89278pt too wide) in paragraph at lines 4311--4312
 
 \openout6 = functional_analysis.thm
  [104]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4337.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4336.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4336.
  (./functional_analysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4337.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4336.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4336.
 Package rerunfilecheck Info: File `functional_analysis.out' has not changed.
 (rerunfilecheck)             Checksum: C1D44FC39675DB089181E9336299E73F;7550.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4337.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4336.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28815 strings out of 481302
+ 28816 strings out of 481302
  100000,953878 words of node,token memory allocated
  2086 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 2 sub_mlist, 1 glyph, 388 attribute
 , 62 glue_spec, 388 attribute_list, 2 write, 1 pdf_action nodes
    avail lists: 2:760,3:219,4:60,5:689,6:63,7:2751,8:120,9:746,10:13,11:127
- 44225 multiletter control sequences out of 65536+200000
+ 44226 multiletter control sequences out of 65536+200000
  102 fonts using 9299075 bytes
  68i,20n,86p,944b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/eladt/appdata/local/programs/miktex/fonts/opentype/public/lm/lmrom
@@ -1564,7 +1564,7 @@ X/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EladT/AppData/Local/P
 rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm5.pfb><C:/Users/EladT/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Use
 rs/EladT/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on functional_analysis.pdf (104 pages, 903679 bytes).
+Output written on functional_analysis.pdf (104 pages, 903587 bytes).
 
 PDF statistics: 1474 PDF objects out of 1728 (max. 8388607)
  744 named destinations out of 1000 (max. 131072)
