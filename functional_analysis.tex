@@ -689,9 +689,10 @@ nd &\geq \sum_{k \in [n]} \abs{\prs{x_0}_k - b_k}
 n - \sum_{k \in [n]} b_k \text{.}
 \end{align*}
 We claim the last sum is bounded. Indeed, if $b_k = a_{k+1} - a_k$ then
-\[\sum_{k \in [n]} b_k = a_{n+1} - a_1 \text{.}\]
+\[\sum_{k \in [n]} b_k = a_{n+1} - a_1\]
+which is bounded as $\prs{a_n}_{n \in \mbb{N}_+} \in \ell_\infty$.
 Hence, dividing by $n$ we get
-\[d \geq 1 - \frac{1}{n} \sum_{k \in [n]} a_k \xrightarrow{n \to \infty} 1 \text{.}\]
+\[d \geq 1 - \frac{1}{n} \sum_{k \in [n]} b_k \xrightarrow{n \to \infty} 1 \text{.}\]
 Hence $d\prs{x_0, E} \geq 1$, but obviously $d\prs{x_0, E} \leq \norm{x_0} = 1$.
 
 By \ref{corollary:hahn_banach_2} there's $f \in \prs{\ell_\infty}^*$ such that $f\prs{E} = 0$, $f\prs{x_0} = 1$ and $\norm{f} = 1$.
@@ -704,7 +705,7 @@ where in the last inequality we use $a_n \in \brs{0,1}$ for all $n \in \mbb{N}_+
 
 Note that
 \begin{align*}
-\forall a \in \ell_\infty \forall k \inf_{mbb{N}} f\prs{\prs{a_n}_{n \in \mbb{N}_+}} = f\prs{\prs{a_{n+k}}_{n \in \mbb{N}_+}} \leq \sup_{n \geq k} a_n \text{.}
+\forall a \in \ell_\infty \forall k \in \mbb{N} f\prs{\prs{a_n}_{n \in \mbb{N}_+}} = f\prs{\prs{a_{n+k}}_{n \in \mbb{N}_+}} \leq \sup_{n \geq k} a_n \text{.}
 \end{align*}
 Hence
 \[f\prs{\prs{a_n}_{n \in \mbb{N}_+}} \leq \inf_{k \in \mbb{N}} \sup_{n \geq k} a_n = \limsup_{n \to \infty} a_n \text{.}\]
@@ -723,7 +724,7 @@ For every $x \in X$ define $\mrm{ev}_x \in X^{**} = \prs{X^*}^*$ by
 \end{definition}
 
 \begin{proposition}
-The map $x \mapsto \mrm{ev}_x$ is a linear norm-preserving map $X \to X^{**}$.
+The map $\iota \colon x \mapsto \mrm{ev}_x$ is a linear norm-preserving map $X \to X^{**}$.
 \end{proposition}
 
 \begin{proof}
@@ -734,7 +735,7 @@ Hence $x \mapsto \mrm{ev}_x$ is norm-preserving.
 \end{proof}
 
 \begin{definition}
-A normed space $X$ is called \emph{reflexive} if $X^{**}$ is of the form $\mrm{ev}_x$ for some $x \in X$.
+A normed space $X$ is called \emph{reflexive} if $\iota \colon X \to X^{**}$ is surjective.
 \end{definition}
 
 \begin{example}
@@ -952,7 +953,7 @@ Let $X$ be a real Banach space and let $f \colon X \to \mbb{R}$ be linear. Let $
 \begin{align*}
 \sup_{x \in X} \frac{\abs{f\prs{x}}}{\norm{x}} = \infty \text{.}
 \end{align*}
-Take $\prs{x_n}_{n \in \mbb{N}}$ such that $\frac{\abs{f\prs{x_n}}}{\norm{x_n}} \xrightarrow{n\to\infty} \infty$ and $y_n \ceq \frac{x_n}{f\prs{x_n}}$ such that $f\prs{y_n} = 1$ and $\norm{y_n} \to \infty$.
+Take $\prs{x_n}_{n \in \mbb{N}}$ such that $\frac{\abs{f\prs{x_n}}}{\norm{x_n}} \xrightarrow{n\to\infty} \infty$ and $y_n \ceq \frac{x_n}{f\prs{x_n}}$, so $f\prs{y_n} = 1$ and $\norm{y_n} \to 0$. In particular $y_n \to 0$.
 Then
 \begin{align*}
 \forall x\in X \colon x = \lim_{n \to \infty} \prs{x - f\prs{x} y_n + \lambda y_n} \text{.}
@@ -1005,16 +1006,17 @@ Then
 This follows immediately from the following theorem and Baire's category theorem.
 
 \begin{theorem}
-Let $X$ be a Banach space, $Y$ a normed space and $\mcal{F} \subseteq \mscr{L}\prs{X,Y}$. Assume $\set{x}{\sup_{T \in \mcal{F}} \norm{{T x} < \infty}}$ is not meagre. Then $\sup_{T \in \mcal{F}} < \infty$.
+Let $X$ be a Banach space, $Y$ a normed space and $\mcal{F} \subseteq \mscr{L}\prs{X,Y}$. Assume $\set{x}{\sup_{T \in \mcal{F}} \norm{T x} < \infty}$ is not meagre. Then $\sup_{T \in \mcal{F}} \norm{T} < \infty$.
 \end{theorem}
 
 \begin{proof}
 Let
 \[A_n \ceq \set{x}{\sup_{T \in \mcal{F}} \norm{Tx} \leq n} \text{.}\]
 Then $A_n$ are closed because if $\phi_T\prs{x} = \norm{Tx}$ we get \[A_n = \bigcap_{T \in \mcal{F}} \phi_T^{-1} \prs{\brs{0,n}} \text{.}\]
-Moreover, $\bigcup_{n \in \mbb{N}_+} A_n = A$ so there's $n \in \mbb{N}$ such that $\int \overline{A_n} \neq \ns$. Then there's $y_0 \in X$ and $r > 0$ such that $B\prs{y_0, r} \subseteq A_n$.
+Moreover, $\bigcup_{n \in \mbb{N}_+} A_n = A$ so there's $n \in \mbb{N}$ such that $\prs{\overline{A_n}}^\circ \neq \ns$. Then there's $y_0 \in X$ and $r > 0$ such that $B\prs{y_0, r} \subseteq A_n$.
 If $\abs{z} < r$ we can write
-\[\norm{Tz} = \norm{T \prs{\frac{y_0 + Z}{z}} - T \prs{\frac{y_0 - z}{2}}} \leq \frac{1}{2} \prs{\norm{T \prs{y_0 + Z}} + \norm{T \prs{y_0 - z}}} \leq \frac{1}{2} \prs{n+n} = n \text{.}\]
+\[\norm{Tz} = \norm{T \prs{\frac{y_0 + z}{2}} - T \prs{\frac{y_0 - z}{2}}} \leq \frac{1}{2} \prs{\norm{T \prs{y_0 + z}} + \norm{T \prs{y_0 - z}}} \leq \frac{1}{2} \prs{n+n} = n \text{,}\]
+where in the last inequality we used $y_0 \pm z \in A_n$.
 Now
 \[\forall T \in \mcal{F} \forall x \in X \colon \norm{Tx} = \norm{T \prs{\frac{r x}{2 \norm{x}}}} \cdot \frac{2 \norm{x}}{r} \leq \frac{2n}{r} \norm{x} \text{.}\]
 Hence
@@ -3190,7 +3192,7 @@ is called the radical of $A$.
 \end{definition}
 
 \begin{definition}[Semisimple Banach Algebra]
-If $\ker \Gamma = \set{0}$, $A$ is called seim-simple.
+If $\ker \Gamma = \set{0}$, $A$ is called semi-simple.
 \end{definition}
 
 \subsection{$\mrm{C}^*$ Algebras}
