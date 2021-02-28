@@ -1995,7 +1995,7 @@ We have
 I \ceq \norm{\frac{1}{k} \sum_{i \in [k]} x_{n_i}}^2 &= \trs{\frac{1}{k} \sum_{i \in [k]} x_{n_i}, \frac{1}{k} \sum_{j \in [k]} x_{n_j}}
 \\&\leq \frac{1}{k^2} \sum_{i \in [k]} \norm{x_{n_i}}^2 + \frac{2}{k^2} \sum_{i,j \in [k]} \abs{\trs{x_{n_i}, x_{n_j}}} \text{.}
 \end{align*}
-Choose $x_{n_1} = x_1$. Assume we already choose $x_{n_i}$ for $i \in [k-1]$. Since $x_n \overset{n\to\infty}{\rightharpoonup} 0$ we have $\trs{x_m, x_{n_i}} \xrightarrow{m\to\infty} 0$ for all $i \in [k-1]$. Hence we can choose $x_{n_k}$ such that $\abs{\trs{x_{n_k}, x_{n_i}}} \leq \frac{1}{2^k}$ for all $i \in [k-1]$. Since $x_n \overset{n\to\infty}{\rightharpoonup} 0$, we have also $\norm{x_n} \leq $ for some $C > 0$.
+Choose $x_{n_1} = x_1$. Assume we already chose $x_{n_i}$ for $i \in [j-1]$. Since $x_n \overset{n\to\infty}{\rightharpoonup} 0$ we have $\trs{x_m, x_{n_i}} \xrightarrow{m\to\infty} 0$ for all $i \in [k-1]$. Hence we can choose $x_{n_k}$ such that $\abs{\trs{x_{n_k}, x_{n_i}}} \leq \frac{1}{2^k}$ for all $i \in [k-1]$. Since $x_n \overset{n\to\infty}{\rightharpoonup} 0$, we have also $\norm{x_n} \leq C$ for all $n \in \mbb{N}$ and some $C > 0$.
 Then
 \begin{align*}
 I &\leq \frac{1}{k^2} C k + \frac{2}{k^2} \sum_{i,j \in [k]} \frac{1}{2^j}
